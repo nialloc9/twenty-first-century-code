@@ -1,17 +1,10 @@
 /**
- * THEME
- * @type {string}
- */
-export const THEME_COLOR = "#3CDDCE";
-
-/**
  * COLORS
  * @type {string}
  */
-export const CONCRETE = "#f2f2f2";
-export const MERCURY = "#e6e6e6";
-export const BOTTICELLI = "#C3D6E0";
-export const PUERTO_RICO = "#38CABD";
-export const CANARY = "#E2FF5B";
-export const SLATE_GRAY = "#556c77";
-export const CUTTY_SARK = "#617B89";
+export const SOLID_PIN = "#8E3B46";
+export const ZOMBIE = "#E1DD8F";
+export const SUNGLO = "#E0777D";
+export const WEDGEWOOD = "#4C86A8";
+export const WEDGEWOOD_TWO = "#477890";
+export const KELP = "#37392E";

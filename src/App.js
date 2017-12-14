@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import { Grid } from 'semantic-ui-react';
 import Block from './components/Common/Styled/Block';
 import withSidebar from './hoc/withSidebar';
 import { setSidebarOpen, setSidebarSelected } from './actions/sidebar';
@@ -8,9 +9,9 @@ import { setSidebarOpen, setSidebarSelected } from './actions/sidebar';
 class App extends Component {
   render() {
     return (
-        <Block>
+        <Grid stackable centered container>
 
-        </Block>
+        </Grid>
     );
   }
 }

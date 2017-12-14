@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Menu } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
+import Icon from '../../components/Common/Styled/Icon';
+import Block from '../../components/Common/Styled/Block';
+import theme from '../../config/theme';
+
+const { colors: { first, second, third, fourth, fifth } } = theme;
 
 class MenuItem extends Component {
     static propTypes = {
@@ -48,8 +53,10 @@ class MenuItem extends Component {
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
-                <Icon loading={loading} name={icon} />
-                {text}
+                <Icon loading={loading} name={icon} color={second} />
+                <Block color={second}>
+                    {text}
+                </Block>
             </Menu.Item>
         )
     }

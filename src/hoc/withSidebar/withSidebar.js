@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Sidebar, Icon, Menu } from 'semantic-ui-react';
+import { Sidebar, Menu } from 'semantic-ui-react';
+import Styled from 'styled-components';
 import MenuItem from './MenuItem';
 import Block from '../../components/Common/Styled/Block';
+import Icon from '../../components/Common/Styled/Icon';
 import { SIDEBAR_HOME, SIDEBAR_PORTFOLIO, SIDEBAR_ACHIEVEMENTS } from '../../constants/sidebar';
 import { remCalc } from '../../common/helpers';
+import theme from '../../config/theme';
+
+const { colors: { fourth } } = theme;
+
+const StyledSidebar = Styled(Sidebar)`
+    background-color: ${fourth} !important;
+`;
 
 const withSidebar = WrappedComponent =>
     class SidebarLeftOverlay extends Component {
@@ -37,66 +46,70 @@ const withSidebar = WrappedComponent =>
             return (
                 <Block>
                     <Sidebar.Pushable>
-                        <Sidebar as={Menu} color="green" animation='push' width='thin' visible={open} icon='labeled' vertical>
-                            <MenuItem
-                                selected={selected}
-                                name="close"
-                                icon="close"
-                                loading={closeHover}
-                                onClick={onSetSidebarOpen}
-                                onMouseEnter={this.handleCloseOnHover}
-                                onMouseLeave={this.handleCloseOnHover}
-                            />
-                            <MenuItem
-                                selected={selected}
-                                name={SIDEBAR_HOME}
-                                icon="home"
-                                text="Home"
-                                onClick={onSetSidebarSelected}
-                            />
-                            <MenuItem
-                                selected={selected}
-                                name={SIDEBAR_PORTFOLIO}
-                                icon="folder"
-                                text="Portfolio"
-                                onClick={onSetSidebarSelected}
-                            />
-                            <MenuItem
-                                selected={selected}
-                                name={SIDEBAR_ACHIEVEMENTS}
-                                icon="trophy"
-                                text="Achievements"
-                                onClick={onSetSidebarSelected}
-                            />
-                            <MenuItem
-                                icon="mail"
-                                text="Achievements"
-                            />
-                            <MenuItem
-                                icon="mail"
-                                text="Achievements"
-                            />
-                            <MenuItem
-                                icon="github square"
-                                text="Github"
-                            />
-                            <MenuItem
-                                icon="linkedin square"
-                                text="Linkedin"
-                            />
-                            <MenuItem
-                                icon="youtube"
-                                text="YouTube"
-                            />
-                        </Sidebar>
+                        <StyledSidebar as={Menu} animation='push' width='thin' visible={open} icon='labeled' vertical>
+                            <Block backgroundColor={fourth}>
+                                <MenuItem
+                                    selected={selected}
+                                    name="close"
+                                    icon="close"
+                                    loading={closeHover}
+                                    onClick={onSetSidebarOpen}
+                                    onMouseEnter={this.handleCloseOnHover}
+                                    onMouseLeave={this.handleCloseOnHover}
+                                />
+                                <MenuItem
+                                    selected={selected}
+                                    name={SIDEBAR_HOME}
+                                    icon="home"
+                                    text="Home"
+                                    onClick={onSetSidebarSelected}
+                                />
+                                <MenuItem
+                                    selected={selected}
+                                    name={SIDEBAR_PORTFOLIO}
+                                    icon="folder"
+                                    text="Portfolio"
+                                    onClick={onSetSidebarSelected}
+                                />
+                                <MenuItem
+                                    selected={selected}
+                                    name={SIDEBAR_ACHIEVEMENTS}
+                                    icon="trophy"
+                                    text="Achievements"
+                                    onClick={onSetSidebarSelected}
+                                />
+                                <MenuItem
+                                    icon="mail"
+                                    text="Achievements"
+                                />
+                                <MenuItem
+                                    icon="mail"
+                                    text="Achievements"
+                                />
+                                <MenuItem
+                                    icon="github square"
+                                    text="Github"
+                                />
+                                <MenuItem
+                                    icon="linkedin square"
+                                    text="Linkedin"
+                                />
+                                <MenuItem
+                                    icon="youtube"
+                                    text="YouTube"
+                                />
+                            </Block>
+                        </StyledSidebar>
                         <Sidebar.Pusher>
                             <Block minHeight={remCalc(window.innerHeight)}>
                                 <Block
-                                    display={open ? "none" : false}
                                     cursor="pointer"
                                     onClick={onSetSidebarOpen}
+                                    position="absolute"
+                                    top={remCalc(10)}
+                                    display={open ? "none" : false}
                                 >
-                                    <Icon name="content" size="big" />
+                                        <Icon name="content" size="big" color={fourth} />
                                 </Block>
                                 <WrappedComponent
                                     {...this.props}
