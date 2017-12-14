@@ -5,7 +5,7 @@ import Icon from '../../components/Common/Styled/Icon';
 import Block from '../../components/Common/Styled/Block';
 import theme from '../../config/theme';
 
-const { colors: { first, second, third, fourth, fifth } } = theme;
+const { colors: { second } } = theme;
 
 class MenuItem extends Component {
     static propTypes = {

@@ -9,10 +9,10 @@ import { SIDEBAR_HOME, SIDEBAR_PORTFOLIO, SIDEBAR_ACHIEVEMENTS } from '../../con
 import { remCalc } from '../../common/helpers';
 import theme from '../../config/theme';
 
-const { colors: { fourth } } = theme;
+const { colors: { first } } = theme;
 
 const StyledSidebar = Styled(Sidebar)`
-    background-color: ${fourth} !important;
+    background-color: ${first} !important;
 `;
 
 const withSidebar = WrappedComponent =>
@@ -47,7 +47,7 @@ const withSidebar = WrappedComponent =>
                 <Block>
                     <Sidebar.Pushable>
                         <StyledSidebar as={Menu} animation='push' width='thin' visible={open} icon='labeled' vertical>
-                            <Block backgroundColor={fourth}>
+                            <Block backgroundColor={first}>
                                 <MenuItem
                                     selected={selected}
                                     name="close"
@@ -101,16 +101,20 @@ const withSidebar = WrappedComponent =>
                             </Block>
                         </StyledSidebar>
                         <Sidebar.Pusher>
-                            <Block minHeight={remCalc(window.innerHeight)}>
-                                <Block
-                                    cursor="pointer"
-                                    onClick={onSetSidebarOpen}
-                                    position="absolute"
-                                    top={remCalc(10)}
-                                    display={open ? "none" : false}
-                                >
-                                        <Icon name="content" size="big" color={fourth} />
-                                </Block>
+                            <Block
+                                cursor="pointer"
+                                onClick={onSetSidebarOpen}
+                                position="absolute"
+                                top={remCalc(10)}
+                                display={open ? "none" : false}
+                            >
+                                <Icon name="content" size="big" color={first} />
+                            </Block>
+
+                            <Block
+                                minHeight={remCalc(window.innerHeight)}
+
+                            >
                                 <WrappedComponent
                                     {...this.props}
                                     toggleSidebar={onSetSidebarOpen}

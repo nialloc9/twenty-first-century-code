@@ -14,15 +14,15 @@ const Block = Styled("div")`
     ${({ backgroundImage = false }) => backgroundImage && `background-image: ${backgroundImage};`}
     ${({ backgroundPosition = false }) => backgroundPosition && `background-position: ${backgroundPosition};`}
     ${({ position = false }) => position && `position: ${position};`}
-    ${({ width = false }) => width && `width: ${width}`};
+    ${({ width = false }) => width && `width: ${width};`};
     ${({ float = false }) => float && `float: ${float};`}
     ${({ border = false }) => border && `border: ${border};`}
-    ${({ opacity = false }) => opacity && `opacity: ${opacity}`}
+    ${({ opacity = false }) => opacity && `opacity: ${opacity};`}
     ${({ minHeight = false }) => minHeight && `min-height: ${minHeight};`}
     ${({ maxHeight = false }) => maxHeight && `max-height: ${maxHeight};`}
     ${({ maxWidth = false }) => maxWidth && `max-width: ${maxWidth};`}
     ${({ fontSize = false }) => fontSize && `font-size: ${remCalc(fontSize)};`}
-    ${({ wordSpacing = false }) => wordSpacing && `word-spacing: ${wordSpacing}`}
+    ${({ wordSpacing = false }) => wordSpacing && `word-spacing: ${wordSpacing};`}
     ${({ color = false }) => color && `color: ${color};`}
     ${({ overflow = false }) => overflow && `overflow: ${overflow};`}
     ${({ top = false }) => top && `top: ${top};`}
@@ -35,6 +35,13 @@ const Block = Styled("div")`
     
     &:hover {
         ${({ hoverColor = false}) => hoverColor && `color: ${hoverColor};`}
+        ${({ hoverWidth = false}) => hoverWidth && `width: ${hoverWidth};`}
+        ${({ hoverHeight = false}) => hoverHeight && `height: ${hoverHeight};`}
+        ${({ hoverMargin = false}) => hoverMargin && `margin: ${hoverMargin};`}
+        ${({ hoverPadding = false}) => hoverPadding && `padding: ${hoverPadding};`}
+        ${({ hoverBorder = false}) => hoverBorder && `border: ${hoverBorder};`}
+        ${({ hoverBoxShadow = false}) => hoverBoxShadow && `box-shadow: ${hoverBoxShadow};`}
+        ${({ hoverTransition= false}) => hoverTransition && `transition: ${hoverTransition};`}
     }
     
     ::-webkit-scrollbar {

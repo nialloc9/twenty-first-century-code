@@ -2,12 +2,12 @@ import { SOLID_PIN, ZOMBIE, SUNGLO, WEDGEWOOD, WEDGEWOOD_TWO, KELP } from '../co
 
 const theme = {
     colors: {
-        first: SOLID_PIN,
-        second: ZOMBIE,
-        third: SUNGLO,
-        fourth: WEDGEWOOD,
-        fifth: WEDGEWOOD_TWO,
-        fontColor: KELP
+        first: '#2D93AD',
+        second: '#DBD56E',
+        third: '#88AB75',
+        fourth: '#7D7C84',
+        fifth: '#DE8F6E',
+        fontColor: '#7D7C84'
     },
     fontSize: 14
 };
