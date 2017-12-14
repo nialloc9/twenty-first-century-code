@@ -14,6 +14,10 @@ import registerServiceWorker from './registerServiceWorker';
 const date = new Date();
 console.log("BUILD", "1.0.15", date.toDateString(), date.toTimeString());
 
+if (module.hot) {
+    module.hot.accept();
+}
+
 render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
@@ -25,9 +29,5 @@ render(
     </Provider>,
     document.getElementById("root")
 );
-
-if (module.hot) {
-    module.hot.accept();
-}
 
 registerServiceWorker();

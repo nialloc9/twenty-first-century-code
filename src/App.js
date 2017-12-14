@@ -1,21 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import Block from './components/Common/Styled/Block';
+import withSidebar from './hoc/withSidebar';
+import { setSidebarOpen, setSidebarSelected } from './actions/sidebar';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Block>
+
+        </Block>
     );
   }
 }
 
-export default App;
+/**
+ * @param open
+ * @param selected
+ */
+const mapStateToProps = ({
+                             sidebar: {
+                                 open,
+                                 selected
+                             }
+                         }) => ({
+    open,
+    selected
+});
+
+/**
+ * @param dispatch
+ */
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+            onSetSidebarOpen: setSidebarOpen,
+            onSetSidebarSelected: setSidebarSelected
+        },
+        dispatch
+    );
+
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(App));
