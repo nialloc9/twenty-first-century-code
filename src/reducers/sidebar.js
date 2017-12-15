@@ -1,8 +1,7 @@
-import { SIDEBAR_SET, SIDEBAR_HOME } from '../constants/sidebar';
+import { SIDEBAR_SET } from '../constants/sidebar';
 
 const initialState = {
-    open: false,
-    selected: SIDEBAR_HOME
+    open: false
 };
 
 /**

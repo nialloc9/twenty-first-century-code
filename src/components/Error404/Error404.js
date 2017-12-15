@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import { Grid } from 'semantic-ui-react';
 import Block from '../Common/Styled/Block';
 
 
-class Error404 extends Component {
-    static propTypes = {};
-
+class Error404 extends PureComponent {
     render() {
-        const {} = this.props;
-
         return (
             <Grid centered>
                 <Grid.Row>

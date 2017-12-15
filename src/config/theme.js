@@ -9,7 +9,8 @@ const theme = {
         fifth: '#DE8F6E',
         fontColor: '#7D7C84'
     },
-    fontSize: 14
+    fontSize: 16,
+    lineHeight: 1.5
 };
 
 export default theme;

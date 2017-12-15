@@ -42,7 +42,8 @@ class MenuItem extends Component {
             text,
             loading,
             onMouseEnter,
-            onMouseLeave
+            onMouseLeave,
+            ...rest
         } = this.props;
 
         return (
@@ -52,6 +53,7 @@ class MenuItem extends Component {
                 onClick={this.handleClick}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
+                {...rest}
             >
                 <Icon loading={loading} name={icon} color={second} />
                 <Block color={second}>

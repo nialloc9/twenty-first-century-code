@@ -13,6 +13,9 @@ const Block = Styled("div")`
     ${({ backgroundColor = false }) => backgroundColor && `background-color: ${backgroundColor};`}
     ${({ backgroundImage = false }) => backgroundImage && `background-image: ${backgroundImage};`}
     ${({ backgroundPosition = false }) => backgroundPosition && `background-position: ${backgroundPosition};`}
+    ${({ backgroundPositionY = false }) => backgroundPositionY && `background-position-y: ${backgroundPositionY};`}
+    ${({ backgroundRepeat = false }) => backgroundRepeat && `background-repeat: ${backgroundRepeat};`}
+    ${({ backgroundSize = false }) => backgroundSize && `background-size: ${backgroundSize};`}
     ${({ position = false }) => position && `position: ${position};`}
     ${({ width = false }) => width && `width: ${width};`};
     ${({ float = false }) => float && `float: ${float};`}

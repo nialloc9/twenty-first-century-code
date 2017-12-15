@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Block from './components/Common/Styled/Block';
-import theme from './config/theme';
-import { remCalc } from './common/helpers';
+import Block from '../../../components/Common/Styled/Block';
+import theme from '../../../config/theme';
+import { remCalc } from '../../../common/helpers';
 
-const { colors: { first, third, fourth, second, fifth, fontColor } } = theme;
+const { colors: { first, third, fourth } } = theme;
 
 
 const hoverBoxShadow = `-1px 1px ${fourth},
@@ -20,7 +20,6 @@ class Card extends Component {
             height="400px"
             width="100%"
             opacity={0.6}
-            hoverPadding={remCalc(10)}
             hoverBorder={`1px solid ${first}`}
             hoverBoxShadow={hoverBoxShadow}
             hoverTransition="box-shadow 0.3s ease-in-out"

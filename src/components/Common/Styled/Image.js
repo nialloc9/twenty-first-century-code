@@ -11,11 +11,11 @@ const Image = Styled(({ cursor, display, height, width, maxWidth, mobileWidth, .
     ${({ height = false }) => height && `height: ${height};`}
     ${({ maxWidth = false }) => maxWidth && `max-width: ${maxWidth};`}
     ${({ margin = false }) => margin && `margin: ${margin};`}
+    ${({ objectFit = false }) => objectFit && `object-fit: ${objectFit};`}
     
     @media ${MOBILE_SCREEN} {
         ${({ mobileWidth = false }) => mobileWidth && `width: ${mobileWidth};`}
     }
 `;
-
 
 export default Image;

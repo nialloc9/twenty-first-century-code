@@ -7,7 +7,8 @@ import { ThemeProvider } from "styled-components";
 import "semantic-ui-css/semantic.min.css";
 import "./config/polyfills";
 import Error404 from "./components/Error404";
-import App from './App';
+import Home from './components/Home';
+import Java from './components/Java';
 import { history } from "./middleware/history";
 import store from "./store";
 import registerServiceWorker from './registerServiceWorker';
@@ -25,7 +26,8 @@ render(
         <Provider store={store}>
             <ConnectedRouter history={history}>
                 <Switch>
-                    <Route exact path="/" component={App} />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/java/:article?" component={Java} />
                     <Route component={Error404} />
                 </Switch>
             </ConnectedRouter>
