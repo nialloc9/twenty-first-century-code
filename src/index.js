@@ -9,6 +9,7 @@ import "./config/polyfills";
 import Error404 from "./components/Error404";
 import Home from './components/Home';
 import Java from './components/Java';
+import Php from './components/Php';
 import { history } from "./middleware/history";
 import store from "./store";
 import registerServiceWorker from './registerServiceWorker';
@@ -28,6 +29,7 @@ render(
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/java/:article?" component={Java} />
+                    <Route exact path="/php/:article?" component={Php} />
                     <Route component={Error404} />
                 </Switch>
             </ConnectedRouter>

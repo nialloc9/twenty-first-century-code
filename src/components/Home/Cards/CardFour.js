@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Block from '../../../components/Common/Styled/Block';
+import Image from '../../../components/Common/Styled/Image';
 import Card from './Card';
 import { remCalc } from '../../../common/helpers';
 import nodeGreen from '../../../static/images/nodeGreen.png';
@@ -13,13 +14,13 @@ class CardFour extends Component {
                     padding={remCalc(2)}
                     height="100%"
                     width="100%"
+                    backgroundColor="white"
                 >
-                    <Block
-                        height="100%"
+                    <Image
+                        fluid
                         width="100%"
-                        backgroundImage={`url(${nodeGreen})`}
-                        backgroundSize="cover"
-                        backgroundRepeat="no-repeat"
+                        height="100% !important"
+                        src={nodeGreen}
                     />
                 </Block>
             </Card>

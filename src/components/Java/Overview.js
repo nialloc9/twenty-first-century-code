@@ -9,20 +9,26 @@ import { remCalc } from '../../common/helpers';
 const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 const {
-    REACT_APP_LINKEDIN
+    REACT_APP_LINKEDIN,
+    REACT_APP_GITHUB
 } = globals;
 
 class Overview extends PureComponent {
     render(){
         return(
-            <Block fontColor={fontColor} lineHeight={lineHeight} fontSize={fontSize} width={remCalc(800)}>
+            <Block fontColor={fontColor} lineHeight={lineHeight} fontSize={fontSize} maxWidth={remCalc(800)}>
                 <Block>
-                    <Image src={javaBlue} size="massive" alt="Java image"/>
+                    <Image
+                        src={javaBlue}
+                        margin="auto"
+                        size="large"
+                        alt="Java image"
+                    />
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
                     Java is a language I really enjoy. It is an extremely powerful language that can be used for nearly every project.
-                    I will show some of my work in java but there is more available on my github page if you wish. Java is an immensely powerful and huge language so in every project, something new is learned.
+                    I will show some of my work in java but there is more available on my <a target="_blank" href={REACT_APP_GITHUB}>github</a> page if you wish. Java is an immensely powerful and huge language so in every project, something new is learned.
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

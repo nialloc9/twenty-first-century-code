@@ -6,7 +6,7 @@ class ClickOutside extends Component{
 
     static propTypes = {
         onClickOutside: PropTypes.func.isRequired
-    }
+    };
 
     handleClickOutside = () => {
         const { onClickOutside } = this.props;

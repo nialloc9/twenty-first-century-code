@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Block from '../../../components/Common/Styled/Block';
+import Image from '../../../components/Common/Styled/Image';
 import Card from './Card';
 import { remCalc } from '../../../common/helpers';
 import css3Blue from '../../../static/images/css3Blue.png';
@@ -15,12 +16,11 @@ class CardSix extends Component {
                     width="100%"
                     backgroundColor="white"
                 >
-                    <Block
-                        height="100%"
+                    <Image
+                        fluid
                         width="100%"
-                        backgroundImage={`url(${css3Blue})`}
-                        backgroundSize="cover"
-                        backgroundRepeat="no-repeat"
+                        height="100% !important"
+                        src={css3Blue}
                     />
                 </Block>
             </Card>

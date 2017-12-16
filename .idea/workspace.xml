@@ -2,170 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e3132b-8612-4f3d-a4f6-2fe1509150e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/calculator.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/coding.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/cool.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/css.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/css3Blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/email.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/feedback.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/github_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/google_plus_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/igoalo_complete.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/igoalo_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/java.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/javaBlue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/javascriptYellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/javscriptGreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/keyboard.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/languageJava.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/languagePhp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/languageSql.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/languagesMain.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/lego.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/lightBulb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/like.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/linkedin_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/logo_blue_bg_no_oc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/logo_white_bg_no_oc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me_and_pug.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/me_travel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/mySqlBlack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/mySqlWhite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/nodeGreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/oc_logo_blue_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/oc_logo_white_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/paintball.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/php.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/phpBlue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/Csrf/loggedIn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/Csrf/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/Csrf/tokenAuthenticationFailure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/InputColorChange/clickGreenPassesTrueBoolean.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/InputColorChange/clickRedPassesFalseBooleanRemovesGreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/InputColorChange/clickRemoveAndRemovesAllColoring.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/InputColorChange/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaCalc/running.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaCalc/start_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaGame/collisionCantContinue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaGame/mainMenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaGame/newGame.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaGame/options.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaGame/winner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/burningHouse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/client_connected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/end_connection.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/instant_messenger_in_operation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/server_client_connected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/JavaIm/server_wating_to_connect_to_client.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ListMaker/addAnItem.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ListMaker/deleteItem.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ListMaker/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ListMaker/subscribeAndreturnListMethodsInAction.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ShouldIInvest/1start.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ShouldIInvest/5fullListOfDataWithKeyValuesHighlightedGreenForGoodRedForBadAndResult.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/captcha/checkBtnInputCorrectNumber.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/captcha/checkBtnInputWrongNumber.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/captcha/newImageBtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/captcha/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/about.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/contact.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/doubleRoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/doubleSuite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/kingSuite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/landingPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/noScroll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/queenSuite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/rooms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/scroll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/singleRoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/fullScreenLanding/singleSuite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/chat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/chatCode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/chatGetMessgesCode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/coding.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/deleteFriendCode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/forgotton_pass_email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/forgotton_password.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/friendCode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/friend_request.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/friends.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/goal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/goals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/group_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/group_recommendation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/home_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/home_page2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/landing_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/logo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/logout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/notifications.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/paginationWithNumbers.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/password_reset.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/igoalo/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ocwebtech/about.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ocwebtech/capture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ocwebtech/jigsaw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/ocwebtech/redux.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/activatedColumnInDbChangedTo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/checkEmailIfAccountIsActivated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/clickEmailLink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/emailAccountNotActivated.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/emailReceived.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/inputEmail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/projects/verifyEmail/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/soccer_team1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/sql.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/travel1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/travel2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/travel3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/travel4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/images/writing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/java.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/isMobile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Common/Clickoutside/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Common/ProjectHeader/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardFive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardFour.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardOne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardSix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardThree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/Java.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/Overview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/globals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/constants/java.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/reducers/java.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/images/a.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Card.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/Card.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.development" afterPath="$PROJECT_DIR$/.env.development" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.production" afterPath="$PROJECT_DIR$/.env.production" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Common/Styled/CodeBlock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/Calculator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/FindTheDoor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Java/InstantMessenger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/Captcha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/Csrf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/Overview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/Php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/VerifyEmail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Php/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/constants/php.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/actions/java.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/reducers/java.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/Csrf/loggedIn.png" afterPath="$PROJECT_DIR$/src/static/images/projects/csrf/loggedIn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/Csrf/start.png" afterPath="$PROJECT_DIR$/src/static/images/projects/csrf/start.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/Csrf/tokenAuthenticationFailure.png" afterPath="$PROJECT_DIR$/src/static/images/projects/csrf/tokenAuthenticationFailure.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaCalc/running.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaCalculator/running.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaCalc/start_up.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaCalculator/start_up.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaGame/collisionCantContinue.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaFindTheDoorGame/collisionCantContinue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaGame/mainMenu.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaFindTheDoorGame/mainMenu.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaGame/newGame.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaFindTheDoorGame/newGame.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaGame/options.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaFindTheDoorGame/options.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaGame/winner.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaFindTheDoorGame/winner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/burningHouse.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/burningHouse.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/client_connected.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/clientConnected.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/end_connection.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/endConnection.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/instant_messenger_in_operation.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/instantMessengerRunning.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/server_client_connected.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/serverClientConnected.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/JavaIm/server_wating_to_connect_to_client.png" afterPath="$PROJECT_DIR$/src/static/images/projects/javaInstantMessenger/serverWaitingToConnectToClient.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ListMaker/addAnItem.png" afterPath="$PROJECT_DIR$/src/static/images/projects/listMaker/addAnItem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ListMaker/deleteItem.png" afterPath="$PROJECT_DIR$/src/static/images/projects/listMaker/deleteItem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ListMaker/start.png" afterPath="$PROJECT_DIR$/src/static/images/projects/listMaker/start.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ListMaker/subscribeAndreturnListMethodsInAction.png" afterPath="$PROJECT_DIR$/src/static/images/projects/listMaker/subscribeAndreturnListMethodsInAction.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ShouldIInvest/1start.PNG" afterPath="$PROJECT_DIR$/src/static/images/projects/shouldIInvest/1start.PNG" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/images/projects/ShouldIInvest/5fullListOfDataWithKeyValuesHighlightedGreenForGoodRedForBadAndResult.PNG" afterPath="$PROJECT_DIR$/src/static/images/projects/shouldIInvest/5fullListOfDataWithKeyValuesHighlightedGreenForGoodRedForBadAndResult.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/sidebar.js" afterPath="$PROJECT_DIR$/src/actions/sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js" afterPath="$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js" afterPath="$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/Styled/Block.js" afterPath="$PROJECT_DIR$/src/components/Common/Styled/Block.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/Styled/Header.js" afterPath="$PROJECT_DIR$/src/components/Common/Styled/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/Styled/Icon.js" afterPath="$PROJECT_DIR$/src/components/Common/Styled/Icon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Common/Styled/Image.js" afterPath="$PROJECT_DIR$/src/components/Common/Styled/Image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Error404/Error404.js" afterPath="$PROJECT_DIR$/src/components/Error404/Error404.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Home.js" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/theme.js" afterPath="$PROJECT_DIR$/src/config/theme.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/Card.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/Card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardFive.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardFive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardFour.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardFour.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardOne.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardOne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardSix.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardSix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardThree.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardThree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js" afterPath="$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Java/Java.js" afterPath="$PROJECT_DIR$/src/components/Java/Java.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Java/Overview.js" afterPath="$PROJECT_DIR$/src/components/Java/Overview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Java/options.js" afterPath="$PROJECT_DIR$/src/components/Java/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/java.js" afterPath="$PROJECT_DIR$/src/constants/java.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js" afterPath="$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js" afterPath="$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/sidebar.js" afterPath="$PROJECT_DIR$/src/reducers/sidebar.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,11 +71,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <file leaf-file-name="Php.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Php/Php.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="558">
+              <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -192,63 +86,11 @@
       <file leaf-file-name="withSidebar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="27" selection-end-column="12" />
+            <state relative-caret-position="174">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardOne.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardOne.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Overview.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Java/Overview.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectHeader.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/theme.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -256,21 +98,51 @@
       <file leaf-file-name="Java.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Java/Java.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="18">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="globals.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/globals.js">
+      <file leaf-file-name="isMobile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/common/isMobile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="1617" lean-forward="true" selection-start-line="6" selection-start-column="1617" selection-end-line="6" selection-end-column="1617" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="php.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/php.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectHeader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Overview.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Php/Overview.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -290,9 +162,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>e</find>
-      <find>displa</find>
       <find>image</find>
-      <find>opac</find>
       <find>opa</find>
       <find>elem</find>
       <find>fou</find>
@@ -301,6 +171,10 @@
       <find>backgroundS</find>
       <find>font</find>
       <find>line</find>
+      <find>opac</find>
+      <find>Image</find>
+      <find>display</find>
+      <find>displa</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -312,57 +186,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/Home/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Sidebar/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.js" />
-        <option value="$PROJECT_DIR$/src/hoc/Sidebar/Sidebar.js" />
-        <option value="$PROJECT_DIR$/src/hoc/withSidebar/index.js" />
-        <option value="$PROJECT_DIR$/src/constants/sidebar.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/common/colours.js" />
-        <option value="$PROJECT_DIR$/src/Card.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Card.js" />
-        <option value="$PROJECT_DIR$/src/components/Error404/Error404.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/Styled/Image.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/Styled/Block.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardFour.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardFive.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardSix.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardThree.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/Card.js" />
-        <option value="$PROJECT_DIR$/.env.production" />
-        <option value="$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js" />
-        <option value="$PROJECT_DIR$/.env.development" />
-        <option value="$PROJECT_DIR$/src/components/Common/Clickoutside/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js" />
-        <option value="$PROJECT_DIR$/src/hoc/withCopyToClipboard.js" />
-        <option value="$PROJECT_DIR$/src/common/isMobile.css" />
-        <option value="$PROJECT_DIR$/src/common/isMobile.js" />
         <option value="$PROJECT_DIR$/src/components/Java/index.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Java/javaOptions.js" />
         <option value="$PROJECT_DIR$/src/reducers/sidebar.js" />
-        <option value="$PROJECT_DIR$/src/constants/java.js" />
-        <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/actions/sidebar.js" />
         <option value="$PROJECT_DIR$/src/reducers/java.js" />
-        <option value="$PROJECT_DIR$/src/components/Java/options.js" />
         <option value="$PROJECT_DIR$/src/components/Common/ProjectDropdown/index.js" />
         <option value="$PROJECT_DIR$/src/components/Common/ProjectSelector/index.js" />
         <option value="$PROJECT_DIR$/src/components/Common/ProjectSelector/ProjectSelector.js" />
         <option value="$PROJECT_DIR$/src/components/Common/ProjectHeader/index.js" />
-        <option value="$PROJECT_DIR$/src/actions/java.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardOne.js" />
         <option value="$PROJECT_DIR$/src/config/globals.js" />
+        <option value="$PROJECT_DIR$/src/config/theme.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Styled/Image.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardFive.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardSix.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardFour.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/Card.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardOne.js" />
+        <option value="$PROJECT_DIR$/src/components/Java/options.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Styled/CodeBlock.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Styled/Block.js" />
+        <option value="$PROJECT_DIR$/src/components/Java/Overview.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/index.js" />
+        <option value="$PROJECT_DIR$/src/reducers/PHP.js" />
+        <option value="$PROJECT_DIR$/src/actions/php.js" />
+        <option value="$PROJECT_DIR$/src/actions/java.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js" />
+        <option value="$PROJECT_DIR$/src/reducers/php.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/Overview.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/options.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Cards/CardThree.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/Csrf.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/Captcha.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/VerifyEmail.js" />
+        <option value="$PROJECT_DIR$/src/components/Java/Calculator.js" />
+        <option value="$PROJECT_DIR$/src/components/Java/FindTheDoor.js" />
+        <option value="$PROJECT_DIR$/src/components/Java/InstantMessenger.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js" />
+        <option value="$PROJECT_DIR$/src/constants/sidebar.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/constants/php.js" />
+        <option value="$PROJECT_DIR$/src/constants/java.js" />
+        <option value="$PROJECT_DIR$/src/components/Php/Php.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Styled/Icon.js" />
+        <option value="$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js" />
+        <option value="$PROJECT_DIR$/src/components/Common/Styled/Header.js" />
         <option value="$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js" />
         <option value="$PROJECT_DIR$/src/components/Java/Java.js" />
-        <option value="$PROJECT_DIR$/src/config/theme.js" />
-        <option value="$PROJECT_DIR$/src/components/Java/Overview.js" />
-        <option value="$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js" />
+        <option value="$PROJECT_DIR$/src/common/isMobile.js" />
       </list>
     </option>
   </component>
@@ -398,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -439,7 +314,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="store" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,61 +332,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twentyfirstcenturycode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twentyfirstcenturycode" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twentyfirstcenturycode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twentyfirstcenturycode" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectHeader" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,11 +355,11 @@
       <recent name="$PROJECT_DIR$/src/hoc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Php" />
       <recent name="$PROJECT_DIR$/src/components/Java" />
       <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/Common" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -645,18 +471,20 @@
       <workItem from="1513248311732" duration="28329000" />
       <workItem from="1513330860758" duration="870000" />
       <workItem from="1513331932998" duration="6732000" />
-      <workItem from="1513348255493" duration="9800000" />
+      <workItem from="1513348255493" duration="16538000" />
+      <workItem from="1513417884255" duration="5646000" />
+      <workItem from="1513445477387" duration="8924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47627000" />
+    <option name="totallyTimeSpent" value="68935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11859838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -682,204 +510,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/reducers/index.js</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/static/images/projects/ocwebtech/about.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/projects/ListMaker/addAnItem.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/projects/ListMaker/subscribeAndreturnListMethodsInAction.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/projects/ocwebtech/capture.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/javascriptYellow.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/javscriptGreen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/languagePhp.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/like.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/languageSql.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/sql.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/images/mysqlWhite.png" />
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardFour.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardFive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardSix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardThree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/Card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hoc/withDisplay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.production">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.development">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Clickoutside/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hoc/withCopyToClipboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/isMobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/isMobile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Java/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,14 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/java.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -919,77 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/java.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/java.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Java/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#121#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/SoftLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,72 +564,409 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/globals.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Image.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="288">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardFive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="27" selection-end-column="12" />
+        <state relative-caret-position="432">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="24" selection-end-column="24" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Block.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardTwo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="432">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardSix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardFour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/Card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/globals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/CodeBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Java/Java.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Php/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardOne.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Java/options.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="true" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+        <state relative-caret-position="108">
+          <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/php.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Java/Overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="414">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardOne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Cards/CardThree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/Csrf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/Captcha.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="224" column="2" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="224" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/VerifyEmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="215" column="0" lean-forward="true" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Java/Calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Java/FindTheDoor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2682">
+          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="223" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Java/InstantMessenger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="287" column="8" lean-forward="false" selection-start-line="287" selection-start-column="8" selection-end-line="290" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Clickoutside/ClickOutside.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/SoftLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/php.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/java.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/java.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/java.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withSidebar/MenuItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="91" column="20" lean-forward="true" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Common/Styled/Block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/Overview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Php/Php.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="64" column="31" lean-forward="true" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hoc/withSidebar/withSidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Common/ProjectHeader/ProjectHeader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="72">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/php.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Java/Java.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/isMobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="1617" lean-forward="true" selection-start-line="6" selection-start-column="1617" selection-end-line="6" selection-end-column="1617" />
           <folding />
         </state>
       </provider>

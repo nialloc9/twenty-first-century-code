@@ -5,7 +5,6 @@ import Styled from 'styled-components';
 import MenuItem from './MenuItem';
 import Block from '../../components/Common/Styled/Block';
 import Icon from '../../components/Common/Styled/Icon';
-import SoftLink from "../../components/Common/Styled/SoftLink";
 import ClickOutside from '../../components/Common/Clickoutside';
 import { SIDEBAR_HOME, SIDEBAR_PORTFOLIO, SIDEBAR_ACHIEVEMENTS } from '../../constants/sidebar';
 import { remCalc } from '../../common/helpers';
@@ -33,21 +32,7 @@ const withSidebar = WrappedComponent =>
         static propTypes = {
             open: PropTypes.bool.isRequired,
             selected: PropTypes.string.isRequired,
-            onSetSidebarOpen: PropTypes.func.isRequired,
-            onSetSidebarSelected: PropTypes.func.isRequired,
-        };
-
-        state = {
-            closeHover: false
-        };
-
-        handleCloseOnHover = () => {
-
-            const { closeHover } = this.state;
-
-            this.setState({
-                closeHover: !closeHover
-            });
+            onSetSidebarOpen: PropTypes.func.isRequired
         };
 
         handleClickOutside = () => {
@@ -57,10 +42,13 @@ const withSidebar = WrappedComponent =>
             open && onSetSidebarOpen(false);
         };
 
-        render() {
-            const { open, selected, onSetSidebarOpen, onSetSidebarSelected } = this.props;
+        handleRedirect = to => () => {
+            const { history: { push } } = this.props;
+            push(to);
+        };
 
-            const { closeHover } = this.state;
+        render() {
+            const { open, selected, onSetSidebarOpen } = this.props;
 
             return (
                 <Block>
@@ -74,35 +62,31 @@ const withSidebar = WrappedComponent =>
                                         selected={selected}
                                         name="close"
                                         icon="close"
-                                        loading={closeHover}
+                                        rotate
                                         onClick={onSetSidebarOpen}
                                         onMouseEnter={this.handleCloseOnHover}
                                         onMouseLeave={this.handleCloseOnHover}
                                     />
-                                    <SoftLink
-                                        to="/"
-                                    >
-                                        <MenuItem
-                                            selected={selected}
-                                            name={SIDEBAR_HOME}
-                                            icon="home"
-                                            text="Home"
-                                            onClick={onSetSidebarSelected}
-                                        />
-                                    </SoftLink>
+                                    <MenuItem
+                                        selected={selected}
+                                        name={SIDEBAR_HOME}
+                                        icon="home"
+                                        text="Home"
+                                        onClick={this.handleRedirect('/')}
+                                    />
                                     <MenuItem
                                         selected={selected}
                                         name={SIDEBAR_PORTFOLIO}
                                         icon="folder"
                                         text="Portfolio"
-                                        onClick={onSetSidebarSelected}
+                                        onClick={this.handleRedirect('/')}
                                     />
                                     <MenuItem
                                         selected={selected}
                                         name={SIDEBAR_ACHIEVEMENTS}
                                         icon="trophy"
                                         text="Achievements"
-                                        onClick={onSetSidebarSelected}
+                                        onClick={this.handleRedirect('/')}
                                     />
                                     <Popup
                                         position='top center'
@@ -150,7 +134,7 @@ const withSidebar = WrappedComponent =>
                                 onClick={onSetSidebarOpen}
                                 position="absolute"
                                 top={remCalc(10)}
-                                display={open ? "none" : false}
+                                display={open ? "none" : undefined}
                             >
                                 <Icon name="content" size="big" color={first} />
                             </Block>

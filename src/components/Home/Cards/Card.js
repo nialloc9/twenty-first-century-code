@@ -20,6 +20,7 @@ class Card extends Component {
             height="400px"
             width="100%"
             opacity={0.6}
+            hoverOpacity={1}
             hoverBorder={`1px solid ${first}`}
             hoverBoxShadow={hoverBoxShadow}
             hoverTransition="box-shadow 0.3s ease-in-out"

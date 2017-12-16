@@ -15,12 +15,14 @@ class ProjectHeader extends Component {
         subTitle: PropTypes.string.isRequired,
         dropdown: PropTypes.bool,
         dropdownWidth: PropTypes.number,
+        placeholder: PropTypes.string,
         onChange: PropTypes.func,
     };
 
     static defaultProps = {
         dropdown: true,
         dropdownWidth: 300,
+        placeholder: "Select Project",
         onChange: null
     };
 

@@ -35,6 +35,7 @@ const Block = Styled("div")`
     ${({ borderRadius = false }) => borderRadius && `border-radius: ${borderRadius};`}
     ${({ cursor = false }) => cursor && `cursor: ${cursor};`}
     ${({ textDecoration = false }) => textDecoration && `text-decoration: ${textDecoration};`}
+    ${({ whiteSpace = false }) => whiteSpace && `white-space: ${whiteSpace};`}
     
     &:hover {
         ${({ hoverColor = false}) => hoverColor && `color: ${hoverColor};`}
@@ -44,7 +45,12 @@ const Block = Styled("div")`
         ${({ hoverPadding = false}) => hoverPadding && `padding: ${hoverPadding};`}
         ${({ hoverBorder = false}) => hoverBorder && `border: ${hoverBorder};`}
         ${({ hoverBoxShadow = false}) => hoverBoxShadow && `box-shadow: ${hoverBoxShadow};`}
-        ${({ hoverTransition= false}) => hoverTransition && `transition: ${hoverTransition};`}
+        ${({ hoverTransition = false}) => hoverTransition && `transition: ${hoverTransition};`}
+        ${({ hoverTransition = false}) => hoverTransition && `-webkit-transition: ${hoverTransition};`}
+        ${({ hoverTransform = false }) => hoverTransform && `-ms-transform: ${hoverTransform};`}
+        ${({ hoverTransform = false }) => hoverTransform && `-webkit-transform: ${hoverTransform};`}
+        ${({ hoverTransform = false }) => hoverTransform && `transform: ${hoverTransform};`}
+        ${({ hoverOpacity = false }) => hoverOpacity && `opacity: ${hoverOpacity};`}
     }
     
     ::-webkit-scrollbar {
@@ -69,6 +75,7 @@ const Block = Styled("div")`
         ${({ tabletHorizontalPadding = false }) => tabletHorizontalPadding && `padding: ${tabletHorizontalPadding};`}
         ${({ tabletHorizontalWidth = false }) => tabletHorizontalWidth && `width: ${tabletHorizontalWidth};`}
         ${({ tabletHorizontalMinWidth = false }) => tabletHorizontalMinWidth && `min-width: ${tabletHorizontalMinWidth}`};
+        ${({ tabletHorizontalMaxWidth = false }) => tabletHorizontalMaxWidth && `max-width: ${tabletHorizontalMaxWidth}`};
     }
     
     @media ${MOBILE_SCREEN} {
@@ -78,6 +85,7 @@ const Block = Styled("div")`
         ${({ mobilePadding = false }) => mobilePadding && `padding: ${mobilePadding};`}
         ${({ mobileWidth = false }) => mobileWidth && `width: ${mobileWidth};`}
         ${({ mobileMinWidth = false }) => mobileMinWidth && `min-width: ${mobileMinWidth};`}
+        ${({ mobileMaxWidth = false }) => mobileMaxWidth && `max-width: ${mobileMaxWidth};`}
     }
 `;
 

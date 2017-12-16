@@ -6,17 +6,17 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
-import Calculator from './Calculator';
-import FindTheDoor from './FindTheDoor';
-import InstantMessenger from './InstantMessenger';
+import Captcha from './Captcha';
+import Csrf from './Csrf';
+import VerifyEmail from './VerifyEmail';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_PORTFOLIO } from '../../constants/sidebar';
-import { JAVA_CALCULATOR, JAVA_GAME, JAVA_INSTANT_MESSENGER } from '../../constants/java';
-import { dropdownOptions } from './options'
+import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL } from '../../constants/php';
+import { dropdownOptions } from './options';
 
-class Java extends Component {
+class Php extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,7 +32,7 @@ class Java extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/java/${article}`)
+        push(`/php/${article}`)
     };
 
     render() {
@@ -42,14 +42,14 @@ class Java extends Component {
         let Article = null;
 
         switch (article) {
-            case JAVA_CALCULATOR:
-                Article = Calculator;
+            case PHP_CAPTCHA:
+                Article = Captcha;
                 break;
-            case JAVA_GAME:
-                Article = FindTheDoor;
+            case PHP_CSRF:
+                Article = Csrf;
                 break;
-            case JAVA_INSTANT_MESSENGER:
-                Article = InstantMessenger;
+            case PHP_VERIFY_EMAIL:
+                Article = VerifyEmail;
                 break;
             default:
                 Article = Overview;
@@ -63,9 +63,8 @@ class Java extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="Java"
-                            subTitle="And not the coffee"
-                            placeholder='Select Project'
+                            title="Php"
+                            subTitle={`<?php echo "hello world!"; ?>`}
                             defaultValue={article}
                             options={dropdownOptions}
                             onChange={this.handleRedirect}
@@ -103,4 +102,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Java));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Php));

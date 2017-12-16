@@ -6,8 +6,8 @@ import {
 } from '../../constants/java';
 
 export const dropdownOptions = [
-    { key: JAVA_OVERVIEW, value: JAVA_OVERVIEW, text: 'Java Overview' },
-    { key: JAVA_CALCULATOR, value: JAVA_CALCULATOR, text: 'Java Calculator' },
-    { key: JAVA_GAME, value: JAVA_GAME, text: 'Java Find The Door Game' },
-    { key: JAVA_INSTANT_MESSENGER, value: JAVA_INSTANT_MESSENGER, text: 'Java Instant Messenger' }
+    { key: JAVA_OVERVIEW, value: JAVA_OVERVIEW, text: 'Overview' },
+    { key: JAVA_CALCULATOR, value: JAVA_CALCULATOR, text: 'Calculator' },
+    { key: JAVA_GAME, value: JAVA_GAME, text: 'Find The Door Game' },
+    { key: JAVA_INSTANT_MESSENGER, value: JAVA_INSTANT_MESSENGER, text: 'Instant Messenger' }
 ];

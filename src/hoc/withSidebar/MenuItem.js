@@ -11,7 +11,7 @@ class MenuItem extends Component {
     static propTypes = {
         icon: PropTypes.string.isRequired,
         onClick: PropTypes.func,
-        loading: PropTypes.bool,
+        rotate: PropTypes.bool,
         text: PropTypes.string,
         selected: PropTypes.string,
         name: PropTypes.string,
@@ -19,11 +19,15 @@ class MenuItem extends Component {
         onMouseLeave: PropTypes.func,
     };
 
+    state = {
+        mouseOver: false
+    };
+
     static defaultProps = {
         text: "",
         selected: "selected",
         name: "name",
-        loading: false,
+        rotate: false,
         onClick: null,
         onMouseEnter: null,
         onMouseLeave: null
@@ -34,28 +38,57 @@ class MenuItem extends Component {
         onClick && onClick(name);
     };
 
+    handleMouseEnter = () => {
+
+        const { onMouseEnter } = this.props;
+
+        this.setState({
+            mouseOver: true
+        });
+
+        onMouseEnter && onMouseEnter();
+
+    };
+
+    handleMouseLeave = () => {
+
+        const { onMouseLeave } = this.props;
+
+        this.setState({
+            mouseOver: false
+        });
+
+        onMouseLeave && onMouseLeave();
+
+    };
+
     render() {
         const {
             selected,
             name,
             icon,
             text,
-            loading,
-            onMouseEnter,
-            onMouseLeave,
+            rotate,
             ...rest
         } = this.props;
+
+        const { mouseOver } = this.state;
 
         return (
             <Menu.Item
                 active={selected === name}
                 name={name}
-                onClick={this.handleClick}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
                 {...rest}
+                onClick={this.handleClick}
+                onMouseEnter={this.handleMouseEnter}
+                onMouseLeave={this.handleMouseLeave}
             >
-                <Icon loading={loading} name={icon} color={second} />
+                <Icon
+                    name={icon}
+                    color={second}
+                    hoverTransform={(rotate && mouseOver) ? 'rotate(40deg)' : false}
+                    hoverTransition={(rotate && mouseOver) ? 'transition 1s linear 1s, -webkit-transform 1s, -ms-transform' : false}
+                />
                 <Block color={second}>
                     {text}
                 </Block>

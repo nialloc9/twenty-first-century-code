@@ -18,7 +18,6 @@ class CardOne extends Component {
                         padding={remCalc(2)}
                         height="100%"
                         width="100%"
-
                     >
                         <Image
                             width="100%"
