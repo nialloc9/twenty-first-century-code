@@ -14,6 +14,7 @@ import Php from './components/Php';
 import Node from './components/Node';
 import MySql from './components/MySql';
 import CSS from './components/CSS';
+import About from './components/About';
 import { history } from "./middleware/history";
 import store from "./store";
 import registerServiceWorker from './registerServiceWorker';
@@ -38,6 +39,7 @@ render(
                     <Route exact path="/node/:article?" component={Node} />
                     <Route exact path="/mysql/:article?" component={MySql} />
                     <Route exact path="/css/:article?" component={CSS} />
+                    <Route exact path="/about" component={About} />
                     <Route component={Error404} />
                 </Switch>
             </ConnectedRouter>

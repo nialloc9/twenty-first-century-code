@@ -6,7 +6,7 @@ import MenuItem from './MenuItem';
 import Block from '../../components/Common/Styled/Block';
 import Icon from '../../components/Common/Styled/Icon';
 import ClickOutside from '../../components/Common/Clickoutside';
-import { SIDEBAR_HOME, SIDEBAR_PORTFOLIO, SIDEBAR_ACHIEVEMENTS } from '../../constants/sidebar';
+import { SIDEBAR_HOME, SIDEBAR_ABOUT } from '../../constants/sidebar';
 import { remCalc } from '../../common/helpers';
 import isMobile from '../../common/isMobile';
 import theme from '../../config/theme';
@@ -83,10 +83,10 @@ const withSidebar = WrappedComponent =>
                                     {/*/>*/}
                                     <MenuItem
                                         selected={selected}
-                                        name={SIDEBAR_ACHIEVEMENTS}
-                                        icon="trophy"
-                                        text="Achievements"
-                                        onClick={this.handleRedirect('/')}
+                                        name={SIDEBAR_ABOUT}
+                                        icon="user circle"
+                                        text="About"
+                                        onClick={this.handleRedirect('/about')}
                                     />
                                     <Popup
                                         position='top center'
