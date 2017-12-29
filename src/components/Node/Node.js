@@ -6,17 +6,17 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
-import Calculator from './Calculator';
-import FindTheDoor from './FindTheDoor';
-import InstantMessenger from './InstantMessenger';
+import NodeCluster from './NodeCluster';
+import AsyncAwait from './AsyncAwait';
+import ApolloChat from './ApolloChat';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { JAVA_CALCULATOR, JAVA_GAME, JAVA_INSTANT_MESSENGER } from '../../constants/java';
-import { dropdownOptions } from './options'
+import { NODE_APOLLO, NODE_ASYNC_AWAIT, NODE_CLUSTER } from '../../constants/node';
+import { dropdownOptions } from './options';
 
-class Java extends Component {
+class Node extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,7 +32,7 @@ class Java extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/java/${article}`)
+        push(`/node/${article}`)
     };
 
     render() {
@@ -42,15 +42,18 @@ class Java extends Component {
         let Article = null;
 
         switch (article) {
-            case JAVA_CALCULATOR:
-                Article = Calculator;
+            case NODE_APOLLO:
+                Article = ApolloChat;
                 break;
-            case JAVA_GAME:
-                Article = FindTheDoor;
+
+            case NODE_ASYNC_AWAIT:
+                Article = AsyncAwait;
                 break;
-            case JAVA_INSTANT_MESSENGER:
-                Article = InstantMessenger;
+
+            case NODE_CLUSTER:
+                Article = NodeCluster;
                 break;
+
             default:
                 Article = Overview;
                 break;
@@ -63,8 +66,8 @@ class Java extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="Java"
-                            subTitle="And not the coffee"
+                            title="NodeJs"
+                            subTitle={`The power of js on the server..`}
                             placeholder='Select Project'
                             defaultValue={article}
                             options={dropdownOptions}
@@ -103,4 +106,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Java));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Node));

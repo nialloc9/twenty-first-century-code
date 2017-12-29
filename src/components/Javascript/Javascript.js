@@ -6,17 +6,18 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
-import Calculator from './Calculator';
-import FindTheDoor from './FindTheDoor';
-import InstantMessenger from './InstantMessenger';
+import ReduxPush from './ReduxPush';
+import ListMaker from './ListMaker';
+import ShouldIInvest from './ShouldIInvest';
+import BlockChain from './BlockChain';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { JAVA_CALCULATOR, JAVA_GAME, JAVA_INSTANT_MESSENGER } from '../../constants/java';
+import { JAVASCRIPT_OVERVIEW, JAVASCRIPT_SHOULD_I_INVEST, JAVASCRIPT_LIST_MAKER, JAVASCRIPT_REDUX_PUSH, JAVASCRIPT_BLOCK_CHAIN } from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
-class Java extends Component {
+class Javascript extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,7 +33,7 @@ class Java extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/java/${article}`)
+        push(`/javascript/${article}`)
     };
 
     render() {
@@ -42,14 +43,20 @@ class Java extends Component {
         let Article = null;
 
         switch (article) {
-            case JAVA_CALCULATOR:
-                Article = Calculator;
+            case JAVASCRIPT_OVERVIEW:
+                Article = Overview;
                 break;
-            case JAVA_GAME:
-                Article = FindTheDoor;
+            case JAVASCRIPT_REDUX_PUSH:
+                Article = ReduxPush;
                 break;
-            case JAVA_INSTANT_MESSENGER:
-                Article = InstantMessenger;
+            case JAVASCRIPT_LIST_MAKER:
+                Article = ListMaker;
+                break;
+            case JAVASCRIPT_SHOULD_I_INVEST:
+                Article = ShouldIInvest;
+                break;
+            case JAVASCRIPT_BLOCK_CHAIN:
+                Article = BlockChain;
                 break;
             default:
                 Article = Overview;
@@ -63,8 +70,8 @@ class Java extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="Java"
-                            subTitle="And not the coffee"
+                            title="Javascript"
+                            subTitle={`Browser Power`}
                             placeholder='Select Project'
                             defaultValue={article}
                             options={dropdownOptions}
@@ -103,4 +110,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Java));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Javascript));

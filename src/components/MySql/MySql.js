@@ -6,17 +6,13 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
-import Calculator from './Calculator';
-import FindTheDoor from './FindTheDoor';
-import InstantMessenger from './InstantMessenger';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { JAVA_CALCULATOR, JAVA_GAME, JAVA_INSTANT_MESSENGER } from '../../constants/java';
-import { dropdownOptions } from './options'
+import { dropdownOptions } from './options';
 
-class Java extends Component {
+class MySql extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,7 +28,7 @@ class Java extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/java/${article}`)
+        push(`/mysql/${article}`)
     };
 
     render() {
@@ -42,15 +38,6 @@ class Java extends Component {
         let Article = null;
 
         switch (article) {
-            case JAVA_CALCULATOR:
-                Article = Calculator;
-                break;
-            case JAVA_GAME:
-                Article = FindTheDoor;
-                break;
-            case JAVA_INSTANT_MESSENGER:
-                Article = InstantMessenger;
-                break;
             default:
                 Article = Overview;
                 break;
@@ -63,8 +50,8 @@ class Java extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="Java"
-                            subTitle="And not the coffee"
+                            title="MySql"
+                            subTitle={`SELECT name FROM user WHERE user_ref = 1`}
                             placeholder='Select Project'
                             defaultValue={article}
                             options={dropdownOptions}
@@ -103,4 +90,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Java));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(MySql));

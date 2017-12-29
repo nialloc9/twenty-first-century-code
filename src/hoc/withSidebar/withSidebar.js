@@ -19,11 +19,11 @@ const StyledSidebar = Styled(Sidebar)`
 `;
 
 const {
-    REACT_APP_PHONE_NUMBER,
-    REACT_APP_EMAIL,
-    REACT_APP_YOUTUBE_CHANNEL,
-    REACT_APP_LINKEDIN,
-    REACT_APP_GITHUB
+    PHONE_NUMBER,
+    EMAIL,
+    YOUTUBE_CHANNEL,
+    LINKEDIN,
+    GITHUB
 } = globals;
 
 const withSidebar = WrappedComponent =>
@@ -74,13 +74,13 @@ const withSidebar = WrappedComponent =>
                                         text="Home"
                                         onClick={this.handleRedirect('/')}
                                     />
-                                    <MenuItem
-                                        selected={selected}
-                                        name={SIDEBAR_PORTFOLIO}
-                                        icon="folder"
-                                        text="Portfolio"
-                                        onClick={this.handleRedirect('/')}
-                                    />
+                                    {/*<MenuItem*/}
+                                        {/*selected={selected}*/}
+                                        {/*name={SIDEBAR_PORTFOLIO}*/}
+                                        {/*icon="folder"*/}
+                                        {/*text="Portfolio"*/}
+                                        {/*onClick={this.handleRedirect('/')}*/}
+                                    {/*/>*/}
                                     <MenuItem
                                         selected={selected}
                                         name={SIDEBAR_ACHIEVEMENTS}
@@ -90,39 +90,43 @@ const withSidebar = WrappedComponent =>
                                     />
                                     <Popup
                                         position='top center'
-                                        content={REACT_APP_EMAIL}
-                                        trigger={<MenuItem
-                                            icon="mail"
-                                            text="Email"
-                                            href={`mailto:${REACT_APP_EMAIL}`}
-                                            target="_top"
-                                        />}
+                                        content={EMAIL}
+                                        trigger={<Block>
+                                            <MenuItem
+                                                icon="mail"
+                                                text="Email"
+                                                href={`mailto:${EMAIL}`}
+                                                target="_top"
+                                            />
+                                        </Block>}
                                     />
                                     <Popup
                                         position='top left'
-                                        content={REACT_APP_PHONE_NUMBER}
-                                        trigger={<MenuItem
-                                            icon="phone"
-                                            text="Phone"
-                                            href={isMobile() ? `tel:${REACT_APP_PHONE_NUMBER}` : '#'}
-                                        />}
+                                        content={PHONE_NUMBER}
+                                        trigger={<Block>
+                                            <MenuItem
+                                                icon="phone"
+                                                text="Phone"
+                                                href={isMobile() ? `tel:${PHONE_NUMBER}` : '#'}
+                                            />
+                                        </Block>}
                                     />
                                     <MenuItem
                                         icon="github square"
                                         text="Github"
-                                        href={REACT_APP_GITHUB}
+                                        href={GITHUB}
                                         target="_blank"
                                     />
                                     <MenuItem
                                         icon="linkedin square"
                                         text="Linkedin"
-                                        href={REACT_APP_LINKEDIN}
+                                        href={LINKEDIN}
                                         target="_blank"
                                     />
                                     <MenuItem
                                         icon="youtube"
                                         text="YouTube"
-                                        href={REACT_APP_YOUTUBE_CHANNEL}
+                                        href={YOUTUBE_CHANNEL}
                                         target="_blank"
                                     />
                                 </Block>

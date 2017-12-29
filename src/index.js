@@ -9,7 +9,11 @@ import "./config/polyfills";
 import Error404 from "./components/Error404";
 import Home from './components/Home';
 import Java from './components/Java';
+import Javascript from './components/Javascript';
 import Php from './components/Php';
+import Node from './components/Node';
+import MySql from './components/MySql';
+import CSS from './components/CSS';
 import { history } from "./middleware/history";
 import store from "./store";
 import registerServiceWorker from './registerServiceWorker';
@@ -29,7 +33,11 @@ render(
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/java/:article?" component={Java} />
+                    <Route exact path="/Javascript/:article?" component={Javascript} />
                     <Route exact path="/php/:article?" component={Php} />
+                    <Route exact path="/node/:article?" component={Node} />
+                    <Route exact path="/mysql/:article?" component={MySql} />
+                    <Route exact path="/css/:article?" component={CSS} />
                     <Route component={Error404} />
                 </Switch>
             </ConnectedRouter>

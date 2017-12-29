@@ -277,7 +277,7 @@ public class Server extends JFrame{
                     side too. First there are two classes same as with server. Here is the ClientTest class responsoible for running the client side.
                 </Block>
 
-                <Block margin={`${remCalc(20)} 0`}>
+                <CodeBlock margin={`${remCalc(20)} 0`}>
 {`
 package client;
 
@@ -293,7 +293,7 @@ public class ClientTest {
 }
 
 `}
-                </Block>
+                </CodeBlock>
 
                 <Block margin={`${remCalc(20)} 0`}>
                     This is all pretty much the same as the server side except for one thing. Notice we pass an ip address to the {`constructor`} of client. Let’s look at this class and find out why. The only new part of the code that
