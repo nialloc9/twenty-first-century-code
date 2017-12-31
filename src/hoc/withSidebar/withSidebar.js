@@ -11,6 +11,7 @@ import { remCalc } from '../../common/helpers';
 import isMobile from '../../common/isMobile';
 import theme from '../../config/theme';
 import globals from '../../config/globals';
+import cv from '../../static/files/cv.pdf';
 
 const { colors: { first } } = theme;
 
@@ -87,6 +88,12 @@ const withSidebar = WrappedComponent =>
                                         icon="user circle"
                                         text="About"
                                         onClick={this.handleRedirect('/about')}
+                                    />
+                                    <MenuItem
+                                        icon="file pdf outline"
+                                        text="Resume"
+                                        href={cv}
+                                        target="_blank"
                                     />
                                     <Popup
                                         position='top center'

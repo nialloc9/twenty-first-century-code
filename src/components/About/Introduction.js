@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Message } from 'semantic-ui-react';
+import moment from 'moment';
 import Block from '../../components/Common/Styled/Block';
 import { remCalc } from '../../common/helpers';
 
@@ -11,7 +12,7 @@ class Introduction extends Component {
             <Block>
                 <Message>
                     <Block margin={`${remCalc(20)} 0 0 0`}>
-                        My name is Niall O' Connor. I'm from a small town in Ireland called Brosna. I am 25 years old and I love to code...
+                        My name is Niall O' Connor. I'm from a small town in Ireland called Brosna. I am {moment().diff(moment("04-09-1990", "DD-MM-YYYY"), 'years')} years old and I love to code...
                     </Block>
                     <Block margin={`${remCalc(20)} 0 0 0`}>
                         I was once described by a guy I met from Tennessee while traveling as a life learner. See, I love to learn. I understand that learning new things and having new experiences help us grow as people both professionally and personally. Everyday I try to learn something new, sometimes related to work, sometimes not. But I always try to look for new ways to grow.

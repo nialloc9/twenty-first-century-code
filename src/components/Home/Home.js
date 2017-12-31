@@ -27,10 +27,10 @@ class Home extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <Grid.Column>
-                            <CardOne />
+                            <CardTwo />
                         </Grid.Column>
                         <Grid.Column>
-                            <CardTwo />
+                            <CardFour />
                         </Grid.Column>
                         <Grid.Column>
                             <CardThree />
@@ -52,7 +52,7 @@ class Home extends Component {
 
                     <Grid.Row>
                         <Grid.Column>
-                            <CardFour />
+                            <CardOne />
                         </Grid.Column>
                         <Grid.Column>
                             <CardFive />
