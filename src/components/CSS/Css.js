@@ -6,10 +6,12 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
+import StyledComponents from './StyledComponents';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
+import { STYLED_COMPONENTS } from '../../constants/css';
 import { dropdownOptions } from './options';
 
 class Css extends Component {
@@ -38,6 +40,11 @@ class Css extends Component {
         let Article = null;
 
         switch (article) {
+
+            case STYLED_COMPONENTS:
+                Article = StyledComponents;
+                break;
+
             default:
                 Article = Overview;
                 break;

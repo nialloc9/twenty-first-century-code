@@ -48,7 +48,7 @@ const withSidebar = WrappedComponent =>
             push(to);
         };
 
-        render() {
+        render() {console.log("yo", this.props)
             const { open, selected, onSetSidebarOpen } = this.props;
 
             return (
