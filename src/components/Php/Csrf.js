@@ -149,6 +149,9 @@ if(isset($_POST['task']) && $_POST['task'] == 'csrfTokenCheck')  {
                     same token is not use twice to ensure an attacker cannot get hold of it.
                 </Block>
 
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 26/08/2016
+                </Block>
             </Block>
         )
     }

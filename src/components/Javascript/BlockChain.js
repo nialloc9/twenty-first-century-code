@@ -145,6 +145,10 @@ class BlockChain{
                     we can see that the mineBlock method is called which will pass in the difficulty. This will loop around creating the hash to be used. Also see that the newBlock has a reference
                     to the previous blocks hash. This is very important as it will ensure the integrity of the chain when calling the isChainValid method.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 25/11/2017
+                </Block>
             </Block>
         )
     }

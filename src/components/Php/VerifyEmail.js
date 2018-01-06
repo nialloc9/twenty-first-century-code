@@ -274,6 +274,10 @@ class Auth{
                     database.  Using the same methodology a password can be reset by sending a different link to page to allow
                     the user to reset the password if the token and email are correct.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 11/09/2016
+                </Block>
             </Block>
         )
     }

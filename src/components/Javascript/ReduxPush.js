@@ -72,6 +72,10 @@ dispatch({
 ...
 `}
                 </CodeBlock>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 22/12/2017
+                </Block>
             </Block>
         )
     }

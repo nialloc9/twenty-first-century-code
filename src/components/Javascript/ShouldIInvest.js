@@ -155,6 +155,9 @@ $scope.resultColor = ($scope.recommendation > 5) ? "positiveResult" : "negativeR
                     AngularJS is a very powerful framework and has lots of very useful features. I really enjoyed making this project so I hope you enjoyed it too and please any feedback is welcome.
                 </Block>
 
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 06/11/2016
+                </Block>
             </Block>
         )
     }

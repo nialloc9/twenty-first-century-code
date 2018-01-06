@@ -397,6 +397,10 @@ public class Cal {
                     num1 is reassigned to the value of Basic calculate which if you remember method has been set to add so this will add num1 and num2. Now we need to set method back to NORMAL and lastly return the computed
                     value num1 which will be displayed by the gui in calcText. I enjoyed making this project a lot because it challenged me to really think through the logic and work it step by step to return the correct values.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 12/04/2016
+                </Block>
             </Block>
         )
     }

@@ -101,6 +101,10 @@ if(!cluster.isMaster) {
                     However, using node clusters and it's multi threaded capability we can send a message up to the master from the worker thread where the error has occured and tell it to start a new thread in the place
                     of the crashed worker thread. This results in virtually zero down time solving the issues related to failures on a single threaded application.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 02/12/2017
+                </Block>
             </Block>
         )
     }

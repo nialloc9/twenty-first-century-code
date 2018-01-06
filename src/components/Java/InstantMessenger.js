@@ -446,6 +446,9 @@ private void ableToType(final boolean tof){
                     I hope you enjoyed my java projects.  I will be adding some more soon. Thank you.
                 </Block>
 
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 22/12/2016
+                </Block>
             </Block>
         )
     }

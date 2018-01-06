@@ -29,7 +29,7 @@ class ListMaker extends PureComponent{
                     />
                 </Block>
 
-                <Block margin={`${remCalc(20)} 0`}>
+                <Block>
                     Source code: <a target="_blank" href="https://github.com/nialloc9/jsListMakerModule">GitHub</a>
                 </Block>
 
@@ -186,6 +186,9 @@ module.exports = list;
                     Revealing patterns are very useful and pubsubs are very powerful so I hope you enjoyed this project and please any feedback is welcome.
                 </Block>
 
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 24/09/2016
+                </Block>
             </Block>
         )
     }

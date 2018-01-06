@@ -87,6 +87,10 @@ waitFunction("hello").then(result => {
                     Above we see an example that we would of previously used where nested callbacks are used. This is much harder to read then our example at the start using
                     aysnc await and causes confusion when reading code.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 19/12/2017
+                </Block>
             </Block>
         )
     }

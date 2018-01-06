@@ -253,6 +253,10 @@ if(isset($_GET['task']) && $_GET['task'] == 'checkCaptchaSession'){
                         alt="Captcha image generator application correct input"
                     />
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 07/07/2016
+                </Block>
             </Block>
         )
     }

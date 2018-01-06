@@ -3,7 +3,8 @@ import {
     JAVASCRIPT_REDUX_PUSH,
     JAVASCRIPT_LIST_MAKER,
     JAVASCRIPT_SHOULD_I_INVEST,
-    JAVASCRIPT_BLOCK_CHAIN
+    JAVASCRIPT_BLOCK_CHAIN,
+    GENERATORS
 } from '../../constants/javascript';
 
 export const dropdownOptions = [
@@ -11,5 +12,6 @@ export const dropdownOptions = [
     { key: JAVASCRIPT_BLOCK_CHAIN, value: JAVASCRIPT_BLOCK_CHAIN, text: 'Block Chain' },
     { key: JAVASCRIPT_REDUX_PUSH, value: JAVASCRIPT_REDUX_PUSH, text: 'Redux Push' },
     { key: JAVASCRIPT_LIST_MAKER, value: JAVASCRIPT_LIST_MAKER, text: 'List Maker' },
-    { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' }
-]
+    { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' },
+    { key: GENERATORS, value: GENERATORS, text: 'Generators' }
+];

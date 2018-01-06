@@ -76,6 +76,10 @@ class AsyncAwait extends PureComponent{
                     and put in or pulled out of any application with minimum effort. I really like using middleware in redux and express as it allows the code to be broken up and increases code reuseability and readability as each individual piece of
                     middleware that handles it's own responsibilities.
                 </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 10/12/2017
+                </Block>
             </Block>
         )
     }

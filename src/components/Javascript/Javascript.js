@@ -10,11 +10,12 @@ import ReduxPush from './ReduxPush';
 import ListMaker from './ListMaker';
 import ShouldIInvest from './ShouldIInvest';
 import BlockChain from './BlockChain';
+import Generators from './Generators';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { JAVASCRIPT_OVERVIEW, JAVASCRIPT_SHOULD_I_INVEST, JAVASCRIPT_LIST_MAKER, JAVASCRIPT_REDUX_PUSH, JAVASCRIPT_BLOCK_CHAIN } from '../../constants/javascript';
+import { JAVASCRIPT_OVERVIEW, JAVASCRIPT_SHOULD_I_INVEST, JAVASCRIPT_LIST_MAKER, JAVASCRIPT_REDUX_PUSH, JAVASCRIPT_BLOCK_CHAIN, GENERATORS } from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
 class Javascript extends Component {
@@ -57,6 +58,9 @@ class Javascript extends Component {
                 break;
             case JAVASCRIPT_BLOCK_CHAIN:
                 Article = BlockChain;
+                break;
+            case GENERATORS:
+                Article = Generators;
                 break;
             default:
                 Article = Overview;

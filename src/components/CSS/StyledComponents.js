@@ -25,7 +25,7 @@ class StyledComponents extends PureComponent{
                     <Image
                         src={styledComponentsLogo}
                         margin="auto"
-                        size="huge"
+                        size="medium"
                         alt="Styled Components Logo"
                     />
                 </Block>
@@ -46,7 +46,7 @@ class StyledComponents extends PureComponent{
                     as props.
                 </Block>
 
-                <Block>
+                <Block margin={`${remCalc(20)} 0`}>
                     <Image
                         src={styledBlock}
                         margin="auto"
@@ -55,10 +55,14 @@ class StyledComponents extends PureComponent{
                     />
                 </Block>
 
-                <Block>
+                <Block margin={`${remCalc(20)} 0`}>
                     Also note how we can also set out the attributes behavour on mobile and make it reuseable aswell. By passing in a prop of mobileMargin it will go inside the media query to and
                     change the components appearance on mobile. This could also be done for any other screen device you wish. It is important to note instead of a default value of something like 0 we are
                     setting it as false. This is so the attribute is only added if there is a value passed. If you so wished you could change the default value to anything you wished.
+                </Block>
+
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 06/01/2018
                 </Block>
             </Block>
         )

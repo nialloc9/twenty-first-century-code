@@ -464,6 +464,9 @@ public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
                     />
                 </Block>
 
+                <Block margin={`${remCalc(20)} 0`}>
+                    Published on 08/03/2016
+                </Block>
             </Block>
         )
     }
