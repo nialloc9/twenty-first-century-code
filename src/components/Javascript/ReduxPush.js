@@ -1,16 +1,39 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import Block from '../Common/Styled/Block';
 import CodeBlock from '../Common/Styled/CodeBlock';
 import Image from '../Common/Styled/Image';
+import { setReduxPushDetails } from '../../actions/npm';
 import logo from '../../static/images/projects/reduxPush/logo.png';
 import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
+import withLoader from '../../hoc/withLoader';
 
 const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
+const LoadingBlock = withLoader(Block);
+
 class ReduxPush extends PureComponent{
 
+    static propTypes = {
+        reduxPushLoading: PropTypes.bool.isRequired,
+        reduxPushDownloads: PropTypes.number.isRequired,
+        onSetReduxPushDetails: PropTypes.func.isRequired,
+    };
+
+    componentWillMount(){
+
+        const { onSetReduxPushDetails } = this.props;
+
+        onSetReduxPushDetails();
+    }
+
     render(){
+
+        const { reduxPushLoading, reduxPushDownloads } = this.props;
+
         return(
             <Block
                 fontColor={fontColor}
@@ -32,6 +55,11 @@ class ReduxPush extends PureComponent{
                 <Block margin={`${remCalc(20)} 0`}>
                     NPM package: <a target="_blank" href="https://www.npmjs.com/package/redux-push">redux-push</a>
                 </Block>
+
+                <LoadingBlock loading={reduxPushLoading}  margin={`${remCalc(20)} 0`}>
+                    Downloads: {reduxPushDownloads}
+                </LoadingBlock>
+
                 <Block margin={`${remCalc(20)} 0`}>
                     Source code: <a target="_blank" href="https://github.com/nialloc9/angularjs-should-i-invest-web-app">GitHub</a>
                 </Block>
@@ -44,8 +72,7 @@ class ReduxPush extends PureComponent{
                 </Block>
 
                 <CodeBlock margin={`${remCalc(20)} 0`}>
-{`
-import { applyMiddleware } from "redux";
+{`import { applyMiddleware } from "redux";
 import reduxPush from 'redux-push';
 const middleware = applyMiddleware([reduxPush])
 `}
@@ -58,8 +85,7 @@ const middleware = applyMiddleware([reduxPush])
                 </Block>
 
                 <CodeBlock margin={`${remCalc(20)} 0`}>
-{`
-import  { PUSH_SET } from 'redux-push';
+{`import  { PUSH_SET } from 'redux-push';
 
 ...
 dispatch({
@@ -81,4 +107,29 @@ dispatch({
     }
 }
 
-export default ReduxPush;
+/**
+ * @param reduxPushDownloads
+ * @param reduxPushLoading
+ */
+const mapStateToProps = ({
+                             npm: {
+                                 reduxPushDownloads,
+                                 reduxPushLoading
+                             }
+                         }) => ({
+    reduxPushDownloads,
+    reduxPushLoading
+});
+
+/**
+ * @param dispatch
+ */
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(
+        {
+            onSetReduxPushDetails: setReduxPushDetails
+        },
+        dispatch
+    );
+
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxPush);
