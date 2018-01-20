@@ -1,6 +1,7 @@
 import { GITHUB_SET } from '../constants/github';
 
 const initialState = {
+    loading: false,
     login: "",
     avatarUrl: "",
     bio: "",

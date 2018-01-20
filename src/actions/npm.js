@@ -1,5 +1,6 @@
 import globals from '../config/globals';
 import { NPM_SET } from '../constants/npm';
+import promiseErrorHandler from '../common/promiseErrorHandler';
 
 const { NPM_API } = globals;
 
@@ -21,16 +22,19 @@ export const setReduxPushDetails = () => async dispatch => {
 
     dispatch(setReduxPushLoading(true));
 
-    const response = await fetch(`${NPM_API}/downloads/point/last-year/redux-push`, {
+    const [error, response] = await promiseErrorHandler(fetch(`${NPM_API}/downloads/point/last-year/redux-push`, {
         method: "GET"
-    });
+    }));
 
-    if(!response.ok){
+    if(error || !response.ok){
         dispatch(setReduxPushLoading(false));
-        return new Error("Am error has occured fetching github data");
     }
 
-    const json = await response.json();
+    const [jsonError, json] = await promiseErrorHandler(response.json());
+
+    if(jsonError){
+        dispatch(setReduxPushLoading(false));
+    }
 
     const { downloads } = json;
 

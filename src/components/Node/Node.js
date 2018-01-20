@@ -7,13 +7,12 @@ import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
 import NodeCluster from './NodeCluster';
-import AsyncAwait from './AsyncAwait';
 import ApolloChat from './ApolloChat';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { NODE_APOLLO, NODE_ASYNC_AWAIT, NODE_CLUSTER } from '../../constants/node';
+import { NODE_APOLLO, NODE_CLUSTER } from '../../constants/node';
 import { dropdownOptions } from './options';
 
 class Node extends Component {
@@ -44,10 +43,6 @@ class Node extends Component {
         switch (article) {
             case NODE_APOLLO:
                 Article = ApolloChat;
-                break;
-
-            case NODE_ASYNC_AWAIT:
-                Article = AsyncAwait;
                 break;
 
             case NODE_CLUSTER:

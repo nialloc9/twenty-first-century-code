@@ -7,12 +7,16 @@ import Image from '../Common/Styled/Image';
 import Block from '../Common/Styled/Block';
 import globals from '../../config/globals';
 import { setGithubDetails } from '../../actions/github';
+import withLoader from '../../hoc/withLoader';
+
+const WithLoaderBlock = withLoader(Block);
 
 const { GITHUB } = globals;
 
 class Github extends Component {
 
     static propTypes = {
+        loading: PropTypes.bool.isRequired,
         login: PropTypes.string.isRequired,
         avatarUrl: PropTypes.string.isRequired,
         bio: PropTypes.string.isRequired,
@@ -28,10 +32,10 @@ class Github extends Component {
 
     render(){
 
-        const { login, bio, avatarUrl, publicRepos, followers } = this.props;
+        const { loading, login, bio, avatarUrl, publicRepos, followers } = this.props;
 
         return(
-        <Block display="inline-block" cursor="pointer">
+        <WithLoaderBlock display="inline-block" cursor="pointer" loading={loading} loadingIconSize="large">
             <a href={GITHUB} target="__blank">
                 <Card>
                     <Image src={avatarUrl} />
@@ -52,16 +56,20 @@ class Github extends Component {
                     </Card.Content>
                 </Card>
             </a>
-        </Block>
+        </WithLoaderBlock>
         )
     }
 }
 
 /**
+ *
  * @param login
  * @param avatarUrl
  * @param htmlUrl
  * @param publicRepos
+ * @param followers
+ * @param bio
+ * @param loading
  */
 const mapStateToProps = ({
                              github: {
@@ -70,9 +78,11 @@ const mapStateToProps = ({
                                  htmlUrl,
                                  publicRepos,
                                  followers,
-                                 bio
+                                 bio,
+                                 loading
                              }
                          }) => ({
+    loading,
     login,
     avatarUrl,
     htmlUrl,
