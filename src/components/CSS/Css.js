@@ -7,11 +7,12 @@ import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
 import StyledComponents from './StyledComponents';
+import Bem from './Bem';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { STYLED_COMPONENTS } from '../../constants/css';
+import { STYLED_COMPONENTS, BEM } from '../../constants/css';
 import { dropdownOptions } from './options';
 
 class Css extends Component {
@@ -45,6 +46,10 @@ class Css extends Component {
                 Article = StyledComponents;
                 break;
 
+            case BEM:
+                Article = Bem;
+                break;
+
             default:
                 Article = Overview;
                 break;
@@ -66,7 +71,7 @@ class Css extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        { Article && <Article /> }
+                        <Article />
                     </Grid.Row>
                 </Grid>
             </Block>

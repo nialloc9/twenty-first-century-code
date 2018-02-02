@@ -5,7 +5,8 @@ import {
     JAVASCRIPT_SHOULD_I_INVEST,
     JAVASCRIPT_BLOCK_CHAIN,
     GENERATORS,
-    ASYNC_AWAIT
+    ASYNC_AWAIT,
+    CURRYING
 } from '../../constants/javascript';
 
 export const dropdownOptions = [
@@ -13,7 +14,8 @@ export const dropdownOptions = [
     { key: JAVASCRIPT_BLOCK_CHAIN, value: JAVASCRIPT_BLOCK_CHAIN, text: 'Block Chain' },
     { key: JAVASCRIPT_REDUX_PUSH, value: JAVASCRIPT_REDUX_PUSH, text: 'Redux Push' },
     { key: ASYNC_AWAIT, value: ASYNC_AWAIT, text: 'Async/Await' },
+    { key: GENERATORS, value: GENERATORS, text: 'Generators' },
+    { key: CURRYING, value: CURRYING, text: 'Currying' },
     { key: JAVASCRIPT_LIST_MAKER, value: JAVASCRIPT_LIST_MAKER, text: 'List Maker' },
     { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' },
-    { key: GENERATORS, value: GENERATORS, text: 'Generators' }
 ];

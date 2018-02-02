@@ -71,7 +71,7 @@ class Php extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        { Article && <Article /> }
+                        <Article />
                     </Grid.Row>
                 </Grid>
             </Block>

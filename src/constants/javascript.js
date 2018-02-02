@@ -5,3 +5,4 @@ export const JAVASCRIPT_SHOULD_I_INVEST = "should-i-invest";
 export const JAVASCRIPT_REDUX_PUSH = "redux-push";
 export const GENERATORS = "generators";
 export const ASYNC_AWAIT = "async-await";
+export const CURRYING = "currying";

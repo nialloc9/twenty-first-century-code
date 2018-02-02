@@ -163,7 +163,7 @@ export default () => {
                     First, we try to retrieve data from the github api. Crucially, we are using ajaxCall instead of a direct
                     ajax request. Remember, this will check the response and decide whether to continue to the next yield. If no response is returned it will finish here and not continue. If there is a
                     valid reponse we now call the npm api and then output a message using a combination of data from each. Generators are really powerful and allow us to do really cool things.
-                    Read about another awesome feature async/await <SoftLink to="node/async-await">here</SoftLink>.
+                    Read about another awesome feature async/await <SoftLink to="javascript/async-await">here</SoftLink>.
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

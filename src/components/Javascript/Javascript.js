@@ -12,11 +12,21 @@ import ShouldIInvest from './ShouldIInvest';
 import BlockChain from './BlockChain';
 import Generators from './Generators';
 import AsyncAwait from './AsyncAwait';
+import Currying from './Currying';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { JAVASCRIPT_OVERVIEW, JAVASCRIPT_SHOULD_I_INVEST, JAVASCRIPT_LIST_MAKER, JAVASCRIPT_REDUX_PUSH, JAVASCRIPT_BLOCK_CHAIN, GENERATORS, ASYNC_AWAIT } from '../../constants/javascript';
+import {
+    JAVASCRIPT_OVERVIEW,
+    JAVASCRIPT_SHOULD_I_INVEST,
+    JAVASCRIPT_LIST_MAKER,
+    JAVASCRIPT_REDUX_PUSH,
+    JAVASCRIPT_BLOCK_CHAIN,
+    GENERATORS,
+    ASYNC_AWAIT,
+    CURRYING
+} from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
 class Javascript extends Component {
@@ -66,6 +76,9 @@ class Javascript extends Component {
             case GENERATORS:
                 Article = Generators;
                 break;
+            case CURRYING:
+                Article = Currying;
+                break;
             default:
                 Article = Overview;
                 break;
@@ -87,7 +100,7 @@ class Javascript extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        { Article && <Article /> }
+                        <Article />
                     </Grid.Row>
                 </Grid>
             </Block>
