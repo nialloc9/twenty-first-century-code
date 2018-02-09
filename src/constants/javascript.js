@@ -6,3 +6,4 @@ export const JAVASCRIPT_REDUX_PUSH = "redux-push";
 export const GENERATORS = "generators";
 export const ASYNC_AWAIT = "async-await";
 export const CURRYING = "currying";
+export const HIGHER_ORDER_FUNCTIONS = "higher-order-functions";

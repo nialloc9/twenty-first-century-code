@@ -6,7 +6,8 @@ import {
     JAVASCRIPT_BLOCK_CHAIN,
     GENERATORS,
     ASYNC_AWAIT,
-    CURRYING
+    CURRYING,
+    HIGHER_ORDER_FUNCTIONS
 } from '../../constants/javascript';
 
 export const dropdownOptions = [
@@ -16,6 +17,7 @@ export const dropdownOptions = [
     { key: ASYNC_AWAIT, value: ASYNC_AWAIT, text: 'Async/Await' },
     { key: GENERATORS, value: GENERATORS, text: 'Generators' },
     { key: CURRYING, value: CURRYING, text: 'Currying' },
+    { key: HIGHER_ORDER_FUNCTIONS, value: HIGHER_ORDER_FUNCTIONS, text: 'Higher Order Functions' },
     { key: JAVASCRIPT_LIST_MAKER, value: JAVASCRIPT_LIST_MAKER, text: 'List Maker' },
     { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' },
 ];

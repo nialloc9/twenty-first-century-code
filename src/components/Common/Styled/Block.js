@@ -10,6 +10,7 @@ const Block = Styled("div")`
     ${({ textAlign = false }) => textAlign && `text-align: ${textAlign};`}
     ${({ verticalAlign = false }) => verticalAlign && `vertical-align: ${verticalAlign};`}
     ${({ display = false }) => display && `display: ${display};`}
+    ${({ background = false }) => background && `background: ${background};`}
     ${({ backgroundColor = false }) => backgroundColor && `background-color: ${backgroundColor};`}
     ${({ backgroundImage = false }) => backgroundImage && `background-image: ${backgroundImage};`}
     ${({ backgroundPosition = false }) => backgroundPosition && `background-position: ${backgroundPosition};`}

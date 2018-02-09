@@ -13,6 +13,7 @@ import BlockChain from './BlockChain';
 import Generators from './Generators';
 import AsyncAwait from './AsyncAwait';
 import Currying from './Currying';
+import HigherOrderFunctions from './HigherOrderFunctions';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
@@ -25,7 +26,8 @@ import {
     JAVASCRIPT_BLOCK_CHAIN,
     GENERATORS,
     ASYNC_AWAIT,
-    CURRYING
+    CURRYING,
+    HIGHER_ORDER_FUNCTIONS
 } from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
@@ -46,6 +48,47 @@ class Javascript extends Component {
         const { history: { push } } = this.props;
 
         push(`/javascript/${article}`)
+    };
+
+    renderArticle = () => {
+        const { match: { params: { article } } } = this.props;
+
+        let Article = null;
+
+        switch (article) {
+            case JAVASCRIPT_OVERVIEW:
+                Article = Overview;
+                break;
+            case JAVASCRIPT_REDUX_PUSH:
+                Article = ReduxPush;
+                break;
+            case ASYNC_AWAIT:
+                Article = AsyncAwait;
+                break;
+            case JAVASCRIPT_LIST_MAKER:
+                Article = ListMaker;
+                break;
+            case JAVASCRIPT_SHOULD_I_INVEST:
+                Article = ShouldIInvest;
+                break;
+            case JAVASCRIPT_BLOCK_CHAIN:
+                Article = BlockChain;
+                break;
+            case GENERATORS:
+                Article = Generators;
+                break;
+            case CURRYING:
+                Article = Currying;
+                break;
+            case HIGHER_ORDER_FUNCTIONS:
+                Article = HigherOrderFunctions;
+                break;
+            default:
+                Article = Overview;
+                break;
+        }
+
+        return <Article />;
     };
 
     render() {
@@ -79,6 +122,9 @@ class Javascript extends Component {
             case CURRYING:
                 Article = Currying;
                 break;
+            case CURRYING:
+                Article = Currying;
+                break;
             default:
                 Article = Overview;
                 break;
@@ -100,7 +146,7 @@ class Javascript extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        <Article />
+                        {this.renderArticle()}
                     </Grid.Row>
                 </Grid>
             </Block>
