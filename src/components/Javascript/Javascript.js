@@ -14,6 +14,7 @@ import Generators from './Generators';
 import AsyncAwait from './AsyncAwait';
 import Currying from './Currying';
 import HigherOrderFunctions from './HigherOrderFunctions';
+import ReduxSagas from './ReduxSagas';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
@@ -27,7 +28,8 @@ import {
     GENERATORS,
     ASYNC_AWAIT,
     CURRYING,
-    HIGHER_ORDER_FUNCTIONS
+    HIGHER_ORDER_FUNCTIONS,
+    REDUX_SAGA
 } from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
@@ -83,6 +85,9 @@ class Javascript extends Component {
             case HIGHER_ORDER_FUNCTIONS:
                 Article = HigherOrderFunctions;
                 break;
+            case REDUX_SAGA:
+                Article = ReduxSagas;
+                break;
             default:
                 Article = Overview;
                 break;
@@ -95,41 +100,6 @@ class Javascript extends Component {
 
         const { match: { params: { article } } } = this.props;
 
-        let Article = null;
-
-        switch (article) {
-            case JAVASCRIPT_OVERVIEW:
-                Article = Overview;
-                break;
-            case JAVASCRIPT_REDUX_PUSH:
-                Article = ReduxPush;
-                break;
-            case ASYNC_AWAIT:
-                Article = AsyncAwait;
-                break;
-            case JAVASCRIPT_LIST_MAKER:
-                Article = ListMaker;
-                break;
-            case JAVASCRIPT_SHOULD_I_INVEST:
-                Article = ShouldIInvest;
-                break;
-            case JAVASCRIPT_BLOCK_CHAIN:
-                Article = BlockChain;
-                break;
-            case GENERATORS:
-                Article = Generators;
-                break;
-            case CURRYING:
-                Article = Currying;
-                break;
-            case CURRYING:
-                Article = Currying;
-                break;
-            default:
-                Article = Overview;
-                break;
-        }
-
         return (
             <Block
                 margin={`${remCalc(100)} ${remCalc(20)}`}
@@ -140,7 +110,7 @@ class Javascript extends Component {
                             title="Javascript"
                             subTitle={`Browser Power`}
                             placeholder='Select Project'
-                            defaultValue={article}
+                            value={article}
                             options={dropdownOptions}
                             onChange={this.handleRedirect}
                         />
