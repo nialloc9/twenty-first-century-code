@@ -25,7 +25,7 @@ class Currying extends PureComponent{
                         src={together}
                         margin="auto"
                         size="large"
-                        alt="List maker start"
+                        alt="Together image"
                     />
                 </Block>
 

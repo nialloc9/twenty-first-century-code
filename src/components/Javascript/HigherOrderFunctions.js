@@ -26,7 +26,7 @@ class HigherOrderFunctions extends PureComponent{
                         src={hands}
                         margin="auto"
                         size="large"
-                        alt="List maker start"
+                        alt="Helping hands image"
                     />
                 </Block>
 

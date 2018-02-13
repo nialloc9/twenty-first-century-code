@@ -7,3 +7,4 @@ export const GENERATORS = "generators";
 export const ASYNC_AWAIT = "async-await";
 export const CURRYING = "currying";
 export const HIGHER_ORDER_FUNCTIONS = "higher-order-functions";
+export const REDUX_SAGA = "redux-saga";

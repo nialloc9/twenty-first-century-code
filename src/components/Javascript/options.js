@@ -7,7 +7,8 @@ import {
     GENERATORS,
     ASYNC_AWAIT,
     CURRYING,
-    HIGHER_ORDER_FUNCTIONS
+    HIGHER_ORDER_FUNCTIONS,
+    REDUX_SAGA
 } from '../../constants/javascript';
 
 export const dropdownOptions = [
@@ -18,6 +19,7 @@ export const dropdownOptions = [
     { key: GENERATORS, value: GENERATORS, text: 'Generators' },
     { key: CURRYING, value: CURRYING, text: 'Currying' },
     { key: HIGHER_ORDER_FUNCTIONS, value: HIGHER_ORDER_FUNCTIONS, text: 'Higher Order Functions' },
+    { key: REDUX_SAGA, value: REDUX_SAGA, text: 'Redux Sagas' },
     { key: JAVASCRIPT_LIST_MAKER, value: JAVASCRIPT_LIST_MAKER, text: 'List Maker' },
     { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' },
 ];
