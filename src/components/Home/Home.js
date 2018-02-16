@@ -11,6 +11,7 @@ import CardFour from './Cards/CardFour';
 import CardFive from './Cards/CardFive';
 import CardSix from './Cards/CardSix';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
@@ -90,4 +91,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Home));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(withScroller(Home)));

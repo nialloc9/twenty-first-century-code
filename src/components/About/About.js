@@ -8,6 +8,7 @@ import Education from './Education';
 import Other from './Other';
 import Introduction from './Introduction';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_ABOUT } from '../../constants/sidebar';
@@ -73,4 +74,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(About));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(withScroller(About)));

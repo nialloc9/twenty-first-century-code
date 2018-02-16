@@ -16,6 +16,7 @@ import Currying from './Currying';
 import HigherOrderFunctions from './HigherOrderFunctions';
 import ReduxSagas from './ReduxSagas';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
@@ -92,6 +93,8 @@ class Javascript extends Component {
                 Article = Overview;
                 break;
         }
+
+        Article = withScroller(Article);
 
         return <Article />;
     };

@@ -10,6 +10,7 @@ import Calculator from './Calculator';
 import FindTheDoor from './FindTheDoor';
 import InstantMessenger from './InstantMessenger';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
@@ -35,8 +36,7 @@ class Java extends Component {
         push(`/java/${article}`)
     };
 
-    render() {
-
+    renderArticle = () => {
         const { match: { params: { article } } } = this.props;
 
         let Article = null;
@@ -56,6 +56,15 @@ class Java extends Component {
                 break;
         }
 
+        Article =  withScroller(Article);
+
+        return <Article />
+    };
+
+    render() {
+
+        const { match: { params: { article } } } = this.props;
+
         return (
             <Block
                 margin={`${remCalc(100)} ${remCalc(20)}`}
@@ -72,7 +81,7 @@ class Java extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        <Article />
+                        {this.renderArticle()}
                     </Grid.Row>
                 </Grid>
             </Block>

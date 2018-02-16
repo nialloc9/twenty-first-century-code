@@ -7,6 +7,7 @@ import Block from '../../components/Common/Styled/Block';
 import ProjectHeader from '../../components/Common/ProjectHeader';
 import Overview from './Overview';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
@@ -31,8 +32,7 @@ class MySql extends Component {
         push(`/mysql/${article}`)
     };
 
-    render() {
-
+    renderArticle = () => {
         const { match: { params: { article } } } = this.props;
 
         let Article = null;
@@ -42,6 +42,15 @@ class MySql extends Component {
                 Article = Overview;
                 break;
         }
+
+        Article =  withScroller(Article);
+
+        return <Article />
+    };
+
+    render() {
+
+        const { match: { params: { article } } } = this.props;
 
         return (
             <Block
@@ -59,7 +68,7 @@ class MySql extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        <Article />
+                        {this.renderArticle()}
                     </Grid.Row>
                 </Grid>
             </Block>

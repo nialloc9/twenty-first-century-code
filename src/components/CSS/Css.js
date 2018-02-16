@@ -9,6 +9,7 @@ import Overview from './Overview';
 import StyledComponents from './StyledComponents';
 import Bem from './Bem';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
@@ -34,8 +35,7 @@ class Css extends Component {
         push(`/css/${article}`)
     };
 
-    render() {
-
+    renderArticle = () => {
         const { match: { params: { article } } } = this.props;
 
         let Article = null;
@@ -55,6 +55,15 @@ class Css extends Component {
                 break;
         }
 
+        Article =  withScroller(Article);
+
+        return <Article />
+    };
+
+    render() {
+
+        const { match: { params: { article } } } = this.props;
+        
         return (
             <Block
                 margin={`${remCalc(100)} ${remCalc(20)}`}
@@ -71,7 +80,7 @@ class Css extends Component {
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        <Article />
+                        {this.renderArticle()}
                     </Grid.Row>
                 </Grid>
             </Block>
