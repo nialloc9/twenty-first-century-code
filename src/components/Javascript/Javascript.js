@@ -15,6 +15,7 @@ import AsyncAwait from './AsyncAwait';
 import Currying from './Currying';
 import HigherOrderFunctions from './HigherOrderFunctions';
 import ReduxSagas from './ReduxSagas';
+import ReactRenderCallback from './ReactRenderCallback';
 import withSidebar from '../../hoc/withSidebar';
 import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
@@ -30,7 +31,8 @@ import {
     ASYNC_AWAIT,
     CURRYING,
     HIGHER_ORDER_FUNCTIONS,
-    REDUX_SAGA
+    REDUX_SAGA,
+    REACT_RENDER_CALLBACKS
 } from '../../constants/javascript';
 import { dropdownOptions } from './options'
 
@@ -88,6 +90,9 @@ class Javascript extends Component {
                 break;
             case REDUX_SAGA:
                 Article = ReduxSagas;
+                break;
+            case REACT_RENDER_CALLBACKS:
+                Article = ReactRenderCallback;
                 break;
             default:
                 Article = Overview;

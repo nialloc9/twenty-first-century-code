@@ -26,7 +26,7 @@ class Generators extends PureComponent{
                         src={generator}
                         margin="auto"
                         size="large"
-                        alt="List maker start"
+                        alt="Factory image"
                     />
                 </Block>
 

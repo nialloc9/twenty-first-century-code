@@ -8,7 +8,8 @@ import {
     ASYNC_AWAIT,
     CURRYING,
     HIGHER_ORDER_FUNCTIONS,
-    REDUX_SAGA
+    REDUX_SAGA,
+    REACT_RENDER_CALLBACKS
 } from '../../constants/javascript';
 
 export const dropdownOptions = [
@@ -20,6 +21,7 @@ export const dropdownOptions = [
     { key: CURRYING, value: CURRYING, text: 'Currying' },
     { key: HIGHER_ORDER_FUNCTIONS, value: HIGHER_ORDER_FUNCTIONS, text: 'Higher Order Functions' },
     { key: REDUX_SAGA, value: REDUX_SAGA, text: 'Redux Sagas' },
+    { key: REACT_RENDER_CALLBACKS, value: REACT_RENDER_CALLBACKS, text: 'React Render Callbacks' },
     { key: JAVASCRIPT_LIST_MAKER, value: JAVASCRIPT_LIST_MAKER, text: 'List Maker' },
-    { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' },
+    { key: JAVASCRIPT_SHOULD_I_INVEST, value: JAVASCRIPT_SHOULD_I_INVEST, text: 'Should I Invest' }
 ];

@@ -13,7 +13,7 @@ const withScroller = WrappedComponent =>
       isScrollOnMount: true
     };
 
-    handleScrollTo = (top = 0, left = 0, behavior = 'smooth') => window.scroll({top, left, behavior });
+    handleScrollTo = (top = 0, left = 0) => window.scrollTo(top, left);
 
     componentDidMount(){
         const { isScrollOnMount } = this.props;
