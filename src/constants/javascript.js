@@ -9,3 +9,4 @@ export const CURRYING = "currying";
 export const HIGHER_ORDER_FUNCTIONS = "higher-order-functions";
 export const REDUX_SAGA = "redux-saga";
 export const REACT_RENDER_CALLBACKS = "react-render-callback";
+export const OPTIMIZATION = "optimization";

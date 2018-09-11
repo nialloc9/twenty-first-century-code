@@ -43,10 +43,10 @@ class BreathFirst extends Component {
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>
-          Breath first search begins at the root node and inspects all the
-          neighbouring nodes before moving down. Then for each of those in turn
-          it inspects it neighbours. It can be used to calculate the shortest
-          distance to a node.
+          Breath first begins at the root node and inspects all the neighbouring
+          nodes before moving down. Then for each of those in turn it inspects
+          it neighbours. It can be used to calculate the shortest distance to a
+          node.
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>
