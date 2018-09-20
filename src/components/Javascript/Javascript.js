@@ -17,6 +17,7 @@ import HigherOrderFunctions from "./HigherOrderFunctions";
 import ReduxSagas from "./ReduxSagas";
 import Optimization from "./Optimization";
 import ReactRenderCallback from "./ReactRenderCallback";
+import VCheck from "./VCheck";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
@@ -34,7 +35,8 @@ import {
   HIGHER_ORDER_FUNCTIONS,
   REDUX_SAGA,
   REACT_RENDER_CALLBACKS,
-  OPTIMIZATION
+  OPTIMIZATION,
+  VCHECK
 } from "../../constants/javascript";
 import { dropdownOptions } from "./options";
 
@@ -103,6 +105,9 @@ class Javascript extends Component {
         break;
       case REACT_RENDER_CALLBACKS:
         Article = ReactRenderCallback;
+        break;
+      case VCHECK:
+        Article = VCheck;
         break;
       default:
         Article = Overview;

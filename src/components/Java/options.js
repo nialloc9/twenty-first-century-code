@@ -3,7 +3,8 @@ import {
   JAVA_GAME,
   JAVA_INSTANT_MESSENGER,
   JAVA_OVERVIEW,
-  BREATH_FIRST_ALGORITHM
+  BREATH_FIRST_ALGORITHM,
+  DEPTH_FIRST_ALGORITHM
 } from "../../constants/java";
 
 export const dropdownOptions = [
@@ -12,6 +13,11 @@ export const dropdownOptions = [
     key: BREATH_FIRST_ALGORITHM,
     value: BREATH_FIRST_ALGORITHM,
     text: "Breath First Algorithm"
+  },
+  {
+    key: DEPTH_FIRST_ALGORITHM,
+    value: DEPTH_FIRST_ALGORITHM,
+    text: "Depth First Algorithm"
   },
   { key: JAVA_CALCULATOR, value: JAVA_CALCULATOR, text: "Calculator" },
   { key: JAVA_GAME, value: JAVA_GAME, text: "Find The Door Game" },

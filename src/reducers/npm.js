@@ -1,8 +1,12 @@
-import { NPM_SET } from '../constants/npm';
+import { NPM_SET } from "../constants/npm";
 
-// 96 as of time of writing
+// redux push 96 as of time of writing
+// vcheck 56 as of time of writing
 const initialState = {
-    reduxPushDownloads: 0
+  reduxPushDownloads: 0,
+  reduxPushLoading: false,
+  vcheckDownloads: 0,
+  vcheckLoading: false
 };
 
 /**
@@ -12,16 +16,16 @@ const initialState = {
  * @returns {*}
  */
 const npm = (state = initialState, { type, payload }) => {
-    switch (type) {
-        case NPM_SET:
-            return {
-                ...state,
-                ...payload,
-            };
+  switch (type) {
+    case NPM_SET:
+      return {
+        ...state,
+        ...payload
+      };
 
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 };
 
 export default npm;

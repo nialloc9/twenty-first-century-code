@@ -10,6 +10,7 @@ import Calculator from "./Calculator";
 import FindTheDoor from "./FindTheDoor";
 import InstantMessenger from "./InstantMessenger";
 import BreathFirst from "./BreathFirst";
+import DepthFirst from "./DepthFirst";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
@@ -19,7 +20,8 @@ import {
   JAVA_CALCULATOR,
   JAVA_GAME,
   JAVA_INSTANT_MESSENGER,
-  BREATH_FIRST_ALGORITHM
+  BREATH_FIRST_ALGORITHM,
+  DEPTH_FIRST_ALGORITHM
 } from "../../constants/java";
 import { dropdownOptions } from "./options";
 
@@ -64,6 +66,9 @@ class Java extends Component {
         break;
       case BREATH_FIRST_ALGORITHM:
         Article = BreathFirst;
+        break;
+      case DEPTH_FIRST_ALGORITHM:
+        Article = DepthFirst;
         break;
       default:
         Article = Overview;

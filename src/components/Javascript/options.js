@@ -10,7 +10,8 @@ import {
   HIGHER_ORDER_FUNCTIONS,
   REDUX_SAGA,
   REACT_RENDER_CALLBACKS,
-  OPTIMIZATION
+  OPTIMIZATION,
+  VCHECK
 } from "../../constants/javascript";
 
 export const dropdownOptions = [
@@ -40,6 +41,7 @@ export const dropdownOptions = [
     text: "React Render Callbacks"
   },
   { key: OPTIMIZATION, value: OPTIMIZATION, text: "Optimization" },
+  { key: VCHECK, value: VCHECK, text: "VCheck" },
   {
     key: JAVASCRIPT_LIST_MAKER,
     value: JAVASCRIPT_LIST_MAKER,
