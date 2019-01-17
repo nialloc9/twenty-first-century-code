@@ -1,6 +1,7 @@
 import {
   MACHINE_LEARING_OVERVIEW,
-  STOCK_PREDICTOR
+  STOCK_PREDICTOR,
+  CANCER_CLASSIFIER
 } from "../../constants/machineLearning";
 
 export const dropdownOptions = [
@@ -9,5 +10,10 @@ export const dropdownOptions = [
     value: MACHINE_LEARING_OVERVIEW,
     text: "Overview"
   },
-  { key: STOCK_PREDICTOR, value: STOCK_PREDICTOR, text: "Stock Predictor" }
+  { key: STOCK_PREDICTOR, value: STOCK_PREDICTOR, text: "Stock Predictor" },
+  {
+    key: CANCER_CLASSIFIER,
+    value: CANCER_CLASSIFIER,
+    text: "Cancer Classifer With K Nearest Neighbours"
+  }
 ];

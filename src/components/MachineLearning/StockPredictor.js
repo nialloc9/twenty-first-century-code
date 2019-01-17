@@ -80,7 +80,37 @@ class StockPredictor extends PureComponent {
 
         <CodeBlock margin={`${remCalc(20)} 0`}>
           {`
-def train(self):
+import numpy, datetime, pickle
+from classes.Stock import Stock
+from sklearn import model_selection, preprocessing
+from sklearn.linear_model import LinearRegression
+from math import ceil
+from os import path
+from matplotlib import pyplot
+
+class Predictor:
+
+    def __init__(self):
+        self.ticker = None
+        self.stock = None
+        self.classifier = None
+        self.prediction = None
+        self.accuracy = None
+        self.data_frame = None
+
+    def set_stock(self, stock_ticker=None):
+        self.ticker = "WIKI/" + stock_ticker.upper()
+        self.stock = Stock(self.ticker)
+        self.stock.fetch_data()
+
+    def get_ticker(self):
+        return self.ticker
+
+    def get_stock_data(self):
+        return self.stock.get_data()
+
+    # trains classifier
+    def train(self):
         self.data_frame = self.get_stock_data().copy()
 
         self.data_frame = self.data_frame[["Adj. Open", "Adj. High", "Adj. Low", "Adj. Close", "Adj. Volume"]]
@@ -125,6 +155,41 @@ def train(self):
         self.classifier.fit(features_train, labels_train)
 
         self.accuracy = self.classifier.score(features_test, labels_test)
+        pass
+
+    def get_accuracy(self):
+        return self.accuracy
+
+    '''
+        predicts stock price
+    '''
+    def predict(self):
+        self.prediction = self.classifier.predict(self.features_lately)
+
+    def get_prediction(self):
+        return self.prediction
+
+    def plot_graph(self):
+        self.data_frame["FORECAST"] = numpy.nan
+
+        last_date = self.data_frame.iloc[-1].name
+        last_unix = last_date.timestamp()
+        one_day = 86400
+
+        next_unix = last_unix + one_day
+
+        for i in self.prediction:
+            next_date = datetime.datetime.fromtimestamp(next_unix)
+            next_unix += one_day
+
+            self.data_frame.loc[next_date] = [numpy.nan for _ in range(len(self.data_frame.columns) - 1)] + [i]
+
+        self.data_frame["Adj. Close"].plot()
+        self.data_frame["FORECAST"].plot()
+        pyplot.title(self.ticker.split("WIKI/")[1] + " stock price")
+        pyplot.legend(loc=4)
+        pyplot.xlabel('Date')
+        pyplot.ylabel('Price')
 `}
         </CodeBlock>
 
@@ -132,7 +197,16 @@ def train(self):
           Using the predictor we can now predict our features_lately which refer
           to the future stock values that there is no prices associated. These
           are then all plotted on a graph showing the forecasted data versus the
-          historical data.
+          historical data. If you would like to see how scikit-learn calculates
+          linear regression I have also provided a vanilla version of linear
+          regression and can be found on my{" "}
+          <a
+            target="__blank"
+            href="https://github.com/nialloc9/machine-learning-linear-regression/blob/master/vanilla_regression_example.py"
+          >
+            github
+          </a>
+          .
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>Published on 14/01/2019</Block>

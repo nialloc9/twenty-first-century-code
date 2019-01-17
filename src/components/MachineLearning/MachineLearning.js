@@ -7,11 +7,15 @@ import Block from "../Common/Styled/Block";
 import ProjectHeader from "../Common/ProjectHeader";
 import Overview from "./Overview";
 import StockPredictor from "./StockPredictor";
+import CancerClassifier from "./CancerClassifier";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
 import { remCalc } from "../../common/helpers";
-import { STOCK_PREDICTOR } from "../../constants/machineLearning";
+import {
+  STOCK_PREDICTOR,
+  CANCER_CLASSIFIER
+} from "../../constants/machineLearning";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 import { dropdownOptions } from "./options";
 
@@ -41,10 +45,11 @@ class MachineLearning extends Component {
         params: { article }
       }
     } = this.props;
-
+    console.log("article", article);
     const Article =
       {
-        [STOCK_PREDICTOR]: StockPredictor
+        [STOCK_PREDICTOR]: StockPredictor,
+        [CANCER_CLASSIFIER]: CancerClassifier
       }[article] || Overview;
 
     const ArticleWithSideBar = withScroller(Article);
