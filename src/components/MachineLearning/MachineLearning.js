@@ -8,13 +8,17 @@ import ProjectHeader from "../Common/ProjectHeader";
 import Overview from "./Overview";
 import StockPredictor from "./StockPredictor";
 import CancerClassifier from "./CancerClassifier";
+import CancerSupportVectorMachine from "./CancerSupportVectorMachine";
+import ColorMatcher from "./ColorMatcher";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
 import { remCalc } from "../../common/helpers";
 import {
   STOCK_PREDICTOR,
-  CANCER_CLASSIFIER
+  CANCER_CLASSIFIER,
+  COLOR_MATCHER,
+  CANCER_SUPPORT_VECTOR_MACHINE
 } from "../../constants/machineLearning";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 import { dropdownOptions } from "./options";
@@ -45,11 +49,13 @@ class MachineLearning extends Component {
         params: { article }
       }
     } = this.props;
-    console.log("article", article);
+
     const Article =
       {
         [STOCK_PREDICTOR]: StockPredictor,
-        [CANCER_CLASSIFIER]: CancerClassifier
+        [CANCER_CLASSIFIER]: CancerClassifier,
+        [COLOR_MATCHER]: ColorMatcher,
+        [CANCER_SUPPORT_VECTOR_MACHINE]: CancerSupportVectorMachine
       }[article] || Overview;
 
     const ArticleWithSideBar = withScroller(Article);
