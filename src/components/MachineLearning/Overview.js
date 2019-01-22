@@ -6,7 +6,6 @@ import theme from "../../config/theme";
 import globals from "../../config/globals";
 import { remCalc } from "../../common/helpers";
 
-const { GITHUB } = globals;
 const {
   colors: { fontColor },
   fontSize,
@@ -39,15 +38,6 @@ class Overview extends PureComponent {
           "builder" in me. I love building complex applications and to be able
           to power these applications with a brain that can improve it self
           without being explicitly programmed to do so. Wow!!.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          This portfolio set is currently in progress. You can find multiple
-          examples of myql in use inside my{" "}
-          <a target="_blank" href={GITHUB}>
-            github
-          </a>
-          .
         </Block>
       </Block>
     );

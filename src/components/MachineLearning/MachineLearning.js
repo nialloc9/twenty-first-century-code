@@ -10,6 +10,8 @@ import StockPredictor from "./StockPredictor";
 import CancerClassifier from "./CancerClassifier";
 import CancerSupportVectorMachine from "./CancerSupportVectorMachine";
 import ColorMatcher from "./ColorMatcher";
+import KMeans from "./KMeans";
+import MeanShift from "./MeanShift";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
@@ -18,7 +20,9 @@ import {
   STOCK_PREDICTOR,
   CANCER_CLASSIFIER,
   COLOR_MATCHER,
-  CANCER_SUPPORT_VECTOR_MACHINE
+  CANCER_SUPPORT_VECTOR_MACHINE,
+  K_MEANS,
+  MEAN_SHIFT
 } from "../../constants/machineLearning";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 import { dropdownOptions } from "./options";
@@ -52,10 +56,12 @@ class MachineLearning extends Component {
 
     const Article =
       {
-        [STOCK_PREDICTOR]: StockPredictor,
+        [CANCER_SUPPORT_VECTOR_MACHINE]: CancerSupportVectorMachine,
         [CANCER_CLASSIFIER]: CancerClassifier,
         [COLOR_MATCHER]: ColorMatcher,
-        [CANCER_SUPPORT_VECTOR_MACHINE]: CancerSupportVectorMachine
+        [STOCK_PREDICTOR]: StockPredictor,
+        [K_MEANS]: KMeans,
+        [MEAN_SHIFT]: MeanShift
       }[article] || Overview;
 
     const ArticleWithSideBar = withScroller(Article);

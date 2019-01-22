@@ -34,7 +34,7 @@ class Home extends Component {
               <CardFour />
             </Grid.Column>
             <Grid.Column>
-              <CardThree />
+              <CardFive />
             </Grid.Column>
           </Grid.Row>
 
@@ -54,7 +54,7 @@ class Home extends Component {
               <CardOne />
             </Grid.Column>
             <Grid.Column>
-              <CardFive />
+              <CardThree />
             </Grid.Column>
             <Grid.Column>
               <CardSix />
