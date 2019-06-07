@@ -21,10 +21,11 @@ class Card extends Component {
             width="100%"
             opacity={1}
             hoverOpacity={0.6}
-            hoverBorder={`1px solid ${first}`}
             hoverBoxShadow={hoverBoxShadow}
-            hoverTransition="box-shadow 0.3s ease-in-out"
+            hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
             cursor="pointer"
+            clipPath="circle(45%)"
+            hoverClipPatb="circle(100%)"
             {...this.props}
         />
     }

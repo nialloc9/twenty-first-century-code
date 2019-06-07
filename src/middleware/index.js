@@ -1,4 +1,4 @@
-import { applyMiddleware } from "redux";
+import { applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import history from './history';
 
@@ -9,4 +9,6 @@ if (process.env.NODE_ENV === `development`) {
 
 }
 
-export default applyMiddleware(...middleware);
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+export default composeEnhancer(applyMiddleware(...middleware));

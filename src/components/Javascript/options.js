@@ -11,11 +11,17 @@ import {
   REDUX_SAGA,
   REACT_RENDER_CALLBACKS,
   OPTIMIZATION,
-  VCHECK
+  VCHECK,
+  REDUX_REDUCER_MAP
 } from "../../constants/javascript";
 
 export const dropdownOptions = [
   { key: JAVASCRIPT_OVERVIEW, value: JAVASCRIPT_OVERVIEW, text: "Overview" },
+  {
+    key: REDUX_REDUCER_MAP,
+    value: REDUX_REDUCER_MAP,
+    text: "A better way to handle redux reducers"
+  },
   {
     key: JAVASCRIPT_BLOCK_CHAIN,
     value: JAVASCRIPT_BLOCK_CHAIN,

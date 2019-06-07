@@ -1,11 +1,12 @@
 import { createStore } from "redux";
 import middleware from '../middleware/index';
-import reducers from '../reducers';
+import createRootReducer from '../reducers';
+import { history } from "../middleware/history"
 
-const store = createStore(
-    reducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+const store = preloadedState => createStore(
+    createRootReducer(history),
+    preloadedState,
     middleware
-);
+)
 
 export default store;

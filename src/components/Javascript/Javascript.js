@@ -17,6 +17,7 @@ import HigherOrderFunctions from "./HigherOrderFunctions";
 import ReduxSagas from "./ReduxSagas";
 import Optimization from "./Optimization";
 import ReactRenderCallback from "./ReactRenderCallback";
+import ReduxReducerMap from "./ReduxReducerMap";
 import VCheck from "./VCheck";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
@@ -24,7 +25,6 @@ import { setSidebarOpen } from "../../actions/sidebar";
 import { remCalc } from "../../common/helpers";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 import {
-  JAVASCRIPT_OVERVIEW,
   JAVASCRIPT_SHOULD_I_INVEST,
   JAVASCRIPT_LIST_MAKER,
   JAVASCRIPT_REDUX_PUSH,
@@ -36,7 +36,8 @@ import {
   REDUX_SAGA,
   REACT_RENDER_CALLBACKS,
   OPTIMIZATION,
-  VCHECK
+  VCHECK,
+  REDUX_REDUCER_MAP
 } from "../../constants/javascript";
 import { dropdownOptions } from "./options";
 
@@ -69,52 +70,23 @@ class Javascript extends Component {
 
     let Article = null;
 
-    switch (article) {
-      case OPTIMIZATION:
-        Article = Optimization;
-        break;
-      case JAVASCRIPT_OVERVIEW:
-        Article = Overview;
-        break;
-      case JAVASCRIPT_REDUX_PUSH:
-        Article = ReduxPush;
-        break;
-      case ASYNC_AWAIT:
-        Article = AsyncAwait;
-        break;
-      case JAVASCRIPT_LIST_MAKER:
-        Article = ListMaker;
-        break;
-      case JAVASCRIPT_SHOULD_I_INVEST:
-        Article = ShouldIInvest;
-        break;
-      case JAVASCRIPT_BLOCK_CHAIN:
-        Article = BlockChain;
-        break;
-      case GENERATORS:
-        Article = Generators;
-        break;
-      case CURRYING:
-        Article = Currying;
-        break;
-      case HIGHER_ORDER_FUNCTIONS:
-        Article = HigherOrderFunctions;
-        break;
-      case REDUX_SAGA:
-        Article = ReduxSagas;
-        break;
-      case REACT_RENDER_CALLBACKS:
-        Article = ReactRenderCallback;
-        break;
-      case VCHECK:
-        Article = VCheck;
-        break;
-      default:
-        Article = Overview;
-        break;
+    const map = {
+      [OPTIMIZATION]: Optimization,
+      [JAVASCRIPT_REDUX_PUSH]: ReduxPush,
+      [ASYNC_AWAIT]: AsyncAwait,
+      [JAVASCRIPT_LIST_MAKER]: ListMaker,
+      [JAVASCRIPT_SHOULD_I_INVEST]: ShouldIInvest,
+      [JAVASCRIPT_BLOCK_CHAIN]: BlockChain,
+      [GENERATORS]: Generators,
+      [CURRYING]: Currying,
+      [HIGHER_ORDER_FUNCTIONS]: HigherOrderFunctions,
+      [REDUX_SAGA]: ReduxSagas,
+      [REACT_RENDER_CALLBACKS]: ReactRenderCallback,
+      [VCHECK]: VCheck,
+      [REDUX_REDUCER_MAP]: ReduxReducerMap
     }
 
-    Article = withScroller(Article);
+    Article = withScroller(map[article] || Overview);
 
     return <Article />;
   };

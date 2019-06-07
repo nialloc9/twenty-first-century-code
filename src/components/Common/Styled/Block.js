@@ -37,9 +37,12 @@ const Block = Styled("div")`
     ${({ cursor = false }) => cursor && `cursor: ${cursor};`}
     ${({ textDecoration = false }) => textDecoration && `text-decoration: ${textDecoration};`}
     ${({ whiteSpace = false }) => whiteSpace && `white-space: ${whiteSpace};`}
+    ${({ clipPath = false }) => clipPath && `clip-path: ${clipPath};`}
+    
     
     &:hover {
         ${({ hoverColor = false}) => hoverColor && `color: ${hoverColor};`}
+        ${({ hoverClipPatb = false}) => hoverClipPatb && `clip-path: ${hoverClipPatb};`}
         ${({ hoverWidth = false}) => hoverWidth && `width: ${hoverWidth};`}
         ${({ hoverHeight = false}) => hoverHeight && `height: ${hoverHeight};`}
         ${({ hoverMargin = false}) => hoverMargin && `margin: ${hoverMargin};`}

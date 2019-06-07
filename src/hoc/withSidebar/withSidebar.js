@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { Sidebar, Menu, Popup } from "semantic-ui-react";
 import Styled from "styled-components";
@@ -56,7 +56,7 @@ const withSidebar = WrappedComponent =>
       const { open, selected, onSetSidebarOpen } = this.props;
 
       return (
-        <Block>
+        <Fragment>
           <Sidebar.Pushable>
             <ClickOutside onClickOutside={this.handleClickOutside}>
               <StyledSidebar
@@ -177,7 +177,7 @@ const withSidebar = WrappedComponent =>
               </Block>
             </Sidebar.Pusher>
           </Sidebar.Pushable>
-        </Block>
+        </Fragment>
       );
     }
   };

@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { Route, Switch } from "react-router";
-import { ConnectedRouter } from "react-router-redux";
+import { ConnectedRouter } from 'connected-react-router'
 import { ThemeProvider } from "styled-components";
 import "semantic-ui-css/semantic.min.css";
 import "./config/polyfills";
@@ -29,7 +29,7 @@ if (module.hot) {
 
 render(
   <ThemeProvider theme={theme}>
-    <Provider store={store}>
+    <Provider store={store()}>
       <ConnectedRouter history={history}>
         <Switch>
           <Route exact path="/" component={Home} />
