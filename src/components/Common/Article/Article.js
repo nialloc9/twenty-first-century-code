@@ -5,6 +5,9 @@ import Image from '../../Common/Styled/Image';
 import Link from '../../Common/Styled/Link';
 import { remCalc, generateId } from '../../../common/helpers';
 import withLoader from '../../../hoc/withLoader';
+import config from "../../../config/globals";
+
+const { LINKEDIN } = config
 
 class AsyncAwait extends PureComponent{
 
@@ -33,7 +36,7 @@ class AsyncAwait extends PureComponent{
     )
 
     renderParagraph = ({ margin = `${remCalc(20)} 0`, text }) => <Block key={`paragraph-${text}`} margin={margin}>{text}</Block>
-    renderPublished = ({  margin = `${remCalc(20)} 0`, author = "Niall O' Connor", date }) => <Block margin={margin} key={`published-${author}`}>{`Published by ${author} on ${date}.`}</Block>
+    renderPublished = ({  margin = `${remCalc(20)} 0`, href=LINKEDIN, author = "Niall O' Connor", date }) => <Block margin={margin} key={`published-${author}`}>Published by <Link href={href} target="__blank" rel="noopener noreferrer">{author}</Link> on {date}.</Block>
     
     renderCode = ({ margin = `${remCalc(20)} 0`, code }) => <CodeBlock margin={margin} key={generateId()}>{code}</CodeBlock>
     

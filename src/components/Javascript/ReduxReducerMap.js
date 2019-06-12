@@ -111,8 +111,8 @@ export default users;
         {
             type: "paragraph",
             text: `So above we two ways of creating a traditional reducer. The first using a switch statement where only one case 
-            can be implemented. This is the most common example of how to create a reducer. While yes it is okay to look at but what it's an eyesore (IMO). As 
-            switch statements get longet they get harder to glance through and take longer to find what you are looking for. Option 2 is a less common implentation (and in my opinion worse than the first). 
+            can be implemented. This is the most common example of how to create a reducer. While yes it is okay to look at but it's an eyesore (IMO). As 
+            switch statements get longer they get harder to glance through and take longer to find what you are looking for. Option 2 is a less common implentation (and in my opinion worse than the first). 
             It uses if else statements to achieve the same result but it is even harder to read.`
         },
         {
