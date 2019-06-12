@@ -1,28 +1,14 @@
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
 import main from "../../static/images/projects/kMeans/main.png";
 import kmeans from "../../static/images/projects/kMeans/kmeans.png";
-import room from "../../static/images/projects/apolloChat/room.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
 import { MEAN_SHIFT } from "../../constants/machineLearning";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class KMeans extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -38,12 +24,13 @@ class KMeans extends PureComponent {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-k-means"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>
@@ -122,12 +109,13 @@ graph_data(features, labels, centroids)
           Using our classifier above we can now group data into segments and if
           you would like to see an example of a vanilla version of
           kNearestNeighbours there is one available on my{" "}
-          <a
+          <Link
             target="__blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-k-means/blob/master/vanilla_main.py"
           >
             github
-          </a>
+          </Link>
           .
         </Block>
 

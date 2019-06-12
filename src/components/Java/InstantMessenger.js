@@ -1,22 +1,14 @@
 import React, { Component } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Image, Block, CodeBlock, Link} from '../Common/Styled';
 import instantMessengerRunning from '../../static/images/projects/javaInstantMessenger/instantMessengerRunning.png';
 import burningHouse from '../../static/images/projects/javaInstantMessenger/burningHouse.png';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class InstantMessenger extends Component{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -31,7 +23,7 @@ class InstantMessenger extends Component{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/java_simple_calculator">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/java_simple_calculator">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

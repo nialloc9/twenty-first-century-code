@@ -5,11 +5,8 @@ import { Grid } from 'semantic-ui-react';
 import Block from '../Common/Styled/Block';
 import Header from '../Common/Styled/Header';
 import { remCalc } from '../../common/helpers';
-import theme from '../../config/theme';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
-
-const { colors: { fontColor } } = theme;
 
 class Error404 extends Component {
     render() {
@@ -18,7 +15,7 @@ class Error404 extends Component {
                 <Grid centered>
                     <Grid.Row>
                         <Block margin={remCalc(200)}>
-                            <Header as="h1" color={fontColor}>
+                            <Header as="h1">
                                 Page not found.
                             </Header>
                         </Block>

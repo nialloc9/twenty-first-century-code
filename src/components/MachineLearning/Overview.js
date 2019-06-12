@@ -2,23 +2,12 @@ import React, { PureComponent } from "react";
 import Block from "../Common/Styled/Block";
 import Image from "../Common/Styled/Image";
 import machineLearning from "../../static/images/new/machineLearning.png";
-import theme from "../../config/theme";
-import globals from "../../config/globals";
 import { remCalc } from "../../common/helpers";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class Overview extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        lineHeight={lineHeight}
-        fontSize={fontSize}
         maxWidth={remCalc(800)}
       >
         <Block>

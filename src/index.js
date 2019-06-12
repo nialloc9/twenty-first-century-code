@@ -13,7 +13,7 @@ import Javascript from "./components/Javascript";
 import Php from "./components/Php";
 import Node from "./components/Node";
 import MachineLearning from "./components/MachineLearning";
-import CSS from "./components/CSS";
+import Style from "./components/Style";
 import About from "./components/About";
 import { history } from "./middleware/history";
 import store from "./store";
@@ -42,7 +42,7 @@ render(
             path="/machine-learning/:article?"
             component={MachineLearning}
           />
-          <Route exact path="/css/:article?" component={CSS} />
+          <Route exact path="/style/:article?" component={Style} />
           <Route exact path="/about" component={About} />
           <Route component={Error404} />
         </Switch>

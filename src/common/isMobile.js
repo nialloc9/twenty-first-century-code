@@ -1,5 +1,5 @@
 //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
-
+/* eslint no-useless-escape: 0 */
 const isMobile = () => {
     let isMobile = false;
 

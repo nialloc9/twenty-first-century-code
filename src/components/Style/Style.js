@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Grid } from 'semantic-ui-react';
-import Block from '../../components/Common/Styled/Block';
-import ProjectHeader from '../../components/Common/ProjectHeader';
+import Block from '../Common/Styled/Block';
+import ProjectHeader from '../Common/ProjectHeader';
 import Overview from './Overview';
 import StyledComponents from './StyledComponents';
 import Bem from './Bem';
@@ -16,7 +16,7 @@ import { SIDEBAR_HOME } from '../../constants/sidebar';
 import { STYLED_COMPONENTS, BEM } from '../../constants/css';
 import { dropdownOptions } from './options';
 
-class Css extends Component {
+class Style extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,7 +32,7 @@ class Css extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/css/${article}`)
+        push(`/style/${article}`)
     };
 
     renderArticle = () => {
@@ -71,7 +71,7 @@ class Css extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="CSS"
+                            title="Style"
                             subTitle={`.sniper: { cursor: crosshair; }`}
                             placeholder='Select Project'
                             defaultValue={article}
@@ -111,4 +111,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Css));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Style));

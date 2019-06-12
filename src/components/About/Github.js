@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Card, Icon } from 'semantic-ui-react';
 import Image from '../Common/Styled/Image';
+import Link from '../Common/Styled/Link';
 import Block from '../Common/Styled/Block';
 import globals from '../../config/globals';
 import { setGithubDetails } from '../../actions/github';
@@ -36,7 +37,7 @@ class Github extends Component {
 
         return(
         <WithLoaderBlock display="inline-block" cursor="pointer" loading={loading} loadingIconSize="large">
-            <a href={GITHUB} target="__blank">
+            <Link href={GITHUB} target="__blank" rel="noopener noreferrer">
                 <Card>
                     <Image src={avatarUrl} />
                     <Card.Content>
@@ -55,7 +56,7 @@ class Github extends Component {
                         {`${followers} followers`}
                     </Card.Content>
                 </Card>
-            </a>
+            </Link>
         </WithLoaderBlock>
         )
     }

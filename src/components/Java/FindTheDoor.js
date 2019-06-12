@@ -1,24 +1,17 @@
+/* eslint no-octal-escape: 0 */
 import React, { Component } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import newGame from '../../static/images/projects/javaFindTheDoorGame/newGame.png';
 import mainMenu from '../../static/images/projects/javaFindTheDoorGame/mainMenu.png';
 import collisionCantContinue from '../../static/images/projects/javaFindTheDoorGame/collisionCantContinue.png';
 import winner from '../../static/images/projects/javaFindTheDoorGame/winner.png';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class FindTheDoor extends Component{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -33,7 +26,7 @@ class FindTheDoor extends Component{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/java_simple_calculator">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/java_simple_calculator">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

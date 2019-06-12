@@ -1,25 +1,13 @@
 import React, { Component } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Image, SoftLink, CodeBlock, Block, Link} from "../Common/Styled";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
 
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class BreathFirst extends Component {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -35,9 +23,9 @@ class BreathFirst extends Component {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a target="_blank" href="https://github.com/nialloc9/factory-pattern">
+          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/factory-pattern">
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>

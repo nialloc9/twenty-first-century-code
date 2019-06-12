@@ -1,27 +1,14 @@
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
 import graph from "../../static/images/projects/meanShift/graph.png";
 import main from "../../static/images/projects/meanShift/main.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
 import { K_MEANS } from "../../constants/machineLearning";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class MeanShift extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -31,12 +18,13 @@ class MeanShift extends PureComponent {
         </Block>
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-mean-shift"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
         <Block margin={`${remCalc(20)} 0`}>
           Apposed to the{" "}
@@ -88,12 +76,13 @@ class MeanShift extends PureComponent {
           proportion of first class customers in this cluster. This can be
           because of differant reasons but one that cannot be ignored is that
           first class was at the top of the ship where the lifeboats were kept.{" "}
-          <a
+          <Link
             target="__blank"
+            rel="noopener noreferrer"
             href="https://www.historyonthenet.com/the-titanic-lifeboats"
           >
             [i]
-          </a>
+          </Link>
           Below we can see the code used to find these insights:
         </Block>
 
@@ -212,12 +201,13 @@ print("Cluster 0 first class passenger have a lower chance of survival but there
           Using our classifier above we can now group data into segments that
           are decided by the machine and if you would like to see an example of
           a vanilla version of mean shift there is one available on my{" "}
-          <a
+          <Link
             target="__blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-mean-shift/blob/master/vanilla_main.py"
           >
             github
-          </a>
+          </Link>
           .
         </Block>
         <Block margin={`${remCalc(20)} 0`}>Published on 19/01/2019</Block>

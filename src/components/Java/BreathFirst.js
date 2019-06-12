@@ -1,24 +1,12 @@
 import React, { Component } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import Image from "../Common/Styled/Image";
+import {Image, Link, CodeBlock, Block} from "../Common/Styled";
 import breathFirstAlgorithm from "../../static/images/projects/breathFirst/breathFirstAlgorithm.gif";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class BreathFirst extends Component {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -34,12 +22,13 @@ class BreathFirst extends Component {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/breath-first-traversal"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>

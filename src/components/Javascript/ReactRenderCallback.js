@@ -1,23 +1,13 @@
 import React, { PureComponent } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
-import SoftLink from '../Common/Styled/SoftLink';
-import Link from '../Common/Styled/Link';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import telephone from '../../static/images/projects/reactRenderCallback/telephone-handset-3179133_1280.jpg';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class ReactRenderCallback extends PureComponent{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -32,7 +22,7 @@ class ReactRenderCallback extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/react-render-callback">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/react-render-callback">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

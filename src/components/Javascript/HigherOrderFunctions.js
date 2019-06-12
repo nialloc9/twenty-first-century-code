@@ -1,22 +1,13 @@
 import React, { PureComponent } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
-import SoftLink from '../Common/Styled/SoftLink';
+import {Block, CodeBlock, Image, SoftLink, Link} from '../Common/Styled';
 import hands from '../../static/images/projects/higherOrderFunctions/hands-1438638-1280x960.jpg';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class HigherOrderFunctions extends PureComponent{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -31,7 +22,7 @@ class HigherOrderFunctions extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/higher-order-functions">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/higher-order-functions">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

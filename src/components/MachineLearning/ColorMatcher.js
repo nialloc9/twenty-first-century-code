@@ -1,28 +1,13 @@
+/* eslint no-useless-escape: 0 */
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, Image, Link} from "../Common/Styled";
 import main from "../../static/images/projects/colorMatcher/main.png";
-import clusters from "../../static/images/projects/cancerClassifier/clusters.png";
-import room from "../../static/images/projects/apolloChat/room.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
-import { STOCK_PREDICTOR } from "../../constants/machineLearning";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class ColorMatcher extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -38,12 +23,13 @@ class ColorMatcher extends PureComponent {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-color-matcher"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>

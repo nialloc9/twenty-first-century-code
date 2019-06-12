@@ -1,25 +1,12 @@
 import React, { Component } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class BreathFirst extends Component {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -35,12 +22,13 @@ class BreathFirst extends Component {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
+            rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/nialloc9/depth-first-algorithm"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>

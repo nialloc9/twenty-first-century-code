@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { Sidebar, Menu, Popup } from "semantic-ui-react";
-import Styled from "styled-components";
 import MenuItem from "./MenuItem";
 import Block from "../../components/Common/Styled/Block";
 import Icon from "../../components/Common/Styled/Icon";
@@ -16,10 +15,6 @@ import cv from "../../static/files/cv.pdf";
 const {
   colors: { first }
 } = theme;
-
-const StyledSidebar = Styled(Sidebar)`
-    background-color: ${first} !important;
-`;
 
 const {
   PHONE_NUMBER,
@@ -59,7 +54,7 @@ const withSidebar = WrappedComponent =>
         <Fragment>
           <Sidebar.Pushable>
             <ClickOutside onClickOutside={this.handleClickOutside}>
-              <StyledSidebar
+              <Sidebar
                 as={Menu}
                 animation="push"
                 width="thin"
@@ -67,7 +62,7 @@ const withSidebar = WrappedComponent =>
                 icon="labeled"
                 vertical
               >
-                <Block backgroundColor={first}>
+                <Block backgroundColor={first} height="100%">
                   <MenuItem
                     selected={selected}
                     name="close"
@@ -156,7 +151,7 @@ const withSidebar = WrappedComponent =>
                     target="_blank"
                   />
                 </Block>
-              </StyledSidebar>
+              </Sidebar>
             </ClickOutside>
             <Sidebar.Pusher>
               <Block

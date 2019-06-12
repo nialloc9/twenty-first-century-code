@@ -1,20 +1,17 @@
 import React, { PureComponent } from 'react';
-import Block from '../Common/Styled/Block';
-import Image from '../Common/Styled/Image';
+import {Block, Image, Link} from '../Common/Styled';
 import javascriptYellow from '../../static/images/javascriptYellow.png';
-import theme from '../../config/theme';
 import globals from '../../config/globals';
 import { remCalc } from '../../common/helpers';
 
 const {
     GITHUB
 } = globals;
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class Overview extends PureComponent {
     render(){
         return(
-            <Block fontColor={fontColor} lineHeight={lineHeight} fontSize={fontSize} maxWidth={remCalc(800)}>
+            <Block maxWidth={remCalc(800)}>
                 <Block>
                     <Image
                         src={javascriptYellow}
@@ -26,9 +23,9 @@ class Overview extends PureComponent {
 
                 <Block margin={`${remCalc(20)} 0`}>
                     Here we will look at some javascript projects that I completed. Javascript is my language of choice and hopefully you
-                    will find these projects rich in detail and to your liking. Some of these projects are wrote in es5 while others are
+                    will find these projects rich in detail and to your liking. Some of these projects are wrote in es5x while others are
                     wrote using es6 and compiled back to es5 using a compiler. Here you will find differant code patterns aswell astechnoligies such as redux and react.
-                    All the source code will be available on <a target="_blank" href={GITHUB}>github</a> and I will provide links where appropriate.
+                    All the source code will be available on <Link target="_blank" rel="noopener noreferrer" href={GITHUB}>github</Link> and I will provide links where appropriate.
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

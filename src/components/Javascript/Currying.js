@@ -1,21 +1,12 @@
 import React, { PureComponent } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import together from '../../static/images/projects/currying/together-3-1162465-1278x903.jpg';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
 
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
-
 class Currying extends PureComponent{
-
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -30,7 +21,7 @@ class Currying extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/currying">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/currying">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

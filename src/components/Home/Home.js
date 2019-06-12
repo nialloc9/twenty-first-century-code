@@ -13,13 +13,8 @@ import CardSix from "./Cards/CardSix";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
-
-const {
-  colors: { fontColor }
-} = theme;
 
 class Home extends Component {
   render() {
@@ -40,10 +35,10 @@ class Home extends Component {
 
           <Grid.Row>
             <Block margin={`${remCalc(100)} 0`}>
-              <Header as="h1" color={fontColor}>
+              <Header as="h1">
                 Welcome to twenty first century code.
                 <SemanticHeader.Subheader>
-                  <Block color={fontColor}>Super simple super awesome..</Block>
+                  <Block>Super simple super awesome..</Block>
                 </SemanticHeader.Subheader>
               </Header>
             </Block>

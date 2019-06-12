@@ -1,24 +1,12 @@
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, Image, Link} from "../Common/Styled";
 import optimization from "../../static/images/projects/optimization/optimization.jpg";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class Optimization extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -34,12 +22,13 @@ class Optimization extends PureComponent {
 
         <Block>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/coding-challenges/blob/master/maxProfit.js"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>

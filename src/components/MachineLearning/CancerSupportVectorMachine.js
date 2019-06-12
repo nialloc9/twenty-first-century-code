@@ -1,33 +1,19 @@
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, SoftLink, Link, Image} from "../Common/Styled";
 import graph from "../../static/images/projects/supportVectorMachine/hyperplanes.png";
 import supportVectorMachine1 from "../../static/images/projects/supportVectorMachine/supportVectorMachine1.png";
 import supportVectorMachine2 from "../../static/images/projects/supportVectorMachine/supportVectorMachine2.png";
 import supportVectorMachine3 from "../../static/images/projects/supportVectorMachine/supportVectorMachine3.png";
-import room from "../../static/images/projects/apolloChat/room.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
 import {
   STOCK_PREDICTOR,
   CANCER_CLASSIFIER
 } from "../../constants/machineLearning";
 
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
-
 class CancerClassifier extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -43,12 +29,13 @@ class CancerClassifier extends PureComponent {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a
+          <Link
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-support-vector-machine"
           >
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>
@@ -130,13 +117,13 @@ class CancerClassifier extends PureComponent {
           format our data into a useable format first. This is often the most
           tedious and time consuming part of machine learning but once we have
           done this we can use libraries such as{" "}
-          <a target="_blank" href="https://scikit-learn.org/stable">
+          <Link target="_blank" rel="noopener noreferrer" href="https://scikit-learn.org/stable">
             scikitlearn
-          </a>{" "}
+          </Link>{" "}
           and frameworks such as Googles{" "}
-          <a target="_blank" href="https://www.tensorflow.org/">
+          <Link target="_blank" rel="noopener noreferrer" href="https://www.tensorflow.org/">
             tensorflow
-          </a>{" "}
+          </Link>{" "}
           to do the legwork of running algorithms and creating Neural Networks.
           We can see from the example we use pandas helper method
           data_frame.replace("?", -99999, inplace=True). This replaces all "?"

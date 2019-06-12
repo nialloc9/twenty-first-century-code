@@ -1,5 +1,3 @@
-import { SOLID_PIN, ZOMBIE, SUNGLO, WEDGEWOOD, WEDGEWOOD_TWO, KELP } from '../common/colours';
-
 const theme = {
     colors: {
         first: '#2D93AD',

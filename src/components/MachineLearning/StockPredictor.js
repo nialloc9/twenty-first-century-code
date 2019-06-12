@@ -1,27 +1,13 @@
 import React, { PureComponent } from "react";
-import Block from "../Common/Styled/Block";
-import CodeBlock from "../Common/Styled/CodeBlock";
-import SoftLink from "../Common/Styled/SoftLink";
-import Image from "../Common/Styled/Image";
+import {Block, CodeBlock, Image, Link} from "../Common/Styled";
 import graph from "../../static/images/projects/stockPredictor/graph.png";
 import algorithm from "../../static/images/projects/stockPredictor/algorithm.png";
-import room from "../../static/images/projects/apolloChat/room.png";
-import theme from "../../config/theme";
 import { remCalc } from "../../common/helpers";
-
-const {
-  colors: { fontColor },
-  fontSize,
-  lineHeight
-} = theme;
 
 class StockPredictor extends PureComponent {
   render() {
     return (
       <Block
-        fontColor={fontColor}
-        fontSize={fontSize}
-        lineHeight={lineHeight}
         maxWidth={remCalc(800)}
         tabletHorizontalMaxWidth={remCalc(600)}
         mobileMaxWidth={remCalc(300)}
@@ -37,9 +23,9 @@ class StockPredictor extends PureComponent {
 
         <Block margin={`${remCalc(20)} 0`}>
           Source code:{" "}
-          <a target="_blank" href="https://github.com/nialloc9/stock-predictor">
+          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/stock-predictor">
             GitHub
-          </a>
+          </Link>
         </Block>
 
         <Block margin={`${remCalc(20)} 0`}>
@@ -200,12 +186,13 @@ class Predictor:
           historical data. If you would like to see how scikit-learn calculates
           linear regression I have also provided a vanilla version of linear
           regression and can be found on my{" "}
-          <a
+          <Link
             target="__blank"
+            rel="noopener noreferrer"
             href="https://github.com/nialloc9/machine-learning-linear-regression/blob/master/vanilla_regression_example.py"
           >
             github
-          </a>
+          </Link>
           .
         </Block>
 

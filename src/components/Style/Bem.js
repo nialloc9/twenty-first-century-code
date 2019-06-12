@@ -2,20 +2,15 @@ import React, { PureComponent } from 'react'
 import Block from '../Common/Styled/Block';
 import CodeBlock from '../Common/Styled/CodeBlock';
 import Image from '../Common/Styled/Image';
+import Link from '../Common/Styled/Link';
 import logo from '../../static/images/projects/bem/logo.png';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class Bem extends PureComponent{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -30,7 +25,7 @@ class Bem extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Website: <a target="_blank" href="http://getbem.com/">BEM</a>
+                    Website: <Link target="_blank" rel="noopener noreferrer" href="http://getbem.com/">BEM</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

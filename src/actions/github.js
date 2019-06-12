@@ -28,7 +28,7 @@ export const setGithubDetails = () => async dispatch => {
         return new Error("Am error has occured fetching github data");
     }
 
-    const [jsonError, json] = await promiseErrorHandler(response.json());
+    const [, json] = await promiseErrorHandler(response.json());
 
     const { avatar_url: avatarUrl, bio, followers, login, public_repos: publicRepos } = json;
 

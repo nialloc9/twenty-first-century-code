@@ -1,20 +1,17 @@
 import React, { PureComponent } from 'react';
-import Block from '../Common/Styled/Block';
-import Image from '../Common/Styled/Image';
+import {Block, Image, Link} from '../Common/Styled';
 import css3Blue from '../../static/images/css3Blue.png';
-import theme from '../../config/theme';
 import globals from '../../config/globals';
 import { remCalc } from '../../common/helpers';
 
 const {
     GITHUB
 } = globals;
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class Overview extends PureComponent {
     render(){
         return(
-            <Block fontColor={fontColor} lineHeight={lineHeight} fontSize={fontSize} maxWidth={remCalc(800)}>
+            <Block maxWidth={remCalc(800)}>
                 <Block>
                     <Image
                         src={css3Blue}
@@ -32,7 +29,7 @@ class Overview extends PureComponent {
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    This portfolio set is currently in progress. You can find multiple examples of css in use inside my <a target="_blank" href={GITHUB}>github</a>.
+                    This portfolio set is currently in progress. You can find multiple examples of css in use inside my <Link target="_blank" rel="noopener noreferrer" href={GITHUB}>github</Link>.
                 </Block>
 
             </Block>

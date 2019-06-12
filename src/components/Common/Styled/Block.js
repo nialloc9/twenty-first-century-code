@@ -5,6 +5,11 @@ import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN } from '../../../common/setting
 const Block = Styled("div")`
     margin: ${({ margin = 0 }) => margin};
     padding: ${({ padding = 0 }) => padding};
+
+    font-size: ${({ theme: { fontSize } }) => remCalc(fontSize)};
+    line-height: ${({ theme: { lineHeight } }) => lineHeight};
+    color: ${({ theme: { fontColor } }) => fontColor};
+    
     ${({ height = false }) => height && `height: ${height};`}
     ${({ lineHeight = false }) => lineHeight && `line-height: ${lineHeight};`}
     ${({ textAlign = false }) => textAlign && `text-align: ${textAlign};`}
@@ -42,7 +47,7 @@ const Block = Styled("div")`
     
     &:hover {
         ${({ hoverColor = false}) => hoverColor && `color: ${hoverColor};`}
-        ${({ hoverClipPatb = false}) => hoverClipPatb && `clip-path: ${hoverClipPatb};`}
+        ${({ hoverClipPath = false}) => hoverClipPath && `clip-path: ${hoverClipPath};`}
         ${({ hoverWidth = false}) => hoverWidth && `width: ${hoverWidth};`}
         ${({ hoverHeight = false}) => hoverHeight && `height: ${hoverHeight};`}
         ${({ hoverMargin = false}) => hoverMargin && `margin: ${hoverMargin};`}
@@ -80,6 +85,12 @@ const Block = Styled("div")`
         ${({ tabletHorizontalWidth = false }) => tabletHorizontalWidth && `width: ${tabletHorizontalWidth};`}
         ${({ tabletHorizontalMinWidth = false }) => tabletHorizontalMinWidth && `min-width: ${tabletHorizontalMinWidth}`};
         ${({ tabletHorizontalMaxWidth = false }) => tabletHorizontalMaxWidth && `max-width: ${tabletHorizontalMaxWidth}`};
+
+        ${({ tabletClipPath = false}) => tabletClipPath && `clip-path: ${tabletClipPath};`}
+        
+        &:hover {
+          ${({ tabletHoverClipPath = false}) => tabletHoverClipPath && `clip-path: ${tabletHoverClipPath};`}
+        }
     }
     
     @media ${MOBILE_SCREEN} {

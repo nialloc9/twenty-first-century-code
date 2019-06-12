@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Accordion, Icon } from "semantic-ui-react";
 import Block from "../../components/Common/Styled/Block";
+import Link from "../../components/Common/Styled/Link";
 import Header from "../../components/Common/Styled/Header";
 import { remCalc } from "../../common/helpers";
 
@@ -41,12 +42,13 @@ class Education extends Component {
             <Block margin={`${remCalc(20)} 0 0 0`}>2018</Block>
             <Block margin={`${remCalc(20)} 0 0 0`}>
               Find more information{" "}
-              <a
+              <Link
                 href="https://www.ncirl.ie/Courses/Course-Details/course/HDCOMP"
                 target="__blank"
+                rel="noopener noreferrer"
               >
                 here
-              </a>
+              </Link>
               .
             </Block>
           </Accordion.Content>
@@ -69,12 +71,13 @@ class Education extends Component {
             <Block margin={`${remCalc(20)} 0 0 0`}>2013</Block>
             <Block margin={`${remCalc(20)} 0 0 0`}>
               Find more information{" "}
-              <a
+              <Link
                 href="http://www.lit.ie/Courses/HDipBusinessManagement/default.aspx"
                 target="__blank"
+                rel="noopener noreferrer"
               >
                 here
-              </a>
+              </Link>
               .
             </Block>
           </Accordion.Content>
@@ -98,12 +101,13 @@ class Education extends Component {
             <Block margin={`${remCalc(20)} 0 0 0`}>2012</Block>
             <Block margin={`${remCalc(20)} 0 0 0`}>
               Find more information{" "}
-              <a
+              <Link
                 href="http://lit.ie/Courses/LC286/default.aspx"
                 target="__blank"
+                rel="noopener noreferrer"
               >
                 here
-              </a>
+              </Link>
               .
             </Block>
           </Accordion.Content>

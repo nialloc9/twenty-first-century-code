@@ -11,7 +11,7 @@ class CardSix extends Component {
     render(){
         return (
             <SoftLink
-                to="/css"
+                to="/style"
             >
                 <Card>
                     <Block
@@ -24,6 +24,7 @@ class CardSix extends Component {
                             fluid
                             width="100%"
                             height="100% !important"
+                            alt="Style Articles"
                             src={css3Blue}
                         />
                     </Block>

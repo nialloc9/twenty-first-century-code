@@ -2,16 +2,11 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import { setReduxPushDetails } from '../../actions/npm';
 import logo from '../../static/images/projects/reduxPush/logo.png';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
 import withLoader from '../../hoc/withLoader';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 const LoadingBlock = withLoader(Block);
 
@@ -36,9 +31,6 @@ class ReduxPush extends PureComponent{
 
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -53,7 +45,7 @@ class ReduxPush extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    NPM package: <a target="_blank" href="https://www.npmjs.com/package/redux-push">redux-push</a>
+                    NPM package: <Link target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/redux-push">redux-push</Link>
                 </Block>
 
                 <LoadingBlock loading={reduxPushLoading}  margin={`${remCalc(20)} 0`}>
@@ -61,7 +53,7 @@ class ReduxPush extends PureComponent{
                 </LoadingBlock>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/angularjs-should-i-invest-web-app">GitHub</a>
+                    Source code: <Link target="_blank" href="https://github.com/nialloc9/angularjs-should-i-invest-web-app">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>

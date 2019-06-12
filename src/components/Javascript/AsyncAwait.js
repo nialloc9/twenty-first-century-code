@@ -1,21 +1,13 @@
 import React, { PureComponent } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import blueArrow from '../../static/images/projects/asyncAwait/blueArrow.jpg';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class AsyncAwait extends PureComponent{
 
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -30,7 +22,7 @@ class AsyncAwait extends PureComponent{
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <a target="_blank" href="https://github.com/nialloc9/asyncAwait">GitHub</a>
+                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/asyncAwait">GitHub</Link>
                 </Block>
 
                 <Block margin={`${remCalc(20)} 0`}>
@@ -70,7 +62,7 @@ const nestedPromises = () => {
                     `}
                 </CodeBlock>
                 <Block>
-                    With async/await the asynchronous function will return a <a target="__blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">AsyncFunction object</a>.
+                    With async/await the asynchronous function will return a <Link target="__blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">AsyncFunction object</Link>.
                     When the async function is called it returns a promise. When the function returns a value the promise will be resolved. When it throws an exception the promise will be rejected. Inside the aync funtion we can
                     use the await expression which will pause the operation of the function until it is resolved and returns it's value.
                 </Block>

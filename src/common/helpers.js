@@ -44,3 +44,18 @@ export const trimString = ({ string, max, start, end }) => {
 
     return string.length > max ? `${string.substring(start, end)}...` : string
 };
+
+/**
+ * @description creates a random string of numbers and characters
+ * @param {number} length
+ * @returns {string}
+ */
+export const generateId = (length = 10) => {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   
+    for ( let index = 0; index < length; index++ ) {
+       result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+ }

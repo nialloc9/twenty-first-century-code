@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Message } from "semantic-ui-react";
 import Block from "../../components/Common/Styled/Block";
 import SoftLink from "../../components/Common/Styled/SoftLink";
+import Link from "../../components/Common/Styled/Link";
 
 class Other extends Component {
   render() {
@@ -24,19 +25,20 @@ class Other extends Component {
             </Message.Item>
             <Message.Item>
               Created{" "}
-              <a
+              <Link
                 href="https://github.com/nialloc9/ocwebtech-source-code"
                 target="__blank"
+                rel="noopener noreferrer"
               >
                 OCWebTech
-              </a>
+              </Link>
               . 2016
             </Message.Item>
             <Message.Item>
               Created{" "}
-              <a href="https://github.com/nialloc9/igoalo" target="__blank">
+              <Link href="https://github.com/nialloc9/igoalo" target="__blank" rel="noopener noreferrer">
                 iGoalo social network
-              </a>
+              </Link>
               . 2015
             </Message.Item>
             <Message.Item>TOPIK korean examinations level 2. 2015</Message.Item>

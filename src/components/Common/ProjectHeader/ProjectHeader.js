@@ -3,12 +3,7 @@ import PropTypes from "prop-types";
 import { Dropdown, Header as SemanticHeader } from "semantic-ui-react";
 import Header from "../Styled/Header";
 import Block from "../Styled/Block";
-import theme from "../../../config/theme";
 import { remCalc } from "../../../common/helpers";
-
-const {
-  colors: { fontColor }
-} = theme;
 
 class ProjectHeader extends Component {
   static propTypes = {
@@ -37,11 +32,11 @@ class ProjectHeader extends Component {
     const { title, subTitle, dropdown, dropdownWidth, ...rest } = this.props;
     return (
       <Block>
-        <Block margin={`${remCalc(20)} 0`}>
-          <Header as="h1" color={fontColor}>
+        <Block margin={`${remCalc(20)} 0 0 0`} mobilePadding={`${remCalc(20)} 0`}>
+          <Header as="h1">
             {title}
             <SemanticHeader.Subheader>
-              <Block color={fontColor} maxWidth={remCalc(300)}>
+              <Block >
                 {subTitle}
               </Block>
             </SemanticHeader.Subheader>

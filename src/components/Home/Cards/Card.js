@@ -3,7 +3,7 @@ import Block from '../../../components/Common/Styled/Block';
 import theme from '../../../config/theme';
 import { remCalc } from '../../../common/helpers';
 
-const { colors: { first, third, fourth } } = theme;
+const { colors: { third, fourth } } = theme;
 
 
 const hoverBoxShadow = `-1px 1px ${fourth},
@@ -25,7 +25,8 @@ class Card extends Component {
             hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
             cursor="pointer"
             clipPath="circle(45%)"
-            hoverClipPatb="circle(100%)"
+            tabletClipPath="circle(100%)"
+            hoverClipPath="circle(100%)"
             {...this.props}
         />
     }

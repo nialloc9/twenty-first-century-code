@@ -1,22 +1,18 @@
 import React, { PureComponent } from 'react'
-import Block from '../Common/Styled/Block';
-import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import {Block, CodeBlock, Image, Link} from '../Common/Styled';
 import checkBtnInputCorrectNumber from '../../static/images/projects/captcha/checkBtnInputCorrectNumber.png';
 import checkBtnInputWrongNumber from '../../static/images/projects/captcha/checkBtnInputWrongNumber.png';
-import theme from '../../config/theme';
 import { remCalc } from '../../common/helpers';
-
-const { colors: { fontColor }, fontSize, lineHeight } = theme;
 
 class Captcha extends PureComponent{
 
+    shouldComponentUpdate() {
+        return false
+    }
+    
     render(){
         return(
             <Block
-                fontColor={fontColor}
-                fontSize={fontSize}
-                lineHeight={lineHeight}
                 maxWidth={remCalc(800)}
                 tabletHorizontalMaxWidth={remCalc(600)}
                 mobileMaxWidth={remCalc(300)}
@@ -32,10 +28,10 @@ class Captcha extends PureComponent{
 
                 <Block margin={`${remCalc(20)} 0`}>
                     <Block>
-                        Source code: ES6: <a target="_blank" href="https://github.com/nialloc9/es6CaptchaGenAndChecker">GitHub</a>
+                        Source code: ES6: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/es6CaptchaGenAndChecker">GitHub</Link>
                     </Block>
                     <Block>
-                        Source code: ES5 with jQuery: <a target="_blank" href="https://github.com/nialloc9/captchaImageGeneratorandChecker">GitHub</a>
+                        Source code: ES5 with jQuery: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/captchaImageGeneratorandChecker">GitHub</Link>
                     </Block>
                 </Block>
 
