@@ -63,7 +63,7 @@ class ReduxPush extends PureComponent{
                     redux-push makes it all simple.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`import { applyMiddleware } from "redux";
 import reduxPush from 'redux-push';
 const middleware = applyMiddleware([reduxPush])
@@ -76,7 +76,7 @@ const middleware = applyMiddleware([reduxPush])
                     To send a notification users need only dispatch an action with type of PUSH_SET that can be imported from the redux-push package.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`import  { PUSH_SET } from 'redux-push';
 
 ...

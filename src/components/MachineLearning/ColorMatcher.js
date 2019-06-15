@@ -58,7 +58,7 @@ class ColorMatcher extends PureComponent {
           as white text and yellow background.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
           {`
 const canvas = document.getElementById("canvas");
 const input = document.getElementById("color-picker");

@@ -70,7 +70,7 @@ class FindTheDoor extends Component{
                 </Block>
 
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package com.ocwebtech.sssa;
 
@@ -139,7 +139,7 @@ public class Main extends StateBasedGame{
                     to be handled.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package com.ocwebtech.sssa;
 
@@ -232,7 +232,7 @@ public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
                 />
             </Block>
 
-            <CodeBlock margin={`${remCalc(20)} 0`}>
+            <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package com.ocwebtech.sssa;
 

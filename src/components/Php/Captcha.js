@@ -54,7 +54,7 @@ class Captcha extends PureComponent{
                     to discuss the server side php code and it's operation.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="php" margin={`${remCalc(20)} 0`}>
 {`
 <?php
 session_start();
@@ -145,7 +145,7 @@ imagedestroy($image);
                     destroy the image to free up memory.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="php" margin={`${remCalc(20)} 0`}>
 {`
 <?php
 session_start();

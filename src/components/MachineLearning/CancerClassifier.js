@@ -90,7 +90,7 @@ class CancerClassifier extends PureComponent {
           kNearesteNeighbours.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
           {`
 import numpy, pandas, pickle
 from os import path

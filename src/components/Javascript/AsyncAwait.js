@@ -37,7 +37,7 @@ class AsyncAwait extends PureComponent{
                     below where multiple promises used inside the then's of other promises starts to get unmanagable quickly.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 /**
  * a function that resolves after 2 seconds
@@ -72,7 +72,7 @@ const nestedPromises = () => {
                     In our example the waitFunction will be called with hello which will wait 2 seconds before moving to messageTwo which will wait for another 2 seconds before resolving. Now are
                     returned values from messageOne and messageTwo are printed out to the screen showing hello world.
                 </Block>
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 /**
  * a function that resolves after 2 seconds
@@ -112,7 +112,7 @@ const asyncAwait = async () => {
                 </Block>
 
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 /**
  * a function that resolves after 2 seconds
@@ -150,7 +150,7 @@ const promiseAll = async () => {
                     an excellant way of using async/await.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 /**
  * a function that resolves after 2 seconds

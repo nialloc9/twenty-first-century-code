@@ -34,7 +34,7 @@ class VerifyEmail extends PureComponent{
                     and look at the auth.controller script which is responsible for checking the status of a user’s email authentication.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="php" margin={`${remCalc(20)} 0`}>
 {`
 <?php
 
@@ -140,7 +140,7 @@ class Auth{
                     Now let’s look at the script that handles the http requests sent from the client in relation to email authentication:
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="php" margin={`${remCalc(20)} 0`}>
 {`
   <?php
   require_once '../utilites/connect.utilites.php';

@@ -45,7 +45,7 @@ class BreathFirst extends Component {
           5 nodes.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
           {`
 package breadthfirstsearch;
 
@@ -77,7 +77,7 @@ public class BreadthFirstSearch
           children and neighbouring nodes.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
           {`
 package breadthfirstsearch;
 
@@ -113,7 +113,7 @@ public class BreadthFirstSearch
           Next a method to allow us to add witdths to the vertices.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
           {`
 package breadthfirstsearch;
 

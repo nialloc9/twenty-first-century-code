@@ -32,7 +32,7 @@ class InstantMessenger extends Component{
                     responsible for running the client side and creates an instance of Server.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package server;
 
@@ -53,7 +53,7 @@ public class ServerTest {
                     side running so the client can connect. Let’s look at the Server class and see how it does this.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package server;
 
@@ -269,7 +269,7 @@ public class Server extends JFrame{
                     side too. First there are two classes same as with server. Here is the ClientTest class responsoible for running the client side.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package client;
 
@@ -294,7 +294,7 @@ public class ClientTest {
                     in for the {`constructor`} when creating the instance of our class 127.0.0.1 above. Also we need to pass in the socket to connect to. This is the same as the one on the server side.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package client;
 

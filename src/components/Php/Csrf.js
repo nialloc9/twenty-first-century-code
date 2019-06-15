@@ -50,7 +50,7 @@ class Csrf extends PureComponent{
                     the client. Let’s work backwards and look at the csrfToken.auth script first.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="php" margin={`${remCalc(20)} 0`}>
 {`
 <?php
 if(!isset($_SESSION)){

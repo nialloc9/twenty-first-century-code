@@ -45,7 +45,7 @@ class BreathFirst extends Component {
           there is only one solution to be found.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
           {`
 package depthfirst;
 

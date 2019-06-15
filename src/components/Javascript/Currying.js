@@ -31,7 +31,7 @@ class Currying extends PureComponent{
                     able to reduce duplicate code that would otherwise cause bloat. Now let's look at our first curried function:
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
 `
 /**
@@ -57,7 +57,7 @@ console.log("Thirty:" + thirty); //Thirty: 30
                     how useful and reuseable curried functions can be.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 /**
@@ -85,7 +85,7 @@ console.log(greetJohn); //Hello John
                     Next we will see a practical example of how curried functions can be used.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 /**

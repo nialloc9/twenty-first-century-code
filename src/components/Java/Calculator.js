@@ -35,7 +35,7 @@ class Calculator extends PureComponent{
                     And lastly the Main app is responsible for running the app so let’s look at this class first.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package super_simple_calculator;
 
@@ -53,7 +53,7 @@ public class Main {
                     So if we look at the main class upon running this class a new instance of the graphic user interface is created and a the run method called. Let’s look at this below.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package super_simple_calculator;
 
@@ -286,7 +286,7 @@ public class gui implements ActionListener{
                     Let’s now look at the Cal class and the logic that is applied when the methods are called.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
 {`
 package super_simple_calculator;
 

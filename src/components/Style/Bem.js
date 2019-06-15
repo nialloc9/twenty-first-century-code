@@ -41,7 +41,7 @@ class Bem extends PureComponent{
                     This will be something like 'disabled' or for size such as '--size-large'.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="css" margin={`${remCalc(20)} 0`}>
                     {`
 .button {
     font-size: 10px;

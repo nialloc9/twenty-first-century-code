@@ -38,7 +38,7 @@ class AsyncAwait extends Component{
     renderParagraph = ({ margin = `${remCalc(20)} 0`, text }) => <Block key={`paragraph-${text}`} margin={margin}>{text}</Block>
     renderPublished = ({  margin = `${remCalc(20)} 0`, href=LINKEDIN, author = "Niall O' Connor", date }) => <Block margin={margin} key={`published-${author}`}>Published by <Link href={href} target="__blank" rel="noopener noreferrer">{author}</Link> on {date}.</Block>
     
-    renderCode = ({ margin = `${remCalc(20)} 0`, code }) => <CodeBlock margin={margin} key={generateId()}>{code}</CodeBlock>
+    renderCode = ({ margin = `${remCalc(20)} 0`, code, language = "javascript" }) => <CodeBlock language={language} margin={margin} key={generateId()}>{code}</CodeBlock>
     
     renderMarkup = ({ markup }) => markup
 

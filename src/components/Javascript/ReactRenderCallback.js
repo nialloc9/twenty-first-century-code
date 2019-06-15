@@ -33,7 +33,7 @@ class ReactRenderCallback extends PureComponent{
                     common functionality to any components we want.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
 `
 import React, { PureComponent, Children, cloneElement } from "react";
@@ -73,7 +73,7 @@ class Greeting extends PureComponent {
                     The same props are passed down here that are passed in to the render callback. Now let's see how we use this component.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 import React, { Component } from 'react';
@@ -119,7 +119,7 @@ class App extends Component {
                     a higher order component can. As an added bonus lets see how we can render children too without using the callback method if we wish.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 import React, { Component } from 'react';

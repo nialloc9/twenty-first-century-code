@@ -144,7 +144,7 @@ class CancerClassifier extends PureComponent {
           pass it to scikit learn to run through it's calculation.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
           {`
 import numpy, pandas, pickle
 from sklearn import preprocessing, model_selection, svm

@@ -30,7 +30,7 @@ class NodeCluster extends PureComponent{
                     But as the saying going goes. Many hands make short work. By harnassing multiple cpu's we can handle more and more requests in shorter time.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`
 import cluster from 'cluster';
 import os from 'os';

@@ -31,7 +31,7 @@ class Generators extends PureComponent{
                     pause. The only thing that will pause a generator will be the keyword yeild inside of the function itself. The syntax for creating a generator can be seen below:
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
 `
 function *myFunc (){
@@ -46,7 +46,7 @@ function *myFunc (){
                     it can also make use of the yield keyword inside of itself. This yield allows us to pause the function and return a value.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 function *myFunc (){
@@ -66,7 +66,7 @@ function *myFunc (){
                     finished. If it has run all of it's code done will be true.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 const multiplierGenerator = function* (number) {
@@ -99,7 +99,7 @@ multiplier.next(); // 1000
                     an example of using generators with promises.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 

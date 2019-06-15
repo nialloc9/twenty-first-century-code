@@ -63,7 +63,7 @@ class KMeans extends PureComponent {
           data. We can see an example f kMeans below with scikit-learn:
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
           {`
 from matplotlib import style, pyplot
 import numpy as np

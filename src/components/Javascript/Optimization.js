@@ -48,7 +48,7 @@ class Optimization extends PureComponent {
           complexity of a peice of code in terms of time and space.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
           {`
 // task: create a function that gets the max profit possible from an array of stock prices listed in order of time.
 
@@ -100,7 +100,7 @@ const v1Result = maximiseProfitsv1(stocks);
           O(8).
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
           {`
 /**
  * @description We can clean up the code by remembering we only need what omes after the early stock price as selling comes after buying. It also reduces the space complexity
@@ -143,7 +143,7 @@ function maximiseProfitsv2(stockPrices) {
           as we were able to remove 2 variables early and later.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
           {`
 /**
  * @description We can reduce the complexity of the code by saving the min price seen previously
@@ -184,7 +184,7 @@ function maximiseProfitsv3(stockPrices) {
           lower.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
           {`
 /**
  * @description We can reduce the complexity of the code by saving the min price seen previously

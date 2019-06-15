@@ -41,7 +41,7 @@ class BreathFirst extends Component {
           A good example of where this might be
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
           {`
 package depthfirst;
 

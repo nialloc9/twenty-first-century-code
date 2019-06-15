@@ -64,7 +64,7 @@ class StockPredictor extends PureComponent {
           assigned to self to be accessed later when predicting prices.
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
           {`
 import numpy, datetime, pickle
 from classes.Stock import Stock

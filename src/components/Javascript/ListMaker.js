@@ -32,7 +32,7 @@ class ListMaker extends PureComponent{
                     and definitely one I would recommend. Below is our pubsub:
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`
 var pubsub = {
       pubsub: {}, //no events at default
@@ -76,7 +76,7 @@ module.exports = pubsub;
                     Next let’s look at our js for the actual list maker:
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`
 var list = (function () {
 
@@ -161,7 +161,7 @@ module.exports = list;
                     needed. We will be using it to bind data to our template.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
 {`
 <script id="addToListTemplate" type="text/template">
     {{#list}}

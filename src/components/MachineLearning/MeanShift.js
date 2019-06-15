@@ -86,7 +86,7 @@ class MeanShift extends PureComponent {
           Below we can see the code used to find these insights:
         </Block>
 
-        <CodeBlock margin={`${remCalc(20)} 0`}>
+        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
           {`
 import numpy, pandas
 from sklearn.cluster import MeanShift

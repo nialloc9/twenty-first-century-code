@@ -32,7 +32,7 @@ class HigherOrderFunctions extends PureComponent{
                     functions being used.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 /**
@@ -60,7 +60,7 @@ withGreeting(testFunction); // Hello
                     This is very simple. Any function passed in will be called with arguement hello. Now let's look at some more useful examples.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 /**
@@ -102,7 +102,7 @@ required({ value: name, message: "Age is required", test: handleRequiredValue })
                     handle errors.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {
                         `
 /**

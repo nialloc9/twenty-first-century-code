@@ -37,7 +37,7 @@ class BlockChain extends PureComponent{
                     in order to do that they have to modify the entire chain. We will see below that this would take an enormous amount of resources to accomplish and therefore naturally securing the chain from attack.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 class Block{
 
@@ -78,7 +78,7 @@ class Block{
                     be an acceptable hash. This will determine how much computing power will be needed so as computing power increases in the future we can just increase the difficulty.
                 </Block>
 
-                <CodeBlock margin={`${remCalc(20)} 0`}>
+                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
                     {`
 class BlockChain{
     constructor(){
