@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import Block from '../Common/Styled/Block';
 import SoftLink from '../Common/Styled/SoftLink';
-import {remCalc} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/helpers';
 import start from '../../static/images/projects/shouldIInvest/start.png';
 
 const ShouldIInvest = () => {
@@ -136,7 +136,7 @@ $scope.calculateStockRecommendation = function(){
         },
         {
             type: "markup",
-            markup: <Block margin={`${remCalc(20)} 0`}>
+            markup: <Block key={generateId()} margin={`${remCalc(20)} 0`}>
                 AngularJS is a very powerful framework and has lots of very useful features. I really enjoyed making this project so I hope you enjoyed it too and please any feedback is welcome. If you would like to know how to deal with
             callback hell when using promises click {<SoftLink to="/javascript/higher-order-functions">higher order functions</SoftLink>}.
             </Block>

@@ -52,30 +52,15 @@ class Java extends Component {
       }
     } = this.props;
 
-    let Article = null;
+    const SelectedArticle = {
+      [JAVA_CALCULATOR]: Calculator,
+      [JAVA_GAME]: FindTheDoor,
+      [JAVA_INSTANT_MESSENGER]: InstantMessenger,
+      [BREATH_FIRST_ALGORITHM]: BreathFirst,
+      [DEPTH_FIRST_ALGORITHM]: DepthFirst
+    }[article] || Overview
 
-    switch (article) {
-      case JAVA_CALCULATOR:
-        Article = Calculator;
-        break;
-      case JAVA_GAME:
-        Article = FindTheDoor;
-        break;
-      case JAVA_INSTANT_MESSENGER:
-        Article = InstantMessenger;
-        break;
-      case BREATH_FIRST_ALGORITHM:
-        Article = BreathFirst;
-        break;
-      case DEPTH_FIRST_ALGORITHM:
-        Article = DepthFirst;
-        break;
-      default:
-        Article = Overview;
-        break;
-    }
-
-    Article = withScroller(Article);
+    const Article = withScroller(SelectedArticle);
 
     return <Article />;
   };

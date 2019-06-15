@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import SoftLink from '../Common/Styled/SoftLink';
 import Block from '../Common/Styled/Block';
-import {remCalc} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/helpers';
 import telephone from '../../static/images/projects/reduxReducerMap/reducer.png';
 
 const ReduxReducerMap = () => {
@@ -12,10 +12,6 @@ const ReduxReducerMap = () => {
             src: telephone,
             size: "large",
             alt: "Green telephone"
-        },
-        {
-            type: "source",
-            href: "https://github.com/nialloc9/react-render-callback"
         },
         {
             type: "paragraph",
@@ -110,7 +106,7 @@ export default users;
         },
         {
             type: "paragraph",
-            text: `So above we two ways of creating a traditional reducer. The first using a switch statement where only one case 
+            text: `So above we see two ways of creating a traditional reducer. The first using a switch statement where only one case 
             can be implemented. This is the most common example of how to create a reducer. While yes it is okay to look at but it's an eyesore (IMO). As 
             switch statements get longer they get harder to glance through and take longer to find what you are looking for. Option 2 is a less common implentation (and in my opinion worse than the first). 
             It uses if else statements to achieve the same result but it is even harder to read.`
@@ -162,7 +158,7 @@ export default users;
         },
         {
             type: "markup",
-            markup: <Block margin={`${remCalc(20)} 0`}>I hope this article has shown you a new way of creating reducers. Check out <SoftLink to="/javascript/redux-push">redux push</SoftLink> if you are interested in redux middleware to handle browser notifications.</Block>
+            markup: <Block key={generateId()} margin={`${remCalc(20)} 0`}>I hope this article has shown you a new way of creating reducers. Check out <SoftLink to="/javascript/redux-push">redux push</SoftLink> if you are interested in redux middleware to handle browser notifications.</Block>
         },
         {
             type: "published",

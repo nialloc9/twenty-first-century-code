@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react'
+import React, { Component, Fragment } from 'react'
 import Block from '../../Common/Styled/Block';
 import CodeBlock from '../../Common/Styled/CodeBlock';
 import Image from '../../Common/Styled/Image';
@@ -9,7 +9,7 @@ import config from "../../../config/globals";
 
 const { LINKEDIN } = config
 
-class AsyncAwait extends PureComponent{
+class AsyncAwait extends Component{
 
     shouldComponentUpdate(prevProps){
         const { onShoudComponentUpdate } = this.props

@@ -24,7 +24,7 @@ class Card extends Component {
             hoverBoxShadow={hoverBoxShadow}
             hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
             cursor="pointer"
-            clipPath="circle(45%)"
+            clipPath={`circle(${remCalc(190)})`}
             tabletClipPath="circle(100%)"
             hoverClipPath="circle(100%)"
             {...this.props}

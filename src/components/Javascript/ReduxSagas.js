@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import Block from '../Common/Styled/Block';
 import SoftLink from '../Common/Styled/SoftLink';
 import Link from '../Common/Styled/Link';
-import {remCalc} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/helpers';
 import logo from '../../static/images/projects/reduxSaga/reduxSagaLogo.png';
 
 const ReduxSagas = () => {
@@ -54,7 +54,7 @@ function* fetchUsersSaga() {
         },
         {
             type: "markup",
-            markup: <Block margin={`${remCalc(20)} 0`}>
+            markup: <Block key={generateId()} margin={`${remCalc(20)} 0`}>
                 If you have read some of my previous articles and in particular my <SoftLink to="/javascript/generators">generators article</SoftLink> you
             will recognise the * next to our functions. Redux sagas harness the power of es6 generators to make aysncronous code easy to read, write, and test.
             It is fairly common advice to think of sagas as a seperate thread when learning about them. This is because I mentioned above the middleware works away from
@@ -95,7 +95,7 @@ sagaMiddleware.run(sagas);
         },
         {
             type: "markup",
-            markup: <Block margin={`${remCalc(20)} 0`}>
+            markup: <Block key={generateId()} margin={`${remCalc(20)} 0`}>
                  So, why use redux sagas? Well there are 3 main reasons. Readability, pure functions, and testability. First off, it is easier to read because it avoids callback hell that can occur when using redux thunks.
             The side effect function is pure because the call helper function does not call the api fetch function. Instead it returns an object that includes the type and function
             function to call, and arguements. This is then passed to the saga middleware that does the api call. This will then return the value to users constant from our yield. This
@@ -133,7 +133,7 @@ describe("fetch test suite", () => {
         },
         {
             type: "markup",
-            markup: <Block margin={`${remCalc(20)} 0`}>
+            markup: <Block key={generateId()} margin={`${remCalc(20)} 0`}>
                 Redux sagas in conclusion provide a clean way of handling effects in your redux application. One of the issues it solves is callback hell. If you would like to know how to deal with
             callback hell when using promises click {<SoftLink to="/javascript/higher-order-functions">higher order functions</SoftLink>}.
             </Block>
