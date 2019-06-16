@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, SoftLink, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import main from "../../static/images/projects/kMeans/main.png";
 import kmeans from "../../static/images/projects/kMeans/kmeans.png";
 import { remCalc } from "../../common/helpers";

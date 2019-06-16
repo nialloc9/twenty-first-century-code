@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, SoftLink, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import graph from "../../static/images/projects/cancerClassifier/kNearestNeighbours.png";
 import clusters from "../../static/images/projects/cancerClassifier/clusters.png";
 import { remCalc } from "../../common/helpers";

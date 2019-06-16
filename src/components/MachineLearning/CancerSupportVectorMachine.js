@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, SoftLink, Link, Image} from "../Common/Styled";
+import {Block, CodeBlock, SoftLink, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import graph from "../../static/images/projects/supportVectorMachine/hyperplanes.png";
 import supportVectorMachine1 from "../../static/images/projects/supportVectorMachine/supportVectorMachine1.png";
 import supportVectorMachine2 from "../../static/images/projects/supportVectorMachine/supportVectorMachine2.png";

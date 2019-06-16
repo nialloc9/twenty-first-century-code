@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {Image, SoftLink, CodeBlock, Block, Link} from "../Common/Styled";
+import {SoftLink, CodeBlock, Block, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
 import { remCalc } from "../../common/helpers";
 

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Image, Link} from '../Common/Styled';
+import {Block, CodeBlock, Link} from '../Common/Styled';
+import Image from "../Common/ImagePopup";
 import checkBtnInputCorrectNumber from '../../static/images/projects/captcha/checkBtnInputCorrectNumber.png';
 import checkBtnInputWrongNumber from '../../static/images/projects/captcha/checkBtnInputWrongNumber.png';
 import { remCalc } from '../../common/helpers';

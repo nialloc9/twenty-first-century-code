@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {Image, Link, CodeBlock, Block} from "../Common/Styled";
+import {Link, CodeBlock, Block} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import breathFirstAlgorithm from "../../static/images/projects/breathFirst/breathFirstAlgorithm.gif";
 import { remCalc } from "../../common/helpers";
 

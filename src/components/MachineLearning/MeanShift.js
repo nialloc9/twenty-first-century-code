@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, SoftLink, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, SoftLink, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import graph from "../../static/images/projects/meanShift/graph.png";
 import main from "../../static/images/projects/meanShift/main.png";
 import { remCalc } from "../../common/helpers";

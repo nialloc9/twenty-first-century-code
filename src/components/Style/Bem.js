@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import Block from '../Common/Styled/Block';
 import CodeBlock from '../Common/Styled/CodeBlock';
-import Image from '../Common/Styled/Image';
+import Image from "../Common/ImagePopup";
 import Link from '../Common/Styled/Link';
 import logo from '../../static/images/projects/bem/logo.png';
 import { remCalc } from '../../common/helpers';

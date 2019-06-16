@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import Block from "../Common/Styled/Block";
-import Image from "../Common/Styled/Image";
+import Image from "../Common/ImagePopup";
 import machineLearning from "../../static/images/new/machineLearning.png";
 import { remCalc } from "../../common/helpers";
 

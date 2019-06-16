@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Image, Link} from '../Common/Styled';
+import {Block, CodeBlock, Link} from '../Common/Styled';
+import Image from '../Common/ImagePopup';
 import together from '../../static/images/projects/currying/together-3-1162465-1278x903.jpg';
 import { remCalc } from '../../common/helpers';
 

@@ -1,6 +1,7 @@
 /* eslint no-octal-escape: 0 */
 import React, { Component } from 'react'
-import {Block, CodeBlock, Image, Link} from '../Common/Styled';
+import {Block, CodeBlock, Link} from '../Common/Styled';
+import Image from '../Common/ImagePopup';
 import newGame from '../../static/images/projects/javaFindTheDoorGame/newGame.png';
 import mainMenu from '../../static/images/projects/javaFindTheDoorGame/mainMenu.png';
 import collisionCantContinue from '../../static/images/projects/javaFindTheDoorGame/collisionCantContinue.png';

@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Block, SoftLink, Image, Link} from '../Common/Styled';
+import {Block, SoftLink, Link} from '../Common/Styled';
+import Image from "../Common/ImagePopup";
 import home from '../../static/images/projects/apolloChat/home.png';
 import mainPage from '../../static/images/projects/apolloChat/mainPage.png';
 import room from '../../static/images/projects/apolloChat/room.png';

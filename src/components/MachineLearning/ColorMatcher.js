@@ -1,6 +1,7 @@
 /* eslint no-useless-escape: 0 */
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import main from "../../static/images/projects/colorMatcher/main.png";
 import { remCalc } from "../../common/helpers";
 

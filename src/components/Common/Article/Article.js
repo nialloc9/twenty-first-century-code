@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Block from '../../Common/Styled/Block';
 import CodeBlock from '../../Common/Styled/CodeBlock';
-import Image from '../../Common/Styled/Image';
+import ImagePopup from '../../Common/ImagePopup';
 import Link from '../../Common/Styled/Link';
 import { remCalc, generateId } from '../../../common/helpers';
 import withLoader from '../../../hoc/withLoader';
@@ -20,7 +20,7 @@ class AsyncAwait extends Component{
     }
 
     renderHeader = ({ src, alt, size = "medium", margin="auto" }) => (
-        <Image
+        <ImagePopup
             src={src}
             margin={margin}
             size={size}

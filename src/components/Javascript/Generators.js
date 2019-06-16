@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Image, SoftLink, Link} from '../Common/Styled';
+import {Block, CodeBlock, SoftLink, Link} from '../Common/Styled';
+import Image from '../Common/ImagePopup';
 import generator from '../../static/images/projects/generators/generator.jpg';
 import { remCalc } from '../../common/helpers';
 

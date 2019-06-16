@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Image, Link} from '../Common/Styled';
+import {Block, CodeBlock, Link} from '../Common/Styled';
+import Image from "../Common/ImagePopup";
 import telephone from '../../static/images/projects/reactRenderCallback/telephone-handset-3179133_1280.jpg';
 import { remCalc } from '../../common/helpers';
 

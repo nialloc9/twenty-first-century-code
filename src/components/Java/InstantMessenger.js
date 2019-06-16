@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Image, Block, CodeBlock, Link} from '../Common/Styled';
+import {Block, CodeBlock, Link} from '../Common/Styled';
+import Image from '../Common/ImagePopup';
 import instantMessengerRunning from '../../static/images/projects/javaInstantMessenger/instantMessengerRunning.png';
 import burningHouse from '../../static/images/projects/javaInstantMessenger/burningHouse.png';
 import { remCalc } from '../../common/helpers';

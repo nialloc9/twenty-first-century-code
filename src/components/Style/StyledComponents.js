@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import Block from '../Common/Styled/Block';
-import Image from '../Common/Styled/Image';
+import Image from "../Common/ImagePopup";
 import Link from '../Common/Styled/Link';
 import styledComponentsLogo from '../../static/images/projects/styledComponents/styledComponentsLogo.png';
 import styledBlock from '../../static/images/projects/styledComponents/styledBlock.png';

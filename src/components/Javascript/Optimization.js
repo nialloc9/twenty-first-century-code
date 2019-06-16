@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import optimization from "../../static/images/projects/optimization/optimization.jpg";
 import { remCalc } from "../../common/helpers";
 

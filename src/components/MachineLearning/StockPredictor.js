@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import {Block, CodeBlock, Image, Link} from "../Common/Styled";
+import {Block, CodeBlock, Link} from "../Common/Styled";
+import Image from "../Common/ImagePopup";
 import graph from "../../static/images/projects/stockPredictor/graph.png";
 import algorithm from "../../static/images/projects/stockPredictor/algorithm.png";
 import { remCalc } from "../../common/helpers";
