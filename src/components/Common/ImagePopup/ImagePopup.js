@@ -30,7 +30,7 @@ class ImagePopup extends Component {
     render() {
         return (
             <Fragment>
-                <Image cursor="pointer" {...this.props} onClick={this.onOpen} />
+                <Image hoverOpacity={0.6} hoverTransition="opacity 1s ease-in-out" cursor="pointer" {...this.props} onClick={this.onOpen} />
                 {this.renderLightBox()}
             </Fragment>
         );

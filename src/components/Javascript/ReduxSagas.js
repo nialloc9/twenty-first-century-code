@@ -6,7 +6,7 @@ import Link from '../Common/Styled/Link';
 import {remCalc, generateId} from '../../common/helpers';
 import logo from '../../static/images/projects/reduxSaga/reduxSagaLogo.png';
 
-const ReduxSagas = () => {
+export default () => {
     const data = [
         {
             type: "header",
@@ -144,7 +144,5 @@ describe("fetch test suite", () => {
         },
     ]
 
-    return <Article data={data} />
+    return <Article data={data} />   
 }
-
-export default ReduxSagas;

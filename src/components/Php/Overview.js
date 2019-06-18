@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import Block from '../Common/Styled/Block';
-import Image from "../Common/ImagePopup";
+import {Block, Image} from '../Common/Styled';
 import phpBlue from '../../static/images/phpBlue.png';
 import { remCalc } from '../../common/helpers';
 

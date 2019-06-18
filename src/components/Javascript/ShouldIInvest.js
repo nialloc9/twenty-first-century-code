@@ -5,7 +5,7 @@ import SoftLink from '../Common/Styled/SoftLink';
 import {remCalc, generateId} from '../../common/helpers';
 import start from '../../static/images/projects/shouldIInvest/start.png';
 
-const ShouldIInvest = () => {
+export default () => {
     const data = [
         {
             type: "header",
@@ -149,5 +149,3 @@ $scope.calculateStockRecommendation = function(){
 
     return <Article data={data} />
 }
-
-export default ShouldIInvest;

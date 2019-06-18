@@ -20,6 +20,15 @@ const Image = Styled(({ cursor, display, height, width, maxWidth, mobileWidth, .
     @media ${MOBILE_SCREEN} {
         ${({ mobileWidth = false }) => mobileWidth && `width: ${mobileWidth};`}
     }
+
+    &:hover {
+        ${({ hoverTransition = false}) => hoverTransition && `transition: ${hoverTransition};`}
+        ${({ hoverTransition = false}) => hoverTransition && `-webkit-transition: ${hoverTransition};`}
+        ${({ hoverTransform = false }) => hoverTransform && `-ms-transform: ${hoverTransform};`}
+        ${({ hoverTransform = false }) => hoverTransform && `-webkit-transform: ${hoverTransform};`}
+        ${({ hoverTransform = false }) => hoverTransform && `transform: ${hoverTransform};`}
+        ${({ hoverOpacity = false }) => hoverOpacity && `opacity: ${hoverOpacity};`}
+    }
 `;
 
 export default Image;

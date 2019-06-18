@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
-import {Block, Link} from '../Common/Styled';
-import Image from '../Common/ImagePopup';
+import {Block, Link, Image} from '../Common/Styled';
 import javaBlue from '../../static/images/javaBlue.png';
 import globals from '../../config/globals';
 import { remCalc } from '../../common/helpers';

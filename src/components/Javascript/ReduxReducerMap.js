@@ -5,7 +5,7 @@ import Block from '../Common/Styled/Block';
 import {remCalc, generateId} from '../../common/helpers';
 import telephone from '../../static/images/projects/reduxReducerMap/reducer.png';
 
-const ReduxReducerMap = () => {
+export default () => {
     const data = [
         {
             type: "header",
@@ -168,5 +168,3 @@ export default users;
 
     return <Article data={data} />
 }
-
-export default ReduxReducerMap;
