@@ -1,40 +1,28 @@
-import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Link} from '../Common/Styled';
-import Image from '../Common/ImagePopup';
+import React from 'react'
+import Article from '../Common/Article';
 import together from '../../static/images/projects/currying/together-3-1162465-1278x903.jpg';
-import { remCalc } from '../../common/helpers';
 
-class Currying extends PureComponent{
-    render(){
-        return(
-            <Block
-                maxWidth={remCalc(800)}
-                tabletHorizontalMaxWidth={remCalc(600)}
-                mobileMaxWidth={remCalc(300)}
-            >
-                <Block>
-                    <Image
-                        src={together}
-                        margin="auto"
-                        size="large"
-                        alt="Together image"
-                    />
-                </Block>
-
-                <Block margin={`${remCalc(20)} 0`}>
-                    Source code: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/currying">GitHub</Link>
-                </Block>
-
-                <Block margin={`${remCalc(20)} 0`}>
-                    Put simply currying is a way of creating functions that allow to pass some of the arguements needed for it and the rest at another time. This
-                    means you can pass all of the arguements expected and get a result or pass some of them and get a function returned that expects the rest. Currying is
-                    a concept from functional programming that allows us to build functions that are consistent, easy to use, and very readable. Using partial functions we are
-                    able to reduce duplicate code that would otherwise cause bloat. Now let's look at our first curried function:
-                </Block>
-
-                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
-                    {
-`
+export default () => {
+    const data = [
+        {
+            type: 'header',
+            src: together,
+            alt: 'Together image'
+        },
+        {
+            type: 'source',
+            href: 'https://github.com/nialloc9/currying'
+        },
+        {
+            type: 'paragraph',
+            text: `Put simply currying is a way of creating functions that allow to pass some of the arguements needed for it and the rest at another time. This
+            means you can pass all of the arguements expected and get a result or pass some of them and get a function returned that expects the rest. Currying is
+            a concept from functional programming that allows us to build functions that are consistent, easy to use, and very readable. Using partial functions we are
+            able to reduce duplicate code that would otherwise cause bloat. Now let's look at our first curried function:`
+        },
+        {
+            type: 'code',
+            code: `
 /**
  * a simple example of how to add 2 numbers together using currying
  * @param number1 - This is the set number. This will not change.
@@ -48,19 +36,17 @@ const thirty = add10(20);
 
 console.log("Twenty:" + twenty); //Twenty: 20
 console.log("Thirty:" + thirty); //Thirty: 30
-`
-                    }
-                </CodeBlock>
-
-                <Block margin={`${remCalc(20)} 0`}>
-                    This is a very simple example of how we pass one arguement to begin with of 10. This returns a function expecting another arguement before returingin a result.
-                    Now we can use this anytime we want to add 10 to a number. Useful? Not really but the concept is clear. Below, you can see two more complicated examples that show
-                    how useful and reuseable curried functions can be.
-                </Block>
-
-                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
-                    {
-                        `
+            `
+        },
+        {
+            type: 'paragraph',
+            text: `This is a very simple example of how we pass one arguement to begin with of 10. This returns a function expecting another arguement before returingin a result.
+            Now we can use this anytime we want to add 10 to a number. Useful? Not really but the concept is clear. Below, you can see two more complicated examples that show
+            how useful and reuseable curried functions can be.`
+        },
+        {
+            type: 'code',
+            code: `
 /**
  * creates a greeting string using a deeply curried function
  * @param greeting
@@ -77,18 +63,16 @@ const greetJohn = seperator("John");
 
 console.log(greetNiall); //Hello Niall
 console.log(greetJohn); //Hello John
-`
-                    }
-                </CodeBlock>
-
-                <Block margin={`${remCalc(20)} 0`}>
-                    This is an example of a deeply curried function that has more than one step. We can construct our gretting in multiple differant ways in a clean and reuseable way.
-                    Next we will see a practical example of how curried functions can be used.
-                </Block>
-
-                <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
-                    {
-                        `
+            `
+        },
+        {
+            type: 'paragraph',
+            text: `This is an example of a deeply curried function that has more than one step. We can construct our gretting in multiple differant ways in a clean and reuseable way.
+            Next we will see a practical example of how curried functions can be used.`
+        },
+        {
+            type: 'code',
+            code: `
 /**
  * converts an input into any type of units
  * @param units
@@ -111,16 +95,13 @@ const twentyTwoMilesToKm = milesToKm(22);
 console.log(tenPxToRem); //0.71428571rem
 console.log(tenPxToEm); //0.71428571em
 console.log(twentyTwoMilesToKm); //35.405919999999995 miles
-`
-                    }
-                </CodeBlock>
+            `
+        },
+        {
+            type: 'published',
+            date: `02/02/2018`
+        },
+    ];
 
-                <Block margin={`${remCalc(20)} 0`}>
-                    02/02/2018
-                </Block>
-            </Block>
-        )
-    }
-}
-
-export default Currying;
+    return <Article data={data} />;
+};

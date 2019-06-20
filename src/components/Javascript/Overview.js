@@ -20,7 +20,7 @@ export default () => {
             type: 'markup',
             markup: <Block margin={`${remCalc(20)} 0`}>
             Here we will look at some javascript projects that I completed. Javascript is my language of choice and hopefully you
-            will find these projects rich in detail and to your liking. Some of these projects are wrote in es5x while others are
+            will find these projects rich in detail and to your liking. Some of these projects are wrote in es5 while others are
             wrote using es6 and compiled back to es5 using a compiler. Here you will find differant code patterns aswell astechnoligies such as redux and react.
             All the source code will be available on <Link target="_blank" rel="noopener noreferrer" href={GITHUB}>github</Link> and I will provide links where appropriate.
             </Block>

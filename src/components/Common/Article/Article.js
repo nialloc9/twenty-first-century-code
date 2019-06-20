@@ -3,6 +3,7 @@ import Block from '../../Common/Styled/Block';
 import CodeBlock from '../../Common/Styled/CodeBlock';
 import ImagePopup from '../../Common/ImagePopup';
 import Link from '../../Common/Styled/Link';
+import List from "../List";
 import { remCalc, generateId } from '../../../common/helpers';
 import withLoader from '../../../hoc/withLoader';
 import config from "../../../config/globals";
@@ -42,6 +43,8 @@ class AsyncAwait extends Component{
     
     renderMarkup = ({ markup }) => markup
 
+    renderList = ({ data }) => <List data={data} />
+
     renderNpm = ({ isLoading, href, text = "NPM", downloads }) => {
 
         const LoadingBlock = withLoader(Block);
@@ -77,6 +80,7 @@ class AsyncAwait extends Component{
             "published": this.renderPublished,
             "markup": this.renderMarkup,
             "npm": this.renderNpm,
+            "list": this.renderList,
         }
 
         return data.map(o => map[o.type](o))

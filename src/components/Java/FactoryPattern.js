@@ -1,49 +1,35 @@
-import React, { Component } from "react";
-import {SoftLink, CodeBlock, Block, Link} from "../Common/Styled";
-import Image from "../Common/ImagePopup";
+import React from 'react'
+import Article from '../Common/Article';
+import {SoftLink, Block} from "../Common/Styled";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
 import { remCalc } from "../../common/helpers";
 
 
-class BreathFirst extends Component {
-  render() {
-    return (
-      <Block
-        maxWidth={remCalc(800)}
-        tabletHorizontalMaxWidth={remCalc(600)}
-        mobileMaxWidth={remCalc(300)}
-      >
-        <Block>
-          <Image
-            src={depthFirst}
-            margin="auto"
-            size="large"
-            alt="Search image"
-          />
-        </Block>
 
-        <Block margin={`${remCalc(20)} 0`}>
-          Source code:{" "}
-          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/factory-pattern">
-            GitHub
-          </Link>
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Today we are going to look at the factory pattern for writing code.
-          The factory pattern is a creational design pattern in that it creates
-          a new object an returns it. A good example of where this might be a
-          suitable pattern to choose is in the case of a library that has lots
-          of books with differant authors. It can be called over and over to
-          create new books assigning an author to each.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          A good example of where this might be
-        </Block>
-
-        <CodeBlock language="java" margin={`${remCalc(20)} 0`}>
-          {`
+export default () => {
+  const data = [
+    {
+      type: 'header',
+      src: depthFirst,
+      alt: 'Search'
+    },
+    {
+      type: 'source',
+      href: 'https://github.com/nialloc9/factory-pattern'
+    },
+    {
+      type: 'paragraph',
+      text: `Today we are going to look at the factory pattern for writing code.
+      The factory pattern is a creational design pattern in that it creates
+      a new object an returns it. A good example of where this might be a
+      suitable pattern to choose is in the case of a library that has lots
+      of books with differant authors. It can be called over and over to
+      create new books assigning an author to each.`
+    },
+    {
+      type: 'code',
+      language: 'java',
+      code: `
 package depthfirst;
 
 /**
@@ -120,34 +106,35 @@ public class DepthFirst
         g.DFS(); // 0 1 2 3
     }
 }
-
-`}
-        </CodeBlock>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          We can see this breath first algorithm is recursive in that it calls
-          its utility DFSUtil over and over untill all vertices have been
-          visited fully. First we add a number of vertices and add some
-          nodes(edges) to each one. Next we call the DFS method which traverses
-          the vertices. Before it moves onto the next vertice it travers all the
-          descendant nodes to the end. This is depth first.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          We can see clearly how we might use this algorithm to search a tree to
-          find a value. We can also clearly see the difference between depth
-          first that searches each vertice to the end before moving to the next
-          and the{" "}
-          <SoftLink to="/java/breath-first-algorithm">
-            breath first algorithm
-          </SoftLink>{" "}
-          which searches all neighbouring vertices before moving down.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>Published on 05/09/2018</Block>
+      `
+    },
+    {
+      type: 'paragraph',
+      text: `We can see this breath first algorithm is recursive in that it calls
+      its utility DFSUtil over and over untill all vertices have been
+      visited fully. First we add a number of vertices and add some
+      nodes(edges) to each one. Next we call the DFS method which traverses
+      the vertices. Before it moves onto the next vertice it travers all the
+      descendant nodes to the end. This is depth first.`
+    },
+    {
+      type: 'markup',
+      markup: <Block margin={`${remCalc(20)} 0`}>
+      We can see clearly how we might use this algorithm to search a tree to
+      find a value. We can also clearly see the difference between depth
+      first that searches each vertice to the end before moving to the next
+      and the{" "}
+      <SoftLink to="/java/breath-first-algorithm">
+        breath first algorithm
+      </SoftLink>{" "}
+      which searches all neighbouring vertices before moving down.
       </Block>
-    );
-  }
-}
+    },
+    {
+      type: 'published',
+      date: `05/09/2018`
+    },
+  ];
 
-export default BreathFirst;
+  return <Article data={data} />;
+};

@@ -33,7 +33,31 @@
 				"	code: ``",
 			  "},"
 		],
-		"description": "Log output to console"
+		"description": "Article snippet for javascript code"
+	},
+	"article-code-java": {
+		"scope": "javascript",
+		"prefix": "article-code-java",
+		"body": [
+			"{",
+				"	type: 'code',",
+				"	language: 'java',",
+				"	code: ``",
+			  "},"
+		],
+		"description": "Article snippet for java code"
+	},
+	"article-code-python": {
+		"scope": "javascript",
+		"prefix": "article-code-python",
+		"body": [
+			"{",
+				"	type: 'code',",
+				"	language: 'python',",
+				"	code: ``",
+			  "},"
+		],
+		"description": "Article snippet for java code"
 	},
 	"article-header": {
 		"scope": "javascript",
@@ -104,5 +128,16 @@
 			"},"
 		],
 		"description": "Markup language"
+	},
+	"article-list": {
+		"scope": "javascript",
+		"prefix": "article-list",
+		"body": [
+			"{",
+				"	type: 'list',",
+				"	data: []",
+			"},"
+		],
+		"description": "List"
 	}
 }
