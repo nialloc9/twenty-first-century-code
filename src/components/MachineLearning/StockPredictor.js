@@ -1,72 +1,57 @@
-import React, { PureComponent } from "react";
-import {Block, CodeBlock, Link} from "../Common/Styled";
-import Image from "../Common/ImagePopup";
+import React from 'react'
+import Article from '../Common/Article';
+import {Block, Link} from "../Common/Styled";
 import graph from "../../static/images/projects/stockPredictor/graph.png";
 import algorithm from "../../static/images/projects/stockPredictor/algorithm.png";
 import { remCalc } from "../../common/helpers";
 
-class StockPredictor extends PureComponent {
-  render() {
-    return (
-      <Block
-        maxWidth={remCalc(800)}
-        tabletHorizontalMaxWidth={remCalc(600)}
-        mobileMaxWidth={remCalc(300)}
-      >
-        <Block>
-          <Image
-            src={graph}
-            margin="auto"
-            size="big"
-            alt="Stock predictor image"
-          />
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Source code:{" "}
-          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/nialloc9/stock-predictor">
-            GitHub
-          </Link>
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          The stock predictor project is build using python and the sklearn
-          library. Harnessing the power of linear regression it is able to
-          predict future stock prices based on historical data. This data is
-          fetched using the python tool quandl. Quandle is a free to use tool
-          that gives us access to financial data. We can use it for fetching
-          data on stock prices to feed into our predictor class.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          <Image
-            src={algorithm}
-            margin="auto"
-            size="big"
-            alt="Linear regression algoritm. y = mx + b"
-          />
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          We can see the linear regression algorithm used. Y stands for the
-          dependant value and it is what we are trying to find. m refers to the
-          slope which can be calculated as the change in y divided by the change
-          in x or in code ( (mean(xs)*mean(ys)) - mean(xs*ys) ). b refers to the
-          y interecept which is where based on historical data if it was
-          extended out where would it hit the y axis. The best fit line is
-          calculated by b = mean(ys) - (m*mean(xs)). Using both of these values
-          we can now find y. y - mx +b for x of any number we want. This allows
-          us to predict based on time(x) the value of y(stock price).
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Based on the above algorithm scikit-learn trains based on historical
-          data(x's(time) and y's(price)). After the classifier is trained it is
-          assigned to self to be accessed later when predicting prices.
-        </Block>
-
-        <CodeBlock language="python" margin={`${remCalc(20)} 0`}>
-          {`
+export default () => {
+  const data = [
+    {
+      type: 'header',
+      src: graph,
+      alt: 'Stock predictor'
+    },
+    {
+      type: 'source',
+      href: 'https://github.com/nialloc9/stock-predictor'
+    },
+    {
+      type: 'paragraph',
+      text: `The stock predictor project is build using python and the sklearn
+      library. Harnessing the power of linear regression it is able to
+      predict future stock prices based on historical data. This data is
+      fetched using the python tool quandl. Quandle is a free to use tool
+      that gives us access to financial data. We can use it for fetching
+      data on stock prices to feed into our predictor class.`
+    },
+    {
+      type: 'header',
+      src: algorithm,
+      alt: 'Linear regression algoritm. y = mx + b'
+    },
+    {
+      type: 'paragraph',
+      text: `We can see the linear regression algorithm used. Y stands for the
+      dependant value and it is what we are trying to find. m refers to the
+      slope which can be calculated as the change in y divided by the change
+      in x or in code ( (mean(xs)*mean(ys)) - mean(xs*ys) ). b refers to the
+      y interecept which is where based on historical data if it was
+      extended out where would it hit the y axis. The best fit line is
+      calculated by b = mean(ys) - (m*mean(xs)). Using both of these values
+      we can now find y. y - mx +b for x of any number we want. This allows
+      us to predict based on time(x) the value of y(stock price).`
+    },
+    {
+      type: 'paragraph',
+      text: `Based on the above algorithm scikit-learn trains based on historical
+      data(x's(time) and y's(price)). After the classifier is trained it is
+      assigned to self to be accessed later when predicting prices.`
+    },
+    {
+      type: 'code',
+      language: 'python',
+      code: `
 import numpy, datetime, pickle
 from classes.Stock import Stock
 from sklearn import model_selection, preprocessing
@@ -177,30 +162,32 @@ class Predictor:
         pyplot.legend(loc=4)
         pyplot.xlabel('Date')
         pyplot.ylabel('Price')
-`}
-        </CodeBlock>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Using the predictor we can now predict our features_lately which refer
-          to the future stock values that there is no prices associated. These
-          are then all plotted on a graph showing the forecasted data versus the
-          historical data. If you would like to see how scikit-learn calculates
-          linear regression I have also provided a vanilla version of linear
-          regression and can be found on my{" "}
-          <Link
-            target="__blank"
-            rel="noopener noreferrer"
-            href="https://github.com/nialloc9/machine-learning-linear-regression/blob/master/vanilla_regression_example.py"
-          >
-            github
-          </Link>
-          .
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>Published on 14/01/2019</Block>
+      `
+    },
+    {
+      type: 'markup',
+      markup: <Block margin={`${remCalc(20)} 0`}>
+      Using the predictor we can now predict our features_lately which refer
+      to the future stock values that there is no prices associated. These
+      are then all plotted on a graph showing the forecasted data versus the
+      historical data. If you would like to see how scikit-learn calculates
+      linear regression I have also provided a vanilla version of linear
+      regression and can be found on my{" "}
+      <Link
+        target="__blank"
+        rel="noopener noreferrer"
+        href="https://github.com/nialloc9/machine-learning-linear-regression/blob/master/vanilla_regression_example.py"
+      >
+        github
+      </Link>
+      .
       </Block>
-    );
-  }
-}
+    },
+    {
+      type: 'published',
+      date: `14/01/2019`
+    },
+  ];
 
-export default StockPredictor;
+  return <Article data={data} />;
+};

@@ -1,66 +1,48 @@
 /* eslint no-useless-escape: 0 */
-import React, { PureComponent } from "react";
-import {Block, CodeBlock, Link} from "../Common/Styled";
-import Image from "../Common/ImagePopup";
+import React from 'react'
+import Article from '../Common/Article';
 import main from "../../static/images/projects/colorMatcher/main.png";
-import { remCalc } from "../../common/helpers";
 
-class ColorMatcher extends PureComponent {
-  render() {
-    return (
-      <Block
-        maxWidth={remCalc(800)}
-        tabletHorizontalMaxWidth={remCalc(600)}
-        mobileMaxWidth={remCalc(300)}
-      >
-        <Block>
-          <Image
-            src={main}
-            margin="auto"
-            size="big"
-            alt="Color matcher running"
-          />
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Source code:{" "}
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/nialloc9/machine-learning-color-matcher"
-          >
-            GitHub
-          </Link>
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          Machine learninging can now be done on the browser using javascript.
-          This is a very powerful feature allowing us to do machine learning
-          without having to go to the server to get the results from a pre
-          trained model. This has obvious benefits but a word of warning machine
-          learning models can be massive. Recently I was doing some sentimental
-          analysis using two files of approx 1MB in size. The resulting model
-          file size was over 100MB in size. Therefore client side machine
-          learning is not always possible and like everything else when to use
-          it is up to the developer but it is a powerfull addition to any
-          developers toolbelt.
-        </Block>
-
-        <Block margin={`${remCalc(20)} 0`}>
-          In this project we are trying to match the color selected by the user
-          with either light or dark text. This is one of those annoying times
-          when the color will change and some colors just look wrong with a
-          light or dark text. For example white text with a white background
-          would make the text invisible. You could fix this with a complicated
-          combination of selection statements but you could also use the power
-          of machine learning libraries like brainJs to handle this. Simply
-          create a NeuralNetwork and train it to predict outcomes based on
-          predetermined inputs. Then optimize it by fixing any edge cases such
-          as white text and yellow background.
-        </Block>
-
-        <CodeBlock language="javascript" margin={`${remCalc(20)} 0`}>
-          {`
+export default () => {
+  const data = [
+    {
+      type: 'header',
+      src: main,
+      alt: 'Color matcher running'
+    },
+    {
+      type: 'source',
+      href: 'https://github.com/nialloc9/machine-learning-color-matcher'
+    },
+    {
+      type: 'paragraph',
+      text: `Machine learninging can now be done on the browser using javascript.
+      This is a very powerful feature allowing us to do machine learning
+      without having to go to the server to get the results from a pre
+      trained model. This has obvious benefits but a word of warning machine
+      learning models can be massive. Recently I was doing some sentimental
+      analysis using two files of approx 1MB in size. The resulting model
+      file size was over 100MB in size. Therefore client side machine
+      learning is not always possible and like everything else when to use
+      it is up to the developer but it is a powerfull addition to any
+      developers toolbelt.`
+    },
+    {
+      type: 'paragraph',
+      text: `In this project we are trying to match the color selected by the user
+      with either light or dark text. This is one of those annoying times
+      when the color will change and some colors just look wrong with a
+      light or dark text. For example white text with a white background
+      would make the text invisible. You could fix this with a complicated
+      combination of selection statements but you could also use the power
+      of machine learning libraries like brainJs to handle this. Simply
+      create a NeuralNetwork and train it to predict outcomes based on
+      predetermined inputs. Then optimize it by fixing any edge cases such
+      as white text and yellow background.`
+    },
+    {
+      type: 'code',
+      code: `
 const canvas = document.getElementById("canvas");
 const input = document.getElementById("color-picker");
 
@@ -114,14 +96,13 @@ function onChange(event) {
 }
 
 input.addEventListener("change", onChange);
+      `
+    },
+    {
+      type: 'published',
+      date: `17/01/2019`
+    },
+  ];
 
-`}
-        </CodeBlock>
-
-        <Block margin={`${remCalc(20)} 0`}>Published on 17/01/2019</Block>
-      </Block>
-    );
-  }
-}
-
-export default ColorMatcher;
+  return <Article data={data} />;
+};
