@@ -14,7 +14,7 @@ import {
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: graph,
       alt: 'Support vector machine'
     },
@@ -50,7 +50,7 @@ export default () => {
       </Block>
     },
     {
-      type: 'header',
+      type: "image",
       src: supportVectorMachine1,
       alt: 'Support vector machine no obvious hyperplane'
     },
@@ -62,7 +62,7 @@ export default () => {
       we can now easily find a hyperplane to seperate the data shown below.`
     },
     {
-      type: 'header',
+      type: "image",
       src: supportVectorMachine2,
       alt: 'Support vector machine no obvious hyperplane'
     },
@@ -77,7 +77,7 @@ export default () => {
       what it does is imporant.`
     },
     {
-      type: 'header',
+      type: "image",
       src: supportVectorMachine3,
       alt: 'Support vector machine no obvious hyperplane'
     },

@@ -9,7 +9,7 @@ import { STOCK_PREDICTOR } from "../../constants/machineLearning";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: graph,
       size: "big",
       alt: 'Stock predictor'
@@ -34,7 +34,7 @@ export default () => {
       </Block>
     },
     {
-      type: 'header',
+      type: "image",
       size: "big",
       src: clusters,
       alt: 'Linear regression algoritm. y = mx + b'

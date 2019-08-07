@@ -5,7 +5,7 @@ import running from '../../static/images/projects/javaCalculator/running.png';
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: running,
       alt: 'Calculator application running'
     },

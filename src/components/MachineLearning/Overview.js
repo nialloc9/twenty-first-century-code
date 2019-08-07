@@ -5,7 +5,7 @@ import machineLearning from "../../static/images/new/machineLearning.png";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: machineLearning,
       alt: 'Machine learning'
     },

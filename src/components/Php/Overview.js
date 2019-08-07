@@ -5,7 +5,7 @@ import phpBlue from '../../static/images/phpBlue.png';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: phpBlue,
             alt: "Php logo"
         },

@@ -5,7 +5,7 @@ import emailReceived from '../../static/images/projects/verifyEmail/emailReceive
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: emailReceived,
             alt: 'Email received'
         },

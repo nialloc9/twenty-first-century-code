@@ -4,13 +4,14 @@ import CodeBlock from '../../Common/Styled/CodeBlock';
 import ImagePopup from '../../Common/ImagePopup';
 import Link from '../../Common/Styled/Link';
 import List from "../List";
+import Video from "../Video";
 import { remCalc, generateId } from '../../../common/helpers';
 import withLoader from '../../../hoc/withLoader';
 import config from "../../../config/globals";
 
 const { LINKEDIN } = config
 
-class AsyncAwait extends Component{
+class Article extends Component{
 
     shouldComponentUpdate(prevProps){
         const { onShoudComponentUpdate } = this.props
@@ -20,7 +21,7 @@ class AsyncAwait extends Component{
         return false
     }
 
-    renderHeader = ({ src, alt, size = "medium", margin="auto" }) => (
+    renderImage = ({ src, alt, size = "medium", margin="auto" }) => (
         <ImagePopup
             src={src}
             margin={margin}
@@ -37,6 +38,7 @@ class AsyncAwait extends Component{
     )
 
     renderParagraph = ({ margin = `${remCalc(20)} 0`, text }) => <Block key={`paragraph-${text}`} margin={margin}>{text}</Block>
+    
     renderPublished = ({  margin = `${remCalc(20)} 0`, href=LINKEDIN, author = "Niall O' Connor", date }) => <Block margin={margin} key={`published-${author}`}>Published by <Link href={href} target="__blank" rel="noopener noreferrer">{author}</Link> on {date}.</Block>
     
     renderCode = ({ margin = `${remCalc(20)} 0`, code, language = "javascript" }) => <CodeBlock language={language} margin={margin} key={generateId()}>{code}</CodeBlock>
@@ -44,6 +46,8 @@ class AsyncAwait extends Component{
     renderMarkup = ({ markup }) => markup
 
     renderList = ({ data }) => <List data={data} />
+
+    renderVideo = ({ url, isHd, placeholder }) => <Video url={url} isHd={isHd} placeholder={placeholder} />
 
     renderNpm = ({ isLoading, href, text = "NPM", downloads }) => {
 
@@ -73,7 +77,7 @@ class AsyncAwait extends Component{
         const { data } = this.props
 
         const map = {
-            "header": this.renderHeader,
+            "image": this.renderImage,
             "source": this.renderSource,
             "paragraph": this.renderParagraph,
             "code": this.renderCode,
@@ -81,6 +85,7 @@ class AsyncAwait extends Component{
             "markup": this.renderMarkup,
             "npm": this.renderNpm,
             "list": this.renderList,
+            "video": this.renderVideo,
         }
 
         return data.map(o => map[o.type](o))
@@ -99,4 +104,4 @@ class AsyncAwait extends Component{
     }
 }
 
-export default AsyncAwait;
+export default Article;

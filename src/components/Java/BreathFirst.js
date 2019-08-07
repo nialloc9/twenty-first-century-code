@@ -5,7 +5,7 @@ import breathFirstAlgorithm from "../../static/images/projects/breathFirst/breat
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: breathFirstAlgorithm,
       alt: 'Breath first search'
     },

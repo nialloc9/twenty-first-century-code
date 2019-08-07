@@ -8,7 +8,7 @@ import { remCalc } from "../../common/helpers";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: graph,
       alt: 'Stock predictor'
     },
@@ -26,7 +26,7 @@ export default () => {
       data on stock prices to feed into our predictor class.`
     },
     {
-      type: 'header',
+      type: "image",
       src: algorithm,
       alt: 'Linear regression algoritm. y = mx + b'
     },

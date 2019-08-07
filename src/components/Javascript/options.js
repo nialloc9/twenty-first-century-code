@@ -12,11 +12,17 @@ import {
   REACT_RENDER_CALLBACKS,
   OPTIMIZATION,
   VCHECK,
-  REDUX_REDUCER_MAP
+  REDUX_REDUCER_MAP,
+  REACT_LONDON_CSS_IN_JS
 } from "../../constants/javascript";
 
 export const dropdownOptions = [
   { key: JAVASCRIPT_OVERVIEW, value: JAVASCRIPT_OVERVIEW, text: "Overview" },
+  {
+    key: REACT_LONDON_CSS_IN_JS,
+    value: REACT_LONDON_CSS_IN_JS,
+    text: "React London CSS in JS"
+  },
   {
     key: REDUX_REDUCER_MAP,
     value: REDUX_REDUCER_MAP,

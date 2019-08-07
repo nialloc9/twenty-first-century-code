@@ -13,7 +13,7 @@ const {
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: javaBlue,
             size: 'large',
             alt: 'Java image'

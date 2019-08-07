@@ -6,7 +6,7 @@ import main from "../../static/images/projects/colorMatcher/main.png";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: main,
       alt: 'Color matcher running'
     },

@@ -9,7 +9,7 @@ import { MEAN_SHIFT } from "../../constants/machineLearning";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: main,
       alt: 'K Means application running image'
     },
@@ -32,7 +32,7 @@ export default () => {
       </Block>
     },
     {
-      type: 'header',
+      type: "image",
       src: kmeans,
       alt: 'K Means clustering image'
     },

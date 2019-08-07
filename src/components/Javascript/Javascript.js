@@ -19,6 +19,7 @@ import Optimization from "./Optimization";
 import ReactRenderCallback from "./ReactRenderCallback";
 import ReduxReducerMap from "./ReduxReducerMap";
 import VCheck from "./VCheck";
+import CssInJs from "./CssInJs";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
@@ -37,7 +38,8 @@ import {
   REACT_RENDER_CALLBACKS,
   OPTIMIZATION,
   VCHECK,
-  REDUX_REDUCER_MAP
+  REDUX_REDUCER_MAP,
+  REACT_LONDON_CSS_IN_JS
 } from "../../constants/javascript";
 import { dropdownOptions } from "./options";
 
@@ -83,7 +85,8 @@ class Javascript extends Component {
       [REDUX_SAGA]: ReduxSagas,
       [REACT_RENDER_CALLBACKS]: ReactRenderCallback,
       [VCHECK]: VCheck,
-      [REDUX_REDUCER_MAP]: ReduxReducerMap
+      [REDUX_REDUCER_MAP]: ReduxReducerMap,
+      [REACT_LONDON_CSS_IN_JS]: CssInJs
     }
 
     Article = withScroller(map[article] || Overview);

@@ -11,7 +11,7 @@ import { remCalc } from '../../common/helpers';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: newGame,
             size: "large",
             alt: 'Java find the door game running image'
@@ -42,7 +42,7 @@ export default () => {
             one for level one, one for level two etc. Our game has just two. One for the main menu and one for the game level (we only have one level). Each state is a class in our project.`
         },
         {
-            type: 'header',
+            type: "image",
             size: "large",
             src: mainMenu,
             alt: 'Java game main menu image'
@@ -214,7 +214,7 @@ public class Menu extends BasicGameState{ //make class a state
             the state to create the Images to be drawn to the screen and the music object for the sound. The init method will be called before the render method to prepare the objects to be rendered.`
         },
         {
-            type: 'header',
+            type: "image",
             size: 'large',
             src: collisionCantContinue,
             alt: 'Java game collision detection image'
@@ -437,7 +437,7 @@ public class Play extends BasicGameState{
             above the characters head and sets exit to true so the menu appears.`
         },
         {
-            type: 'header',
+            type: "image",
             src: winner,
             size: 'large',
             alt: 'Java find the door game winner image'

@@ -9,7 +9,7 @@ import { remCalc } from '../../common/helpers';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: styledComponentsLogo,
             alt: 'Styled Components Logo'
         },
@@ -32,7 +32,7 @@ export default () => {
             as props.`
         },
         {
-            type: 'header',
+            type: "image",
             src: styledBlock,
             alt: 'styled div code'
         },

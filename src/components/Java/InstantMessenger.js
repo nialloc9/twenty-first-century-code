@@ -6,7 +6,7 @@ import burningHouse from '../../static/images/projects/javaInstantMessenger/burn
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             size: 'massive',
             src: instantMessengerRunning,
             alt: 'Java instant messenger running'
@@ -213,7 +213,7 @@ public class Server extends JFrame{
             put it in the oven. If that cake bakes correctly or not we still want to turn off the oven so the house don’t burn down.`
         },
         {
-            type: 'header',
+            type: "image",
             src: burningHouse,
             size: "large",
             alt: "Java instant messenger don't close sockets will eat up memory"

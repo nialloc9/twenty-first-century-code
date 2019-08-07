@@ -8,7 +8,7 @@ export default () => {
 
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: telephone,
             alt: 'Green telephone'
         },

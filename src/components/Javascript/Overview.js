@@ -12,7 +12,7 @@ const {
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: javascriptYellow,
             alt: 'Javascript image'
         },

@@ -31,7 +31,7 @@ class VCheck extends Component {
 
     const data = [
       {
-        type: "header",
+        type: "image",
         src: logo,
         alt: "vcheck logo"
       },

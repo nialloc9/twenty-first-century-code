@@ -11,7 +11,7 @@ import { K_MEANS } from "../../constants/machineLearning";
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: graph,
       size: 'large',
       alt: 'Mean shift graph'
@@ -60,7 +60,7 @@ export default () => {
       distance away from the center of the cluster.`
     },
     {
-      type: 'header',
+      type: "image",
       src: main,
       alt: 'Project running',
       size: 'large',

@@ -5,7 +5,7 @@ import together from '../../static/images/projects/currying/together-3-1162465-1
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: together,
             alt: 'Together image'
         },

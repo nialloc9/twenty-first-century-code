@@ -5,7 +5,7 @@ import logo from '../../static/images/projects/bem/logo.png';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: logo,
             alt: 'GetBem Logo'
         },

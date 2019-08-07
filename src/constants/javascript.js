@@ -12,3 +12,4 @@ export const REACT_RENDER_CALLBACKS = "react-render-callback";
 export const OPTIMIZATION = "optimization";
 export const VCHECK = "vcheck";
 export const REDUX_REDUCER_MAP = "a-better-way-to-handle-reudux-reducers";
+export const REACT_LONDON_CSS_IN_JS = "react-london-css-in-js";

@@ -1,16 +1,11 @@
-import React, { PureComponent } from 'react'
-import {Block, CodeBlock, Link} from '../Common/Styled';
-import Image from "../Common/ImagePopup";
-import start from '../../static/images/projects/csrf/start.png';
-import { remCalc } from '../../common/helpers';
-
 import React from 'react'
 import Article from '../Common/Article';
+import start from '../../static/images/projects/csrf/start.png';
 
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: start,
             alt: 'Csrf start image'
         },

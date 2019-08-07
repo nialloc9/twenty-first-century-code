@@ -5,7 +5,7 @@ import css3Blue from '../../static/images/css3Blue.png';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: css3Blue,
             alt: 'CSS 3'
         },

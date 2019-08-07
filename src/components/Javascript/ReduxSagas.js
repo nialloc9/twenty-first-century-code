@@ -9,7 +9,7 @@ import logo from '../../static/images/projects/reduxSaga/reduxSagaLogo.png';
 export default () => {
     const data = [
         {
-            type: "header",
+            type: "image",
             src: logo,
             size: "large",
             alt: "Redux saga logo"

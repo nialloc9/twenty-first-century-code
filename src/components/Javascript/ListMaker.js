@@ -5,7 +5,7 @@ import start from '../../static/images/projects/listMaker/start.png';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: start,
             alt: 'List maker start'
         },

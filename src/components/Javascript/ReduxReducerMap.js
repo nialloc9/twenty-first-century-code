@@ -8,7 +8,7 @@ import telephone from '../../static/images/projects/reduxReducerMap/reducer.png'
 export default () => {
     const data = [
         {
-            type: "header",
+            type: "image",
             src: telephone,
             size: "large",
             alt: "Green telephone"

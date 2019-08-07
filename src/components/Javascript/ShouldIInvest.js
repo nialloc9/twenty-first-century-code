@@ -8,7 +8,7 @@ import start from '../../static/images/projects/shouldIInvest/start.png';
 export default () => {
     const data = [
         {
-            type: "header",
+            type: "image",
             src: start,
             size: "large",
             alt: "Should I invest application start"

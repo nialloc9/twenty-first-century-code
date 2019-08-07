@@ -5,7 +5,7 @@ import start from '../../static/images/projects/blockChain/start.png';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: start,
             alt: 'Block chain mining start'
         },

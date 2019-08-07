@@ -6,7 +6,7 @@ import checkBtnInputWrongNumber from '../../static/images/projects/captcha/check
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: checkBtnInputWrongNumber,
             alt: 'Captcha image generator application running wrong input image'
         },
@@ -229,7 +229,7 @@ if(isset($_GET['task']) && $_GET['task'] == 'checkCaptchaSession'){
             determine whether to allow the user to continue.`
         },
         {
-            type: 'header',
+            type: "image",
             src: checkBtnInputCorrectNumber,
             alt: 'Captcha image generator application correct input'
         },

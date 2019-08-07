@@ -5,12 +5,12 @@ import optimization from "../../static/images/projects/optimization/optimization
 export default () => {
   const data = [
     {
-      type: 'header',
+      type: "image",
       src: '',
       alt: ''
     },
     {
-      type: 'header',
+      type: "image",
       src: optimization,
       alt: 'List maker start'
     },

@@ -7,7 +7,7 @@ import { remCalc } from '../../common/helpers';
 export default () => {
     const data = [
         {
-            type: 'header',
+            type: "image",
             src: blueArrow,
             alt: 'Waiting...'
         },
