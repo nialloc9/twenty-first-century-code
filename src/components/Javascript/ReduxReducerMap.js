@@ -6,6 +6,21 @@ import {remCalc, generateId} from '../../common/helpers';
 import telephone from '../../static/images/projects/reduxReducerMap/reducer.png';
 
 export default () => {
+
+    const head = {
+        title: "a better way to handle redux reducers",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn a better way to handle redux reducers'
+          },
+          {
+            name: 'keywords',
+            content: 'redux, redux reducers, javascript'
+          }
+        ]
+    };
+
     const data = [
         {
             type: "image",
@@ -166,5 +181,5 @@ export default users;
         },
     ]
 
-    return <Article data={data} />
+    return <Article head={head} data={data} />
 }

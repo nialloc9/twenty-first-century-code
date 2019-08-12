@@ -29,6 +29,20 @@ class ReduxPush extends Component {
   render() {
     const { isLoading, downloads } = this.props;
 
+    const head = {
+      title: "redux push",
+      meta: [
+        {
+          name: 'description',
+          content: 'learn how to use redux push to provide browser push notifications inside your applications'
+        },
+        {
+          name: 'keywords',
+          content: 'react, redux, redux push, browser notifications, javascript'
+        }
+      ]
+    };
+
     const data = [
       {
         type: "image",
@@ -97,7 +111,7 @@ dispatch({
         date: "22/12/2017"
       },
     ]
-    return <Article onShoudComponentUpdate={this.onShoudComponentUpdate} data={data} />
+    return <Article head={head} onShoudComponentUpdate={this.onShoudComponentUpdate} data={data} />
   }
 }
 

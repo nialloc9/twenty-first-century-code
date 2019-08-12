@@ -6,6 +6,20 @@ import { remCalc } from '../../common/helpers';
 
 export default () => {
 
+    const head = {
+        title: "react render callback",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to use the react render callback'
+          },
+          {
+            name: 'keywords',
+            content: 'react render, react render callback, react, javascript'
+          }
+        ]
+    };
+
     const data = [
         {
             type: "image",
@@ -123,5 +137,5 @@ return (
             date: `27/02/2018`
         },
     ]
-    return <Article data={data} />
+    return <Article head={head} data={data} />
 };

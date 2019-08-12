@@ -10,6 +10,21 @@ const {
 } = globals;
 
 export default () => {
+
+    const head = {
+        title: "javascript overview",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how create awesome projects in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'overview, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -33,5 +48,5 @@ export default () => {
         },
     ]
     
-    return <Article data={data} />
+    return <Article head={head} data={data} />
 }

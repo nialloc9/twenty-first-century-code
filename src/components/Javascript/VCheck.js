@@ -29,6 +29,20 @@ class VCheck extends Component {
   render() {
     const { isLoading, downloads } = this.props;
 
+    const head = {
+      title: "validation check library",
+      meta: [
+        {
+          name: 'description',
+          content: 'a library of common validation use cases in javascript'
+        },
+        {
+          name: 'keywords',
+          content: 'npm validation, npm, redux, redux validation'
+        }
+      ]
+    };
+
     const data = [
       {
         type: "image",
@@ -92,7 +106,7 @@ import { Field } from 'redux-form';
         date: "20/09/2018"
       }
     ]
-    return <Article onShoudComponentUpdate={this.onShoudComponentUpdate} data={data} />
+    return <Article head={head} onShoudComponentUpdate={this.onShoudComponentUpdate} data={data} />
   }
 }
 

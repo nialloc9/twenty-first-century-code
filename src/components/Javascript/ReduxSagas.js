@@ -7,6 +7,21 @@ import {remCalc, generateId} from '../../common/helpers';
 import logo from '../../static/images/projects/reduxSaga/reduxSagaLogo.png';
 
 export default () => {
+
+    const head = {
+        title: "react sagas",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to use redux sagas in your applications'
+          },
+          {
+            name: 'keywords',
+            content: 'redux saga, redux, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -144,5 +159,5 @@ describe("fetch test suite", () => {
         },
     ]
 
-    return <Article data={data} />   
+    return <Article head={head} data={data} />   
 }

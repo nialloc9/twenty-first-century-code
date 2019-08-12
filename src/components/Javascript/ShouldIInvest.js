@@ -6,6 +6,21 @@ import {remCalc, generateId} from '../../common/helpers';
 import start from '../../static/images/projects/shouldIInvest/start.png';
 
 export default () => {
+
+    const head = {
+        title: "react should i invest application",
+        meta: [
+          {
+            name: 'description',
+            content: 'a project using react and the yahoo finance api to project a stocks viability'
+          },
+          {
+            name: 'keywords',
+            content: 'react, finance, stock predictor, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -147,5 +162,5 @@ $scope.calculateStockRecommendation = function(){
         },
     ]
 
-    return <Article data={data} />
+    return <Article head={head} data={data} />
 }
