@@ -4,9 +4,22 @@ import {SoftLink, Block} from "../Common/Styled";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
 import { remCalc } from "../../common/helpers";
 
-
-
 export default () => {
+
+  const head = {
+    title: 'Factory Design Pattern',
+    meta: [
+      {
+        name: 'description',
+        content: 'An example of the factory design pattern in Java'
+      },
+      {
+        name: 'keywords',
+        content: 'java, factory design pattern'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -136,5 +149,5 @@ public class DepthFirst
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

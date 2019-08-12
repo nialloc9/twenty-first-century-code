@@ -11,6 +11,21 @@ const {
 } = globals;
 
 export default () => {
+    
+    const head = {
+        title: 'java overview',
+        meta: [
+          {
+            name: 'description',
+            content: 'an overview of java'
+          },
+          {
+            name: 'keywords',
+            content: 'java, overview'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -34,5 +49,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

@@ -1,3 +1,5 @@
-import About from './About';
+import { asyncComponent } from 'react-async-component';
 
-export default About;
+export default asyncComponent({
+    resolve: () => import('./About'),
+});

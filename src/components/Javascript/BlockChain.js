@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import start from '../../static/images/projects/blockChain/start.png';
 
 export default () => {
+
+    const head = {
+        title: "block chain in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create a block chain in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'blockchain, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -132,5 +147,5 @@ class BlockChain{
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

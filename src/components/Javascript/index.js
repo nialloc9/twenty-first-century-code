@@ -1,3 +1,5 @@
-import Javascript from './Javascript';
+import { asyncComponent } from 'react-async-component';
 
-export default Javascript;
+export default asyncComponent({
+    resolve: () => import('./Javascript'),
+});

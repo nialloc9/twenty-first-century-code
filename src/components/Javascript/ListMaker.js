@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import start from '../../static/images/projects/listMaker/start.png';
 
 export default () => {
+
+    const head = {
+        title: "vanilla list maker with pub sub in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create a vanilla list maker application with a pubsub in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'pubsub, publish, subscribe, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -172,5 +187,5 @@ module.exports = list;
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

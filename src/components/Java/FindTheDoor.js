@@ -9,6 +9,21 @@ import winner from '../../static/images/projects/javaFindTheDoorGame/winner.png'
 import { remCalc } from '../../common/helpers';
 
 export default () => {
+
+    const head = {
+        title: 'Find The Door Game',
+        meta: [
+          {
+            name: 'description',
+            content: 'An collision detection game created using Java'
+          },
+          {
+            name: 'keywords',
+            content: 'java, collision detection, game'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -448,5 +463,5 @@ public class Play extends BasicGameState{
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

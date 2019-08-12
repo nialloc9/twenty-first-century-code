@@ -3,6 +3,21 @@ import Article from "../Common/Article";
 import optimization from "../../static/images/projects/optimization/optimization.jpg";
 
 export default () => {
+
+  const head = {
+    title: "optimizing javascript",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to optimize your code using big o'
+      },
+      {
+        name: 'keywords',
+        content: 'optimize, complexity, big o, javascript'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -222,5 +237,5 @@ function maximiseProfitsv4(stockPrices) {
     },
   ]
 
-  return <Article data={data} />
+  return <Article head={head} data={data} />
 }

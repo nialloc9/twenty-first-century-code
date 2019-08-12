@@ -5,6 +5,21 @@ import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
 import { remCalc } from "../../common/helpers";
 
 export default () => {
+
+  const head = {
+    title: 'Depth First Algorithm',
+    meta: [
+      {
+        name: 'description',
+        content: 'An example of the depth first algorithm in Java'
+      },
+      {
+        name: 'keywords',
+        content: 'java, depth first algoritm'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -139,5 +154,5 @@ public class DepthFirst
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

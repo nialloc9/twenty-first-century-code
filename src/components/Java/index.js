@@ -1,3 +1,5 @@
-import Java from './Java';
+import { asyncComponent } from 'react-async-component';
 
-export default Java;
+export default asyncComponent({
+    resolve: () => import('./Java'),
+});

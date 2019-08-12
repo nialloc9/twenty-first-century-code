@@ -1,3 +1,5 @@
-import Node from './Node';
+import { asyncComponent } from 'react-async-component';
 
-export default Node;
+export default asyncComponent({
+    resolve: () => import('./Node'),
+});

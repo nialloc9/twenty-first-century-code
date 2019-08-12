@@ -1,3 +1,5 @@
-import Php from './Php';
+import { asyncComponent } from 'react-async-component';
 
-export default Php;
+export default asyncComponent({
+    resolve: () => import('./Php'),
+});

@@ -59,3 +59,13 @@ export const generateId = (length = 10) => {
     }
     return result;
  }
+
+ /**
+  * @description capitalizes the first letter of each word in a string
+  * @param {string} sentence
+  * @returns {string}
+  */
+export const capitalizeEachWord = sentence => sentence.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ')

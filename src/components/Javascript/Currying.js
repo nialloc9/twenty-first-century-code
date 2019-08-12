@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import together from '../../static/images/projects/currying/together-3-1162465-1278x903.jpg';
 
 export default () => {
+
+    const head = {
+        title: "curried functions in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create a curried functions in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'curry, curried, currying, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -103,5 +118,5 @@ console.log(twentyTwoMilesToKm); //35.405919999999995 miles
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

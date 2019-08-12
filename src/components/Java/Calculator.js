@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import running from '../../static/images/projects/javaCalculator/running.png';
 
 export default () => {
+
+  const head = {
+    title: 'Java Calculator',
+    meta: [
+      {
+        name: 'description',
+        content: 'An calulator built in Java'
+      },
+      {
+        name: 'keywords',
+        content: 'java, calculator'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -387,5 +402,5 @@ public class Cal {
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

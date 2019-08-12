@@ -4,6 +4,21 @@ import instantMessengerRunning from '../../static/images/projects/javaInstantMes
 import burningHouse from '../../static/images/projects/javaInstantMessenger/burningHouse.png';
 
 export default () => {
+
+    const head = {
+        title: 'instant messenger',
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create an instant messenger in java'
+          },
+          {
+            name: 'keywords',
+            content: 'java, calculator'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -427,5 +442,5 @@ package client;
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

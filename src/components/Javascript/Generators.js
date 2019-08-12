@@ -5,6 +5,21 @@ import generator from '../../static/images/projects/generators/generator.jpg';
 import { remCalc } from '../../common/helpers';
 
 export default () => {
+
+    const head = {
+        title: "generators in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create a generators in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'generators, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -146,5 +161,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

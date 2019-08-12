@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import breathFirstAlgorithm from "../../static/images/projects/breathFirst/breathFirstAlgorithm.gif";
 
 export default () => {
+
+  const head = {
+    title: 'Breath First Search',
+    meta: [
+      {
+        name: 'description',
+        content: 'An example of implementing breath first search algorithm in Java.'
+      },
+      {
+        name: 'keywords',
+        content: 'java, breath first, algorithm'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -206,5 +221,5 @@ public class BreadthFirstSearch
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

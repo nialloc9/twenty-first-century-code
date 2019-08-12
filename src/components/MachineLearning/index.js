@@ -1,1 +1,5 @@
-export { default } from "./MachineLearning";
+import { asyncComponent } from 'react-async-component';
+
+export default asyncComponent({
+    resolve: () => import('./MachineLearning'),
+});

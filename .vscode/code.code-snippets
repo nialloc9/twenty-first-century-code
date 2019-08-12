@@ -7,9 +7,24 @@
 			"import Article from '../Common/Article';",
 			"",
 			"export default () => {",
+				"",
+				"	const head = {",
+					"		title: '',",
+					"		meta: [",
+						"			{",
+						"				name: 'description',",
+						"				content: ''",
+					"			},",
+					"			{",
+						"				name: 'keywords',",
+						"				content: ''",
+					"			}",
+						"		]",
+				"	};",
+				"",
 				"	const data = [",
 					"		{",
-						"			type: 'header',",
+						"			type: 'image',",
 						"			src: '',",
 						"			alt: ''",
 					"		},",
@@ -19,7 +34,7 @@
 					"		}",
 				"	];",
 				"",
-				"	return <Article data={data} />;",
+				"	return <Article head={head} data={data} />;",
 			"};"
 		],
 		"description": "Markup language"
@@ -59,17 +74,17 @@
 		],
 		"description": "Article snippet for java code"
 	},
-	"article-header": {
+	"article-image": {
 		"scope": "javascript",
-		"prefix": "article-header",
+		"prefix": "article-image",
 		"body": [
 			"{",
-				"	type: 'header',",
+				"	type: 'image',",
 				"	src: '',",
 				"	alt: ''",
 			"},"
 		],
-		"description": "A header for an article"
+		"description": "An image for an article"
 	},
 	"article-npm": {
 		"scope": "javascript",

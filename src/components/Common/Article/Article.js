@@ -7,6 +7,7 @@ import List from "../List";
 import Video from "../Video";
 import { remCalc, generateId } from '../../../common/helpers';
 import withLoader from '../../../hoc/withLoader';
+import withHelmet from '../../../hoc/withHelmet';
 import config from "../../../config/globals";
 
 const { LINKEDIN } = config
@@ -104,4 +105,4 @@ class Article extends Component{
     }
 }
 
-export default Article;
+export default withHelmet(Article);

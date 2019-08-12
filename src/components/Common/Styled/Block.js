@@ -83,8 +83,8 @@ const Block = Styled("div")`
         ${({ tabletHorizontalBackgroundPosition = false }) => tabletHorizontalBackgroundPosition && `background-position: ${tabletHorizontalBackgroundPosition};`}
         ${({ tabletHorizontalPadding = false }) => tabletHorizontalPadding && `padding: ${tabletHorizontalPadding};`}
         ${({ tabletHorizontalWidth = false }) => tabletHorizontalWidth && `width: ${tabletHorizontalWidth};`}
-        ${({ tabletHorizontalMinWidth = false }) => tabletHorizontalMinWidth && `min-width: ${tabletHorizontalMinWidth}`};
-        ${({ tabletHorizontalMaxWidth = false }) => tabletHorizontalMaxWidth && `max-width: ${tabletHorizontalMaxWidth}`};
+        ${({ tabletHorizontalMinWidth = false }) => tabletHorizontalMinWidth && `min-width: ${tabletHorizontalMinWidth};`}
+        ${({ tabletHorizontalMaxWidth = false }) => tabletHorizontalMaxWidth && `max-width: ${tabletHorizontalMaxWidth};`}
 
         ${({ tabletClipPath = false}) => tabletClipPath && `clip-path: ${tabletClipPath};`}
         

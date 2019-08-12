@@ -5,6 +5,21 @@ import hands from '../../static/images/projects/higherOrderFunctions/hands-14386
 import { remCalc } from '../../common/helpers';
 
 export default () => {
+
+    const head = {
+        title: "higher order functions in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create higher order functions in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'higher order functions, hof, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -140,5 +155,5 @@ fetchAllData();
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

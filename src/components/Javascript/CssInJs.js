@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import placeholder from "../../static/images/projects/reactLondonCssInJS/introSlide.png"
 
 export default () => {
+
+    const head = {
+        title: "react london august 2018",
+        meta: [
+          {
+            name: 'description',
+            content: 'watch niall o connor talk about the state of CSS in JS at the react london conference'
+          },
+          {
+            name: 'keywords',
+            content: 'react london, css in js, styled components, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: 'paragraph',
@@ -22,5 +37,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

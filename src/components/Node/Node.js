@@ -9,6 +9,7 @@ import Overview from './Overview';
 import NodeCluster from './NodeCluster';
 import ApolloChat from './ApolloChat';
 import withSidebar from '../../hoc/withSidebar';
+import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/helpers';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
@@ -28,32 +29,34 @@ class Node extends Component {
         })
     };
 
+    get article() {
+        const {
+            match: {
+              params: { article }
+            }
+          } = this.props;
+
+          return article
+    }
+
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
         push(`/node/${article}`)
     };
 
+    renderArticle = () => {
+
+        const Article = withScroller({
+            [NODE_APOLLO]: ApolloChat,
+            [NODE_CLUSTER]: NodeCluster
+        }[this.article] || Overview)
+          
+        return <Article />
+    }
+
     render() {
-
-        const { match: { params: { article } } } = this.props;
-
-        let Article = null;
-
-        switch (article) {
-            case NODE_APOLLO:
-                Article = ApolloChat;
-                break;
-
-            case NODE_CLUSTER:
-                Article = NodeCluster;
-                break;
-
-            default:
-                Article = Overview;
-                break;
-        }
-
+        
         return (
             <Block
                 margin={`${remCalc(100)} ${remCalc(20)}`}
@@ -64,13 +67,13 @@ class Node extends Component {
                             title="NodeJs"
                             subTitle={`The power of js on the server..`}
                             placeholder='Select Project'
-                            defaultValue={article}
+                            defaultValue={this.article}
                             options={dropdownOptions}
                             onChange={this.handleRedirect}
                         />
                     </Grid.Row>
                     <Grid.Row>
-                        <Article />
+                        {this.renderArticle()}
                     </Grid.Row>
                 </Grid>
             </Block>

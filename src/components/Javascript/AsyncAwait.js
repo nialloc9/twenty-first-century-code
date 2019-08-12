@@ -5,6 +5,21 @@ import blueArrow from '../../static/images/projects/asyncAwait/blueArrow.jpg';
 import { remCalc } from '../../common/helpers';
 
 export default () => {
+
+    const head = {
+        title: "asnyc await in javascript",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to use async await in javascript'
+          },
+          {
+            name: 'keywords',
+            content: 'async await, javascript'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -188,5 +203,5 @@ const asyncAwaitWithErrorHandler = async () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };
