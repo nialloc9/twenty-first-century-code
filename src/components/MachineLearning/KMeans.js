@@ -7,6 +7,21 @@ import { remCalc } from "../../common/helpers";
 import { MEAN_SHIFT } from "../../constants/machineLearning";
 
 export default () => {
+
+  const head = {
+    title: "KMeans algorithm",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to find clusters in data using KMeans algorithm'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, kmeans, kmeans algorithm, vanilla kmeans, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -110,5 +125,5 @@ export default () => {
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

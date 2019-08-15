@@ -4,6 +4,21 @@ import checkBtnInputCorrectNumber from '../../static/images/projects/captcha/che
 import checkBtnInputWrongNumber from '../../static/images/projects/captcha/checkBtnInputWrongNumber.png';
 
 export default () => {
+
+    const head = {
+        title: "capctha image generator",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create captcha images using javascript and PHP'
+          },
+          {
+            name: 'keywords',
+            content: 'captcha, php'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -239,5 +254,5 @@ if(isset($_GET['task']) && $_GET['task'] == 'checkCaptchaSession'){
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

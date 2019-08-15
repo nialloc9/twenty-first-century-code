@@ -4,6 +4,21 @@ import Article from '../Common/Article';
 import main from "../../static/images/projects/colorMatcher/main.png";
 
 export default () => {
+
+  const head = {
+    title: "color matcher neural network",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to change text color by using a neural network to decide based on background color'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, neural network, brainjs, javascript'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -104,5 +119,5 @@ input.addEventListener("change", onChange);
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

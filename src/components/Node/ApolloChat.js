@@ -7,6 +7,21 @@ import room from '../../static/images/projects/apolloChat/room.png';
 import { remCalc } from '../../common/helpers';
 
 export default () => {
+
+    const head = {
+        title: "apollo chat proof of concept",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create an instant messenger using NodeJs'
+          },
+          {
+            name: 'keywords',
+            content: 'sockets, socket.io, socket.io chat, socket chat, nodejs'
+          }
+        ]
+      };
+
     const data = [
         {
             type: 'image',
@@ -59,5 +74,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

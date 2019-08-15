@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import machineLearning from "../../static/images/new/machineLearning.png";
 
 export default () => {
+
+  const head = {
+    title: "machine learning",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to use machine learning to create powerful applications'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -21,5 +36,5 @@ export default () => {
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

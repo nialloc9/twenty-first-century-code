@@ -6,9 +6,22 @@ import graph from "../../static/images/projects/meanShift/graph.png";
 import { remCalc } from "../../common/helpers";
 import { K_MEANS } from "../../constants/machineLearning";
 
-
-
 export default () => {
+
+  const head = {
+    title: "mean shift algorithm",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to find clusters in data using KMeans algorithm without defining the number of clusters'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, mean shift, mean shift algorithm, vanilla mean shift, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -221,5 +234,5 @@ export default () => {
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

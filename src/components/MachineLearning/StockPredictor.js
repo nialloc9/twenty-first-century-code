@@ -6,6 +6,21 @@ import algorithm from "../../static/images/projects/stockPredictor/algorithm.png
 import { remCalc } from "../../common/helpers";
 
 export default () => {
+
+  const head = {
+    title: "stock predictor",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to use machine learning to predict the viability of future stocks'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, stock predictor, linear regression algorithm, vanilla linear regression, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -189,5 +204,5 @@ class Predictor:
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

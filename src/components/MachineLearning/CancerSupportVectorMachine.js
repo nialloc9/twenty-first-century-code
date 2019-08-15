@@ -12,6 +12,21 @@ import {
 } from "../../constants/machineLearning";
 
 export default () => {
+
+  const head = {
+    title: "cancer classifier support vector machine",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to classify cancer tumors using a support vector machine'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, cancer classifer, support vector machine, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -202,5 +217,5 @@ print(prediction)
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

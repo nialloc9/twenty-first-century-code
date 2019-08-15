@@ -7,6 +7,21 @@ import { remCalc } from "../../common/helpers";
 import { STOCK_PREDICTOR } from "../../constants/machineLearning";
 
 export default () => {
+
+  const head = {
+    title: "cancer classifier machine learning",
+    meta: [
+      {
+        name: 'description',
+        content: 'learn how to classify cancer tumors using machine learning'
+      },
+      {
+        name: 'keywords',
+        content: 'machine learning, cancer classifer, k nearest neighbours, vanilla k nearest neighbours, python'
+      }
+    ]
+  };
+
   const data = [
     {
       type: "image",
@@ -188,5 +203,5 @@ print("Prediction: ", predict)
     },
   ];
 
-  return <Article data={data} />;
+  return <Article head={head} data={data} />;
 };

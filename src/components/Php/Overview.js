@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import phpBlue from '../../static/images/phpBlue.png';
 
 export default () => {
+
+    const head = {
+        title: "PHP",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create awesome applications using PHP'
+          },
+          {
+            name: 'keywords',
+            content: 'php'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -22,5 +37,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

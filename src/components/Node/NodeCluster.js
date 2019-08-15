@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import start from '../../static/images/projects/nodeCluster/start.png';
 
 export default () => {
+
+    const head = {
+        title: "node clusters",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how create clusters to perform tasks concurrently in NodeJS'
+          },
+          {
+            name: 'keywords',
+            content: 'nodejs, cluster, concurrent, concurrency, nodejs'
+          }
+        ]
+      };
+
     const data = [
         {
             type: 'image',
@@ -88,5 +103,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

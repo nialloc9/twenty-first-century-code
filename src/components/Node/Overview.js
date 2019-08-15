@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import nodeGreen from '../../static/images/nodeGreen.png';
 
 export default () => {
+
+    const head = {
+        title: "NodeJS",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create awesome applications using NodeJS'
+          },
+          {
+            name: 'keywords',
+            content: 'nodejs, python'
+          }
+        ]
+      };
+
     const data = [
         {
             type: 'image',
@@ -23,5 +38,5 @@ export default () => {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

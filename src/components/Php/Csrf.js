@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import start from '../../static/images/projects/csrf/start.png';
 
 export default () => {
+
+    const head = {
+        title: "CSRF",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to prevent CSRF attacks in PHP'
+          },
+          {
+            name: 'keywords',
+            content: 'CSRF php, attack, php'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -137,5 +152,5 @@ if(isset($_POST['task']) && $_POST['task'] == 'csrfTokenCheck')  {
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };

@@ -3,6 +3,21 @@ import Article from '../Common/Article';
 import emailReceived from '../../static/images/projects/verifyEmail/emailReceived.png';
 
 export default () => {
+
+    const head = {
+        title: "email verification",
+        meta: [
+          {
+            name: 'description',
+            content: 'learn how to create an email verifier using PHP and MYSQL'
+          },
+          {
+            name: 'keywords',
+            content: 'email verification, php'
+          }
+        ]
+      };
+
     const data = [
         {
             type: "image",
@@ -263,5 +278,5 @@ function checkEmailAndToken($email, $token, $db){
         },
     ];
 
-    return <Article data={data} />;
+    return <Article head={head} data={data} />;
 };
