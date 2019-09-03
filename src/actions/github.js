@@ -1,6 +1,6 @@
 import globals from '../config/globals';
 import { GITHUB_SET } from '../constants/github';
-import promiseErrorHandler from '../common/promiseErrorHandler';
+import promiseErrorHandler from '../hof/promiseErrorHandler';
 
 const { GITHUB_API } = globals;
 

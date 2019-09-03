@@ -3,7 +3,7 @@ import Block from '../../../components/Common/Styled/Block';
 import Image from '../../../components/Common/Styled/Image'
 import SoftLink from "../../../components/Common/Styled/SoftLink";
 import Card from './Card';
-import { remCalc } from '../../../common/helpers';
+import { remCalc } from '../../../common/utils';
 import nodeGreen from '../../../static/images/nodeGreen.png';
 
 class CardFour extends Component {

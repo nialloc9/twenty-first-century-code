@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Styled from "styled-components";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 
 const StyledLabel = Styled("label")`
     float: ${({ float = "left" }) => float};

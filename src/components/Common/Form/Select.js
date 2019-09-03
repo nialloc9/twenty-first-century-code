@@ -6,7 +6,7 @@ import Styled from "styled-components";
 import Label from "./Label";
 import Error from "./Error";
 import Warning from "./Warning";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 
 const StyledSelect = Styled(SemanticSelect)`
     height: ${remCalc(37)};

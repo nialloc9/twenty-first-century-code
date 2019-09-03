@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Message } from 'semantic-ui-react';
 import moment from 'moment';
 import Block from '../../components/Common/Styled/Block';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 class Introduction extends Component {
 

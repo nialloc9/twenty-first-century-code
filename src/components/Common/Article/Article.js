@@ -5,7 +5,7 @@ import ImagePopup from '../../Common/ImagePopup';
 import Link from '../../Common/Styled/Link';
 import List from "../List";
 import Video from "../Video";
-import { remCalc, generateId } from '../../../common/helpers';
+import { remCalc, generateId } from '../../../common/utils';
 import withLoader from '../../../hoc/withLoader';
 import withHelmet from '../../../hoc/withHelmet';
 import config from "../../../config/globals";

@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import {Block, SoftLink} from "../Common/Styled";
 import depthFirst from "../../static/images/projects/depthFirst/depthFirst.png";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 
 export default () => {
 

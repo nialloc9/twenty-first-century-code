@@ -1,5 +1,5 @@
 import Styled from "styled-components";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN } from '../../../common/settings';
 
 const Block = Styled("div")`

@@ -5,7 +5,7 @@ import graph from "../../static/images/projects/supportVectorMachine/hyperplanes
 import supportVectorMachine1 from "../../static/images/projects/supportVectorMachine/supportVectorMachine1.png";
 import supportVectorMachine2 from "../../static/images/projects/supportVectorMachine/supportVectorMachine2.png";
 import supportVectorMachine3 from "../../static/images/projects/supportVectorMachine/supportVectorMachine3.png";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import {
   STOCK_PREDICTOR,
   CANCER_CLASSIFIER

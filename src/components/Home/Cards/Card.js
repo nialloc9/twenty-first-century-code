@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Block from '../../../components/Common/Styled/Block';
 import theme from '../../../config/theme';
-import { remCalc } from '../../../common/helpers';
+import { remCalc } from '../../../common/utils';
 
 const { colors: { third, fourth } } = theme;
 

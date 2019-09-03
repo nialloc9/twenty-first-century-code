@@ -6,7 +6,7 @@ import Form from "semantic-ui-react/dist/commonjs/collections/Form";
 import Label from "./Label";
 import Error from "./Error";
 import Warning from "./Warning";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 
 const StyledCheckbox = Styled(SemanticCheckbox)`
     margin: ${({ margin = `${remCalc(4)} 0 0 ${remCalc(5)}` }) => margin};

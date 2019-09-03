@@ -4,7 +4,7 @@ import Block from '../Common/Styled/Block';
 import Link from '../Common/Styled/Link';
 import styledComponentsLogo from '../../static/images/projects/styledComponents/styledComponentsLogo.png';
 import styledBlock from '../../static/images/projects/styledComponents/styledBlock.png';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 export default () => {
     const data = [

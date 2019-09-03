@@ -7,7 +7,7 @@ import moment from "moment";
 import Label from "./Label";
 import Error from "./Error";
 import Warning from "./Warning";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 
 import "react-datepicker/dist/react-datepicker.css";
 

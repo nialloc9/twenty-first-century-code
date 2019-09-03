@@ -13,7 +13,7 @@ import CardSix from "./Cards/CardSix";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 
 class Home extends Component {
@@ -42,6 +42,18 @@ class Home extends Component {
                 </SemanticHeader.Subheader>
               </Header>
             </Block>
+          </Grid.Row>
+
+          <Grid.Row>
+            <Grid.Column>
+              <CardOne />
+            </Grid.Column>
+            <Grid.Column>
+              <CardThree />
+            </Grid.Column>
+            <Grid.Column>
+              <CardSix />
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row>

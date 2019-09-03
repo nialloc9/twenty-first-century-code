@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import {Block, Link} from '../Common/Styled';
 import javaBlue from '../../static/images/javaBlue.png';
 import globals from '../../config/globals';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 const {
     LINKEDIN,

@@ -11,7 +11,7 @@ import Csrf from './Csrf';
 import VerifyEmail from './VerifyEmail';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
 import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL } from '../../constants/php';
 import { dropdownOptions } from './options';

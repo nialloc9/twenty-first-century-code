@@ -3,11 +3,15 @@ import Block from '../../../components/Common/Styled/Block';
 import Image from '../../../components/Common/Styled/Image';
 import SoftLink from "../../../components/Common/Styled/SoftLink";
 import Card from './Card';
-import { remCalc } from '../../../common/helpers';
-import css3Blue from '../../../static/images/css3Blue.png';
+import { remCalc } from '../../../common/utils';
+import otherProjects from '../../../static/images/new/otherProjects.jpg';
 
 class CardSix extends Component {
 
+    shouldComponentUpdate() {
+        return false;
+    }
+    
     render(){
         return (
             <SoftLink
@@ -24,8 +28,8 @@ class CardSix extends Component {
                             fluid
                             width="100%"
                             height="100% !important"
-                            alt="Style Articles"
-                            src={css3Blue}
+                            alt="Other Articles"
+                            src={otherProjects}
                         />
                     </Block>
                 </Card>

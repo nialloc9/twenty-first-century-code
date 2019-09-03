@@ -6,7 +6,7 @@ import newGame from '../../static/images/projects/javaFindTheDoorGame/newGame.pn
 import mainMenu from '../../static/images/projects/javaFindTheDoorGame/mainMenu.png';
 import collisionCantContinue from '../../static/images/projects/javaFindTheDoorGame/collisionCantContinue.png';
 import winner from '../../static/images/projects/javaFindTheDoorGame/winner.png';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 export default () => {
 

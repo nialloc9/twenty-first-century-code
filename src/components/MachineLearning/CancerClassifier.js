@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import {Block, SoftLink, Link} from "../Common/Styled";
 import graph from "../../static/images/projects/cancerClassifier/kNearestNeighbours.png";
 import clusters from "../../static/images/projects/cancerClassifier/clusters.png";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import { STOCK_PREDICTOR } from "../../constants/machineLearning";
 
 export default () => {

@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 import { Grid } from 'semantic-ui-react';
 import Block from '../Common/Styled/Block';
 import Header from '../Common/Styled/Header';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 

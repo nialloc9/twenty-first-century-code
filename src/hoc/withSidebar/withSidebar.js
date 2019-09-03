@@ -6,8 +6,7 @@ import Block from "../../components/Common/Styled/Block";
 import Icon from "../../components/Common/Styled/Icon";
 import ClickOutside from "../../components/Common/Clickoutside";
 import { SIDEBAR_HOME, SIDEBAR_ABOUT } from "../../constants/sidebar";
-import { remCalc } from "../../common/helpers";
-import isMobile from "../../common/isMobile";
+import { isMobile, remCalc } from "../../common/utils";
 import theme from "../../config/theme";
 import globals from "../../config/globals";
 import cv from "../../static/files/cv.pdf";
@@ -115,7 +114,7 @@ const withSidebar = WrappedComponent =>
                         <MenuItem
                           icon="phone"
                           text="Phone"
-                          href={isMobile() ? `tel:${PHONE_NUMBER}` : "#"}
+                          href={isMobile ? `tel:${PHONE_NUMBER}` : "#"}
                         />
                       </Block>
                     }

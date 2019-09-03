@@ -1,4 +1,4 @@
-import { emCalc } from "./helpers";
+import { emCalc } from "./utils";
 /**
  *  Screen Sizes
  */

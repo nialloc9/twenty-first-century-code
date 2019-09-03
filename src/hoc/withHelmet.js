@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet"
-import { capitalizeEachWord } from "../common/helpers"
+import { capitalizeEachWord } from "../common/utils"
 
 const withHelmet = WrappedComponent =>
     class MyComponent extends Component {
@@ -46,7 +46,7 @@ const withHelmet = WrappedComponent =>
 
             const newContent = MyComponent.metaManipulatorMap[name] ? MyComponent.metaManipulatorMap[name](content) : content;
                 
-            return <meta key={`${o.name}-${newContent}`} name={name} content={newContent} {...rest} />
+            return <meta key={`${name}-${newContent}`} name={name} content={newContent} {...rest} />
         })
         
         renderHelmet = () => <Helmet>{this.renderTitle()} {this.renderMeta()}</Helmet>

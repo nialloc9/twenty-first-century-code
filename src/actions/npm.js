@@ -1,6 +1,6 @@
 import globals from "../config/globals";
 import { NPM_SET } from "../constants/npm";
-import promiseErrorHandler from "../common/promiseErrorHandler";
+import promiseErrorHandler from "../hof/promiseErrorHandler";
 
 const { NPM_API } = globals;
 

@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import {Block, Link} from '../Common/Styled';
 import blueArrow from '../../static/images/projects/asyncAwait/blueArrow.jpg';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 export default () => {
 

@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Message from "../Styled/Message";
-import { remCalc } from '../../../common/helpers';
+import { remCalc } from '../../../common/utils';
 
 class Warning extends PureComponent {
     static propTypes = {

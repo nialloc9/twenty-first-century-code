@@ -3,7 +3,7 @@ import { Block, Link } from '../Common/Styled';
 import Article from '../Common/Article';
 import javascriptYellow from '../../static/images/javascriptYellow.png';
 import globals from '../../config/globals';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 const {
     GITHUB

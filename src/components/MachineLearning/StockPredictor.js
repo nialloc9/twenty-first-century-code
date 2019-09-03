@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import {Block, Link} from "../Common/Styled";
 import graph from "../../static/images/projects/stockPredictor/graph.png";
 import algorithm from "../../static/images/projects/stockPredictor/algorithm.png";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 
 export default () => {
 

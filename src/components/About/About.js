@@ -10,7 +10,7 @@ import Introduction from './Introduction';
 import withSidebar from '../../hoc/withSidebar';
 import withScroller from '../../hoc/withScroller';
 import { setSidebarOpen } from '../../actions/sidebar';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 import { SIDEBAR_ABOUT } from '../../constants/sidebar';
 
 class About extends Component {

@@ -2,7 +2,7 @@ import React from 'react'
 import {Block, Link} from '../Common/Styled';
 import Article from "../Common/Article";
 import telephone from '../../static/images/projects/reactRenderCallback/telephone-handset-3179133_1280.jpg';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 export default () => {
 

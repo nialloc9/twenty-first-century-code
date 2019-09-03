@@ -3,7 +3,7 @@ import { Accordion, Icon } from "semantic-ui-react";
 import Block from "../../components/Common/Styled/Block";
 import Link from "../../components/Common/Styled/Link";
 import Header from "../../components/Common/Styled/Header";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 
 class Education extends Component {
   state = { activeIndex: 0 };

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Dropdown, Header as SemanticHeader } from "semantic-ui-react";
 import Header from "../Styled/Header";
 import Block from "../Styled/Block";
-import { remCalc } from "../../../common/helpers";
+import { remCalc } from "../../../common/utils";
 
 class ProjectHeader extends Component {
   static propTypes = {

@@ -2,7 +2,7 @@ import React from 'react';
 import Styled from "styled-components";
 import SemanticMenu from "semantic-ui-react/dist/commonjs/collections/Menu";
 import { MOBILE_SCREEN } from "../../../common/settings";
-import { remCalc } from '../../../common/helpers';
+import { remCalc } from '../../../common/utils';
 
 const SemanticItem = SemanticMenu.Item;
 

@@ -15,7 +15,7 @@ import MeanShift from "./MeanShift";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import {
   STOCK_PREDICTOR,
   CANCER_CLASSIFIER,

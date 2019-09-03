@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import {Block, SoftLink, Link} from "../Common/Styled";
 import main from "../../static/images/projects/kMeans/main.png";
 import kmeans from "../../static/images/projects/kMeans/kmeans.png";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import { MEAN_SHIFT } from "../../constants/machineLearning";
 
 export default () => {

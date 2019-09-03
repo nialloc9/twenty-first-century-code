@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import Block from '../Common/Styled/Block';
 import SoftLink from '../Common/Styled/SoftLink';
-import {remCalc, generateId} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/utils';
 import start from '../../static/images/projects/shouldIInvest/start.png';
 
 export default () => {

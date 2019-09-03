@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import {Block, SoftLink} from '../Common/Styled';
 import hands from '../../static/images/projects/higherOrderFunctions/hands-1438638-1280x960.jpg';
-import { remCalc } from '../../common/helpers';
+import { remCalc } from '../../common/utils';
 
 export default () => {
 

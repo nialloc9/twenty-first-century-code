@@ -14,7 +14,7 @@ import DepthFirst from "./DepthFirst";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
-import { remCalc } from "../../common/helpers";
+import { remCalc } from "../../common/utils";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
 import {
   JAVA_CALCULATOR,

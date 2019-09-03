@@ -3,7 +3,7 @@ import SoftLink from "../../../components/Common/Styled/SoftLink";
 import Block from '../../../components/Common/Styled/Block';
 import Image from '../../../components/Common/Styled/Image';
 import Card from './Card';
-import { remCalc } from '../../../common/helpers';
+import { remCalc } from '../../../common/utils';
 import javascriptYellow from '../../../static/images/javascriptYellow.png';
 
 class CardTwo extends Component {

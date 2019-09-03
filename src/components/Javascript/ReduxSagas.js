@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import Block from '../Common/Styled/Block';
 import SoftLink from '../Common/Styled/SoftLink';
 import Link from '../Common/Styled/Link';
-import {remCalc, generateId} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/utils';
 import logo from '../../static/images/projects/reduxSaga/reduxSagaLogo.png';
 
 export default () => {

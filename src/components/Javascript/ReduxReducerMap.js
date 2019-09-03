@@ -2,7 +2,7 @@ import React from 'react'
 import Article from '../Common/Article';
 import SoftLink from '../Common/Styled/SoftLink';
 import Block from '../Common/Styled/Block';
-import {remCalc, generateId} from '../../common/helpers';
+import {remCalc, generateId} from '../../common/utils';
 import telephone from '../../static/images/projects/reduxReducerMap/reducer.png';
 
 export default () => {
