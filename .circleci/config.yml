@@ -1,42 +1,46 @@
 workflows:
   version: 2
   deploy-workflow:
-    filters:
-      branches:
-        only: master
     jobs:
-      build:
-        docker: # run the steps with Docker
-          - image: circleci/node:10.16
-        steps: # a collection of executable commands
-          - checkout # special step to check out source code to working directory
-          - run:
-              name: Update NPM
-              command: sudo npm install -g npm@latest
-          - restore_cache: # special step to restore the dependency cache
-              # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
-              key: dependency-cache-{{ checksum "package.json" }}
-          - run:
-              name: Install Dependencies
-              command: npm install
-          - save_cache: # special step to save the dependency cache
-              key: dependency-cache-{{ checksum "package.json" }}
-              paths:
-                - ./node_modules
-          - run:
-              name: Build Application
-              command: npm run build
-        deploy:
-          context: twenty-first-century-code
-          - run:
-                name: Install AWS SDK
-                command: |
-                  sudo curl -O https://bootstrap.pypa.io/get-pip.py
-                  sudo python get-pip.py
-                  sudo pip install awscli --upgrade
+      - checkout
+      - build:
+          filters:
+            branches:
+              only: master
+          docker: # run the steps with Docker
+            - image: circleci/node:10.16
+          steps: # a collection of executable commands
+            - checkout # special step to check out source code to working directory
             - run:
-                name: Deploy To S3
-                command: aws s3 sync ./build s3://${BUCKET_NAME} --delete
+                name: Update NPM
+                command: sudo npm install -g npm@latest
+            - restore_cache: # special step to restore the dependency cache
+                # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+                key: dependency-cache-{{ checksum "package.json" }}
             - run:
-                name: Invalidate Cache
-                command: aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'
+                name: Install Dependencies
+                command: npm install
+            - save_cache: # special step to save the dependency cache
+                key: dependency-cache-{{ checksum "package.json" }}
+                paths:
+                  - ./node_modules
+            - run:
+                name: Build Application
+                command: npm run build
+        - deploy:
+            filters:
+            branches:
+              only: master
+            context: twenty-first-century-code
+            - run:
+                  name: Install AWS SDK
+                  command: |
+                    sudo curl -O https://bootstrap.pypa.io/get-pip.py
+                    sudo python get-pip.py
+                    sudo pip install awscli --upgrade
+              - run:
+                  name: Deploy To S3
+                  command: aws s3 sync ./build s3://${BUCKET_NAME} --delete
+              - run:
+                  name: Invalidate Cache
+                  command: aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'
