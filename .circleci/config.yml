@@ -1,10 +1,9 @@
 version: 2
-filters:
-    branches:
-      only: master
-  
 jobs:
   build:
+    filters:
+      branches:
+        only: master
     docker: # run the steps with Docker
       - image: circleci/node:10.16
     steps: # a collection of executable commands
