@@ -20,7 +20,6 @@ const {
   EMAIL,
   YOUTUBE_CHANNEL,
   TWITTER,
-  FACEBOOK,
   LINKEDIN,
   GITHUB
 } = globals;
@@ -129,12 +128,6 @@ const withSidebar = WrappedComponent =>
                     icon="twitter"
                     text="Twitter"
                     href={TWITTER}
-                    target="_blank"
-                  />
-                  <MenuItem
-                    icon="facebook"
-                    text="Facebook"
-                    href={FACEBOOK}
                     target="_blank"
                   />
                   <MenuItem

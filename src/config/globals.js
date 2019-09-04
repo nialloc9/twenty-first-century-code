@@ -7,7 +7,6 @@ const {
     REACT_APP_GITHUB_API,
     REACT_APP_NPM_API,
     REACT_APP_TWITTER,
-    REACT_APP_FACEBOOK,
 } = process.env;
 
 export default {
@@ -19,5 +18,4 @@ export default {
     GITHUB_API: REACT_APP_GITHUB_API,
     NPM_API: REACT_APP_NPM_API,
     TWITTER: REACT_APP_TWITTER,
-    FACEBOOK: REACT_APP_FACEBOOK,
 };
