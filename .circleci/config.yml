@@ -7,6 +7,7 @@ jobs:
   build:
     docker: # run the steps with Docker
       - image: circleci/node:10.16
+    context: twenty-first-century-code
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       - run:
@@ -34,13 +35,11 @@ jobs:
       
       - run:
           name: Deploy To S3
-          context: twenty-first-century-code
           command: |
             export BUCKET_NAME=${BUCKET_NAME}
             make deploy_to_s3
       - run:
           name: Invalidate Cache
-          context: twenty-first-century-code
           command: |
             export DISTRIBUTION_ID=${DISTRIBUTION_ID}
             make invalidate_cache
