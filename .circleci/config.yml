@@ -34,7 +34,7 @@ jobs:
             sudo pip install awscli --upgrade
       - run:
           name: Deploy To S3
-          command: aws s3 sync ./build s3://$BUCKET_NAME --delete
+          command: "aws s3 sync ./build s3://${BUCKET_NAME} --delete"
       - run:
           name: Invalidate Cache
-          command: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
+          command: "aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'"
