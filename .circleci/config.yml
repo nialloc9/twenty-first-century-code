@@ -1,5 +1,4 @@
 version: 2
-context: twenty-first-century-code
 filters:
     branches:
       only: master
@@ -35,15 +34,13 @@ jobs:
       
       - run:
           name: Deploy To S3
+          context: twenty-first-century-code
           command: |
             export BUCKET_NAME=${BUCKET_NAME}
-            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
-            export HELLO="hell"
             make deploy_to_s3
       - run:
           name: Invalidate Cache
+          context: twenty-first-century-code
           command: |
-            export BUCKET_NAME=${BUCKET_NAME}
             export DISTRIBUTION_ID=${DISTRIBUTION_ID}
-            export HELLO="hell"
             make invalidate_cache
