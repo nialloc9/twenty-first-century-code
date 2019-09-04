@@ -1,8 +1,8 @@
 version: 2
-context: twenty-first-century-code
-  filters:
+filters:
     branches:
       only: master
+  
 jobs:
   build:
     docker: # run the steps with Docker
