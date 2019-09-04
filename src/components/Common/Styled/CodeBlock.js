@@ -5,6 +5,7 @@ import java from 'react-syntax-highlighter/dist/esm/languages/hljs/java';
 import css from 'react-syntax-highlighter/dist/esm/languages/hljs/css';
 import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
 import php from 'react-syntax-highlighter/dist/esm/languages/hljs/php';
+import yaml from 'react-syntax-highlighter/dist/esm/languages/hljs/yaml';
 import docco from 'react-syntax-highlighter/dist/esm/styles/hljs/docco';
 import Block from './Block';
 
@@ -13,6 +14,7 @@ SyntaxHighlighter.registerLanguage('php', php);
 SyntaxHighlighter.registerLanguage('java', java);
 SyntaxHighlighter.registerLanguage('css', css);
 SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('yaml', yaml);
 
 class CodeBlock extends Component{
 

@@ -62,6 +62,18 @@
 		],
 		"description": "Article snippet for java code"
 	},
+	"article-code-yaml": {
+		"scope": "javascript",
+		"prefix": "article-code-yaml",
+		"body": [
+			"{",
+				"	type: 'code',",
+				"	language: 'yaml',",
+				"	code: ``",
+			  "},"
+		],
+		"description": "Article snippet for yaml code"
+	},
 	"article-code-python": {
 		"scope": "javascript",
 		"prefix": "article-code-python",

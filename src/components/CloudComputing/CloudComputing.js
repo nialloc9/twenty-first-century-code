@@ -6,11 +6,13 @@ import { Grid } from "semantic-ui-react";
 import Block from "../Common/Styled/Block";
 import ProjectHeader from "../Common/ProjectHeader";
 import Overview from "./Overview";
+import S3Pipeline from "./S3Pipeline";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
 import { remCalc } from "../../common/utils";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
+import { CIRCLE_CI_S3_CLOUDFRONT } from "../../constants/cloudComputing";
 import { dropdownOptions } from "./options";
 
 class CloudComputing extends Component {
@@ -41,7 +43,9 @@ class CloudComputing extends Component {
     } = this.props;
 
     const Article =
-      {}[article] || Overview;
+      {
+        [CIRCLE_CI_S3_CLOUDFRONT]: S3Pipeline
+      }[article] || Overview;
 
     const ArticleWithSideBar = withScroller(Article);
 
