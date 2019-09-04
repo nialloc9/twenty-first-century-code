@@ -11,6 +11,12 @@ jobs:
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       - run:
+          name: Echo name
+          command: echo ${BUCKET_NAME}
+      - run:
+          name: Echo name
+          command: echo $BUCKET_NAME
+      - run:
           name: Update NPM
           command: sudo npm install -g npm@latest
       - restore_cache: # special step to restore the dependency cache
@@ -32,9 +38,7 @@ jobs:
             sudo curl -O https://bootstrap.pypa.io/get-pip.py
             sudo python get-pip.py
             sudo pip install awscli --upgrade
-      - run:
-          name: Echo name
-          command: echo ${BUCKET_NAME}
+      
       - run:
           name: Deploy To S3
           command: aws s3 sync ./build s3://${BUCKET_NAME} --delete
