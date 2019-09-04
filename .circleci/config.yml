@@ -15,11 +15,13 @@ jobs:
           command: |
             export BUCKET_NAME=${BUCKET_NAME}
             export DISTRIBUTION_ID=${DISTRIBUTION_ID}
+            export HELLO="hell"
       - run:
           name: Echo
           command: |
             echo ${BUCKET_NAME}
             echo ${DISTRIBUTION_ID}
+            echo ${HELLO}
       - run:
           name: Update NPM
           command: sudo npm install -g npm@latest
