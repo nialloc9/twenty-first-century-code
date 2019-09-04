@@ -11,18 +11,6 @@ jobs:
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       - run:
-          name: Export Environment Variables To Be Used In deploy.sh
-          command: |
-            export BUCKET_NAME=${BUCKET_NAME}
-            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
-            export HELLO="hell"
-      - run:
-          name: Echo
-          command: |
-            echo ${BUCKET_NAME}
-            echo ${DISTRIBUTION_ID}
-            echo ${HELLO}
-      - run:
           name: Update NPM
           command: sudo npm install -g npm@latest
       - restore_cache: # special step to restore the dependency cache
@@ -47,7 +35,15 @@ jobs:
       
       - run:
           name: Deploy To S3
-          command: make deploy_to_s3
+          command: |
+            export BUCKET_NAME=${BUCKET_NAME}
+            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
+            export HELLO="hell"
+            make deploy_to_s3
       - run:
           name: Invalidate Cache
-          command: make invalidate_cache
+          command: |
+            export BUCKET_NAME=${BUCKET_NAME}
+            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
+            export HELLO="hell"
+            make invalidate_cache
