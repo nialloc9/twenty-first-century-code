@@ -14,6 +14,10 @@ const hoverBoxShadow = `-1px 1px ${fourth},
 
 class Card extends Component {
 
+    shouldComponentUpdate() {
+        return false
+    }
+    
     render(){
         return  <Block
             backgroundColor={third}
@@ -24,7 +28,7 @@ class Card extends Component {
             hoverBoxShadow={hoverBoxShadow}
             hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
             cursor="pointer"
-            clipPath={`circle(${remCalc(190)})`}
+            clipPath={`circle(46% at 50% 50%)`}
             tabletClipPath="circle(100%)"
             hoverClipPath="circle(100%)"
             {...this.props}

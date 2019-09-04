@@ -3,20 +3,22 @@ import PropTypes from 'prop-types';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Grid } from 'semantic-ui-react';
-import Block from '../../components/Common/Styled/Block';
-import ProjectHeader from '../../components/Common/ProjectHeader';
+import Block from '../Common/Styled/Block';
+import ProjectHeader from '../Common/ProjectHeader';
 import Overview from './Overview';
 import Captcha from './Captcha';
 import Csrf from './Csrf';
 import VerifyEmail from './VerifyEmail';
+import StyledComponents from './StyledComponents';
+import Bem from './Bem';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/utils';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL } from '../../constants/php';
+import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL, STYLED_COMPONENTS, BEM } from '../../constants/other';
 import { dropdownOptions } from './options';
 
-class Php extends Component {
+class Other extends Component {
 
     static propTypes = {
         history: PropTypes.shape({
@@ -32,29 +34,20 @@ class Php extends Component {
     handleRedirect = article => {
         const { history: { push } } = this.props;
 
-        push(`/php/${article}`)
+        push(`/other/${article}`)
     };
 
     render() {
 
         const { match: { params: { article } } } = this.props;
 
-        let Article = null;
-
-        switch (article) {
-            case PHP_CAPTCHA:
-                Article = Captcha;
-                break;
-            case PHP_CSRF:
-                Article = Csrf;
-                break;
-            case PHP_VERIFY_EMAIL:
-                Article = VerifyEmail;
-                break;
-            default:
-                Article = Overview;
-                break;
-        }
+        const Article = {
+            [PHP_CAPTCHA]: Captcha,
+            [PHP_CSRF]: Csrf,
+            [PHP_VERIFY_EMAIL]: VerifyEmail,
+            [STYLED_COMPONENTS]: StyledComponents,
+            [BEM]: Bem,
+        }[article] || Overview;
 
         return (
             <Block
@@ -63,8 +56,8 @@ class Php extends Component {
                 <Grid stackable centered columns={3}>
                     <Grid.Row>
                         <ProjectHeader
-                            title="Php"
-                            subTitle={`<?php echo "hello world!"; ?>`}
+                            title="Other Articles"
+                            subTitle={`while anything_else:`}
                             defaultValue={article}
                             options={dropdownOptions}
                             onChange={this.handleRedirect}
@@ -102,4 +95,4 @@ const mapDispatchToProps = dispatch =>
         dispatch
     );
 
-export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Php));
+export default connect(mapStateToProps, mapDispatchToProps)(withSidebar(Other));

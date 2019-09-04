@@ -10,11 +10,11 @@ import Error404 from "./components/Error404";
 import Home from "./components/Home";
 import Java from "./components/Java";
 import Javascript from "./components/Javascript";
-import Php from "./components/Php";
+import Other from "./components/Other";
 import Node from "./components/Node";
 import MachineLearning from "./components/MachineLearning";
-import Style from "./components/Style";
 import About from "./components/About";
+import CloudComputing from "./components/CloudComputing";
 import { history } from "./middleware/history";
 import store from "./store";
 import registerServiceWorker from "./registerServiceWorker";
@@ -35,14 +35,18 @@ render(
           <Route exact path="/" component={Home} />
           <Route exact path="/java/:article?" component={Java} />
           <Route exact path="/Javascript/:article?" component={Javascript} />
-          <Route exact path="/php/:article?" component={Php} />
+          <Route exact path="/other/:article?" component={Other} />
           <Route exact path="/node/:article?" component={Node} />
           <Route
             exact
             path="/machine-learning/:article?"
             component={MachineLearning}
           />
-          <Route exact path="/style/:article?" component={Style} />
+          <Route
+            exact
+            path="/cloud-computing/:article?"
+            component={CloudComputing}
+          />
           <Route exact path="/about" component={About} />
           <Route component={Error404} />
         </Switch>

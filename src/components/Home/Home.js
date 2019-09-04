@@ -55,18 +55,6 @@ class Home extends Component {
               <CardSix />
             </Grid.Column>
           </Grid.Row>
-
-          <Grid.Row>
-            <Grid.Column>
-              <CardOne />
-            </Grid.Column>
-            <Grid.Column>
-              <CardThree />
-            </Grid.Column>
-            <Grid.Column>
-              <CardSix />
-            </Grid.Column>
-          </Grid.Row>
         </Grid>
       </Block>
     );

@@ -26,7 +26,7 @@ class Github extends Component {
         onSetGithubDetails: PropTypes.func.isRequired
     };
 
-    componentWillMount(){
+    componentDidMount(){
         const { onSetGithubDetails } = this.props;
         onSetGithubDetails();
     }

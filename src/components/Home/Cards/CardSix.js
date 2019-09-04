@@ -15,7 +15,7 @@ class CardSix extends Component {
     render(){
         return (
             <SoftLink
-                to="/style"
+                to="/other"
             >
                 <Card>
                     <Block
