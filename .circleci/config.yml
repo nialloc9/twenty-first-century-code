@@ -10,12 +10,17 @@ jobs:
       - image: circleci/node:10.16
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
+      steps:
       - run:
-          name: Echo name
-          command: echo ${BUCKET_NAME}
+          name: Export Environment Variables To Be Used In deploy.sh
+          command: |
+            export BUCKET_NAME=${BUCKET_NAME}
+            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
       - run:
-          name: Echo name
-          command: echo $BUCKET_NAME
+          name: Echo
+          command: |
+            echo ${BUCKET_NAME}
+            echo ${DISTRIBUTION_ID}
       - run:
           name: Update NPM
           command: sudo npm install -g npm@latest
@@ -41,7 +46,7 @@ jobs:
       
       - run:
           name: Deploy To S3
-          command: aws s3 sync ./build s3://${BUCKET_NAME} --delete
+          command: make deploy_to_s3
       - run:
           name: Invalidate Cache
-          command: aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'
+          command: make invalidate_cache
