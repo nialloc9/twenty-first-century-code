@@ -1,6 +1,5 @@
-version: 2.1
+version: 2
 jobs:
-
   build:
     docker: # run the steps with Docker
       - image: circleci/node:10.16
@@ -19,34 +18,18 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
-
-  deploy:
-    steps:
       - run:
-          name: Install awscli
-          command: sudo npm -g awscli@latest
+          name: Build Application
+          command: npm run build
       - run:
-          name: Deploy to S3
+          name: Install AWS SDK
+          command: |
+            sudo curl -O https://bootstrap.pypa.io/get-pip.py
+            sudo python get-pip.py
+            sudo pip install awscli --upgrade
+      - run:
+          name: Deploy To S3
           command: aws s3 sync ./build s3://${BUCKET_NAME} --delete
       - run:
-          name: Invalidate cache
+          name: Invalidate Cache
           command: aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'
-
-    docker:
-      - image: circleci/node:10.16
-    steps:
-      - aws-s3/sync:
-          from: build
-          to: s3://${BUCKET_NAME}
-          aws-access-key-id: AWS_ACCESS_KEY_ID
-          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
-          aws-region: AWS_REGION
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400"
-          overwrite: true
-      - aws-s3/copy:
-          from: bucket/build_asset.txt
-          to: 's3://my-s3-bucket-name'
-          arguments: '--dryrun'
-  
