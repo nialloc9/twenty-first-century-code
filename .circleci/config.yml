@@ -33,7 +33,7 @@ jobs:
             sudo python get-pip.py
             sudo pip install awscli --upgrade
       - run:
-          name: Deploy To S3
+          name: Deploy To S3 ${BUCKET_NAME}
           command: aws s3 sync ./build "s3://${BUCKET_NAME}" --delete
       - run:
           name: Invalidate Cache
