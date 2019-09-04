@@ -32,14 +32,13 @@ jobs:
             sudo curl -O https://bootstrap.pypa.io/get-pip.py
             sudo python get-pip.py
             sudo pip install awscli --upgrade
-      
       - run:
           name: Deploy To S3
           command: |
-            export BUCKET_NAME=${BUCKET_NAME}
+            export BUCKET_NAME="${BUCKET_NAME}"
             make deploy_to_s3
       - run:
           name: Invalidate Cache
           command: |
-            export DISTRIBUTION_ID=${DISTRIBUTION_ID}
+            export DISTRIBUTION_ID="${DISTRIBUTION_ID}"
             make invalidate_cache
