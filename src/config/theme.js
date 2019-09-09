@@ -1,4 +1,4 @@
-const theme = {
+export default {
     colors: {
         first: '#2D93AD',
         second: '#DBD56E',
@@ -9,6 +9,4 @@ const theme = {
     },
     fontSize: 16,
     lineHeight: 1.5
-};
-
-export default theme;
+};;
