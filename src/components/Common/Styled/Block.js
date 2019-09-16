@@ -1,6 +1,6 @@
 import Styled from "styled-components";
 import { remCalc } from "../../../common/utils";
-import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN, LARGE_SCREEN } from '../../../common/settings';
+import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN } from '../../../common/settings';
 
 const Block = Styled("div")`
     margin: ${({ margin = 0 }) => margin};
