@@ -19,20 +19,25 @@ class Card extends Component {
     }
     
     render(){
-        return  <Block
-            backgroundColor={third}
-            height="400px"
-            width="100%"
-            opacity={1}
-            hoverOpacity={0.6}
-            hoverBoxShadow={hoverBoxShadow}
-            hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
-            cursor="pointer"
-            clipPath={`circle(46% at 50% 50%)`}
-            tabletClipPath="circle(100%)"
-            hoverClipPath="circle(100%)"
-            {...this.props}
-        />
+        return  (
+            <Block width="100%" textAlign="center" >
+                <Block
+                    backgroundColor={third}
+                    height={remCalc(400)}
+                    width={remCalc(400)}
+                    opacity={1}
+                    hoverOpacity={0.6}
+                    hoverBoxShadow={hoverBoxShadow}
+                    hoverTransition="box-shadow 1s ease-in-out, clip-path 1s ease-in-out"
+                    cursor="pointer"
+                    clipPath={`circle(49% at 50% 50%)`}
+                    tabletClipPath="circle(100%)"
+                    hoverClipPath="circle(100%)"
+                    margin="auto"
+                    {...this.props}
+                />
+            </Block>
+        )
     }
 }
 
