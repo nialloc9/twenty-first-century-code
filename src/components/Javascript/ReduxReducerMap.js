@@ -3,7 +3,7 @@ import Article from '../Common/Article';
 import SoftLink from '../Common/Styled/SoftLink';
 import Block from '../Common/Styled/Block';
 import {remCalc, generateId} from '../../common/utils';
-import telephone from '../../static/images/projects/reduxReducerMap/reducer.png';
+import reducerImage from '../../static/images/projects/reduxReducerMap/reducer.png';
 
 export default () => {
 
@@ -24,9 +24,10 @@ export default () => {
     const data = [
         {
             type: "image",
-            src: telephone,
+            src: reducerImage,
             size: "large",
-            alt: "Green telephone"
+            alt: "Redux architecture",
+            hasLegend: true
         },
         {
             type: "paragraph",

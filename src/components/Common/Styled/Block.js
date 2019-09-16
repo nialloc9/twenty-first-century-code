@@ -31,6 +31,7 @@ const Block = Styled("div")`
     ${({ maxHeight = false }) => maxHeight && `max-height: ${maxHeight};`}
     ${({ maxWidth = false }) => maxWidth && `max-width: ${maxWidth};`}
     ${({ fontSize = false }) => fontSize && `font-size: ${remCalc(fontSize)};`}
+    ${({ fontWeight = false }) => fontWeight && `font-weight: ${fontWeight};`}
     ${({ wordSpacing = false }) => wordSpacing && `word-spacing: ${wordSpacing};`}
     ${({ color = false }) => color && `color: ${color};`}
     ${({ overflow = false }) => overflow && `overflow: ${overflow};`}

@@ -28,8 +28,9 @@ export default () => {
         {
             type: "video",
             url: "https://www.youtube.com/embed/rLYr2yNzC4Y?start=2047",
-            alt: 'CSS in JS react london talk',
-            placeholder
+            legend: 'CSS in JS react London talk',
+            placeholder,
+            hasLegend: true
         },
         {
             type: 'published',

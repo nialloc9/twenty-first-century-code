@@ -47,7 +47,8 @@ class ReduxPush extends Component {
       {
         type: "image",
         src: logo,
-        alt: "Redux push logo"
+        alt: "Redux push logo",
+        size: "small"
       },
       {
         type: "npm",

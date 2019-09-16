@@ -22,13 +22,14 @@ class Article extends Component{
         return false
     }
 
-    renderImage = ({ src, alt, size = "medium", margin="auto" }) => (
+    renderImage = ({ src, alt, size = "medium", margin="auto", hasLegend }) => (
         <ImagePopup
             src={src}
             margin={margin}
             size={size}
             alt={alt}
             key={src}
+            hasLegend={hasLegend}
         />
     )
 
@@ -48,7 +49,7 @@ class Article extends Component{
 
     renderList = ({ data }) => <List data={data} />
 
-    renderVideo = ({ url, isHd, placeholder }) => <Video url={url} isHd={isHd} placeholder={placeholder} />
+    renderVideo = ({ url, isHd, placeholder, legend }) => <Video url={url} isHd={isHd} placeholder={placeholder} legend={legend} />
 
     renderNpm = ({ isLoading, href, text = "NPM", downloads }) => {
 

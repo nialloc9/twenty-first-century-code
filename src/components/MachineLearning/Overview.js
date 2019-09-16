@@ -22,7 +22,7 @@ export default () => {
     {
       type: "image",
       src: machineLearning,
-      alt: 'Machine learning'
+      alt: 'Machine learning',
     },
     {
       type: 'paragraph',

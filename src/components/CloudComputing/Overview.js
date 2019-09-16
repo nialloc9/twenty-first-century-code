@@ -22,7 +22,7 @@ export default () => {
     {
       type: "image",
       src: cloudComputing,
-      alt: 'Cloud computing'
+      alt: 'Cloud computing',
     },
     {
       type: 'paragraph',

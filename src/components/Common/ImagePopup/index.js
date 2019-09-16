@@ -1,1 +1,1 @@
-export { default } from "./ImagePopup"
+export { default } from "../Image"

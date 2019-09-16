@@ -1,5 +1,7 @@
 import React from 'react'
 import Article from '../Common/Article';
+import architecture from "../../static/images/projects/kenesis/kenesisArchitecture.png"
+import redhose from "../../static/images/projects/kenesis/redhose.png"
 
 export default () => {
 
@@ -20,19 +22,29 @@ export default () => {
     const data = [
         {
             type: 'image',
-            src: '',
-            alt: ''
+            src: architecture,
+            alt: 'AWS kenesis architecture',
+            size: "big",
+            hasLegend: true
         },
         {
             type: 'paragraph',
             text: `Streaming data into AWS is called kinesis. This data is piped through a pipeline typically to S3. The awesome part about S3 
-            that makes it an excellent choice for this use case is that it is auto scaling. Kinesis can in fact be broken down into 3 sub services called 
-            stream, firehose, and analytics.`
+            that makes it an excellent choice for this use case is that it is auto scaling. Kinesis can in fact be broken down into 3 further sub services called 
+            stream, firehose, and analytics. We can see above that data is ingested from different producers into the shards and passed to consumers. These consumers 
+            will do things like data manipulations before passing the new data to a new destination. Typically this would be a warehouse or S3 but it can be passed to other destinations.`
         },
         {
             type: 'paragraph',
             text: `Stream and firehose are responsible for streaming data to a destination. Typically, this would be S3 for stream. The difference between stream and 
             firehose is that firehose is a simplified version of stream that can pipe data to other destinations.`
+        },
+        {
+            type: 'image',
+            src: redhose,
+            alt: 'AWS redhose architecture',
+            size: "big",
+            hasLegend: true
         },
         {
             type: 'paragraph',

@@ -22,7 +22,8 @@ export default () => {
         {
             type: "image",
             src: start,
-            alt: 'Block chain mining start'
+            alt: 'Block chain mining start',
+            size: "large"
         },
         {
             type: 'source',

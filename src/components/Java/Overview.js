@@ -31,7 +31,8 @@ export default () => {
             type: "image",
             src: javaBlue,
             size: 'large',
-            alt: 'Java image'
+            alt: 'Java image',
+            hasLegend: false
         },
         {
             type: 'markup',

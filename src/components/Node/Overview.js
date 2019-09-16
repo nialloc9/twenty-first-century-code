@@ -22,7 +22,7 @@ export default () => {
         {
             type: 'image',
             src: nodeGreen,
-            alt: 'Node logo image'
+            alt: 'Node logo image',
         },
         {
             type: 'paragraph',
