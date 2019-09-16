@@ -1,6 +1,6 @@
 import Styled from "styled-components";
 import { remCalc } from "../../../common/utils";
-import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN } from '../../../common/settings';
+import { MOBILE_SCREEN, TABLET_HORIZONTAL_SCREEN, LARGE_SCREEN } from '../../../common/settings';
 
 const Block = Styled("div")`
     margin: ${({ margin = 0 }) => margin};
@@ -44,7 +44,7 @@ const Block = Styled("div")`
     ${({ textDecoration = false }) => textDecoration && `text-decoration: ${textDecoration};`}
     ${({ whiteSpace = false }) => whiteSpace && `white-space: ${whiteSpace};`}
     ${({ clipPath = false }) => clipPath && `clip-path: ${clipPath};`}
-    
+   
     
     &:hover {
         ${({ hoverColor = false}) => hoverColor && `color: ${hoverColor};`}
@@ -77,7 +77,7 @@ const Block = Styled("div")`
     ${({ scrollBarFaceColor = false }) => scrollBarFaceColor && `::-webkit-scrollbar-face-color: ${scrollBarFaceColor};`}
     ${({ scrollBarArrowColor = false }) => scrollBarArrowColor && `::-webkit-scrollbar-arrow-color: ${scrollBarArrowColor};`}
     ${({ scrollBarTrackColor = false }) => scrollBarTrackColor && `::-webkit-scrollbar-track-color: ${scrollBarTrackColor};`}
-    
+
     @media ${TABLET_HORIZONTAL_SCREEN} {
         ${({ tabletHorizontalMargin = false }) => tabletHorizontalMargin && `margin: ${tabletHorizontalMargin};`}
         ${({ tabletHorizontalBackgroundImage = false }) => tabletHorizontalBackgroundImage && `background-image: ${tabletHorizontalBackgroundImage};`}

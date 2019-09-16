@@ -9,6 +9,7 @@ const Image = Styled(({ cursor, display, height, width, maxWidth, mobileWidth, .
     ${({ cursor = false }) => cursor && `cursor: ${cursor};`}
     ${({ display = false }) => display && `display: ${display};`}
     ${({ height = false }) => height && `height: ${height};`}
+    ${({ width = false }) => width && `width: ${width};`}
     ${({ maxWidth = false }) => maxWidth && `max-width: ${maxWidth};`}
     ${({ margin = false }) => margin && `margin: ${margin};`}
     ${({ objectFit = false }) => objectFit && `object-fit: ${objectFit};`}
