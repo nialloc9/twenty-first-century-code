@@ -29,8 +29,13 @@ export default () => {
         },
         {
             type: 'paragraph',
+            text: `With the advent of big data came services to handle it. One of these services "kenesis" offered by AWS is a widely used and talked about topic. 
+            In this article I intend to give a breakdown of what kenesis is. What the keywords mean. And how you would use it.`
+        },
+        {
+            type: 'paragraph',
             text: `Streaming data into AWS is called kinesis. This data is piped through a pipeline typically to S3. The awesome part about S3 
-            that makes it an excellent choice for this use case is that it is auto scaling. Kinesis can in fact be broken down into 3 further sub services called 
+            that makes it an excellent choice for this use case is that it is auto scaling. Kinesis can in fact be broken down into 3 sections 
             stream, firehose, and analytics. We can see above that data is ingested from different producers into the shards and passed to consumers. These consumers 
             will do things like data manipulations before passing the new data to a new destination. Typically this would be a warehouse or S3 but it can be passed to other destinations.`
         },
@@ -48,7 +53,7 @@ export default () => {
         },
         {
             type: 'paragraph',
-            text: `The final sub service analytics can be used to run SQL like queries being piped to your streams or firehoses. This is a very powerful feature allowing you 
+            text: `The final section analytics can be used to run SQL like queries being piped to your streams or firehoses. This is a very powerful feature allowing you 
             to do data manupulation and learn more about your data before passing it to S3 or a data wearhouse.`
         },
         {
@@ -60,7 +65,8 @@ export default () => {
         },
         {
             type: 'paragraph',
-            text: `The last thing I want to note here about kenisis that is very important especially for big enterprise is that data can be encrypted in kenesis using a key.`
+            text: `The last thing I want to note here about kenisis that is very important especially for big enterprise is that data can be encrypted in kenesis using a key. In a nutshell the above explains 
+            kenesis and how it would be used. If you want to learn more about cloud computing check out my other cloud computing articles above.`
         },
         {
             type: 'published',
