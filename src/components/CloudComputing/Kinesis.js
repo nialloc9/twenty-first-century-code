@@ -70,8 +70,7 @@ export default () => {
         },
         {
             type: 'paragraph',
-            text: `In a nutshell the above explains 
-            kenesis and how it would be used. If you want to learn more about cloud computing check out my other cloud computing articles above.`
+            text: `In a nutshell the above explains kenesis and how it would be used. If you want to learn more about cloud computing check out my other cloud computing articles above.`
         },
         {
             type: 'published',
