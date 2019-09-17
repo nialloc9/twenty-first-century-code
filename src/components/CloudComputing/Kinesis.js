@@ -65,7 +65,12 @@ export default () => {
         },
         {
             type: 'paragraph',
-            text: `The last thing I want to note here about kenisis that is very important especially for big enterprise is that data can be encrypted in kenesis using a key. In a nutshell the above explains 
+            text: `The last thing I want to note here about kenisis that is very important especially for big enterprise is that data can be encrypted in kenesis using an AWS KMS customer master key (CMK). Data 
+            is encrypted automatically before it's at rest and after it is retrieved from storage. As a result all data at rest is encrypted allowing your company to meet strict regulatory requirements and enhance the security of your data`
+        },
+        {
+            type: 'paragraph',
+            text: `In a nutshell the above explains 
             kenesis and how it would be used. If you want to learn more about cloud computing check out my other cloud computing articles above.`
         },
         {
