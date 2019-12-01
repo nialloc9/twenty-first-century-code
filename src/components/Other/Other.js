@@ -11,11 +11,12 @@ import Csrf from './Csrf';
 import VerifyEmail from './VerifyEmail';
 import StyledComponents from './StyledComponents';
 import Bem from './Bem';
+import ContractTesting from './ContractTesting';
 import withSidebar from '../../hoc/withSidebar';
 import { setSidebarOpen } from '../../actions/sidebar';
 import { remCalc } from '../../common/utils';
 import { SIDEBAR_HOME } from '../../constants/sidebar';
-import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL, STYLED_COMPONENTS, BEM } from '../../constants/other';
+import { PHP_CAPTCHA, PHP_CSRF, PHP_VERIFY_EMAIL, STYLED_COMPONENTS, BEM, CONTRACT_TESTING } from '../../constants/other';
 import { dropdownOptions } from './options';
 
 class Other extends Component {
@@ -47,6 +48,7 @@ class Other extends Component {
             [PHP_VERIFY_EMAIL]: VerifyEmail,
             [STYLED_COMPONENTS]: StyledComponents,
             [BEM]: Bem,
+            [CONTRACT_TESTING]: ContractTesting,
         }[article] || Overview;
 
         return (

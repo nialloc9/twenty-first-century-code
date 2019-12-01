@@ -8,12 +8,13 @@ import ProjectHeader from "../Common/ProjectHeader";
 import Overview from "./Overview";
 import S3Pipeline from "./S3Pipeline";
 import Kinesis from "./Kinesis";
+import DistributedProcessing from "./DistributedProcessing";
 import withSidebar from "../../hoc/withSidebar";
 import withScroller from "../../hoc/withScroller";
 import { setSidebarOpen } from "../../actions/sidebar";
 import { remCalc } from "../../common/utils";
 import { SIDEBAR_HOME } from "../../constants/sidebar";
-import { CIRCLE_CI_S3_CLOUDFRONT, KENESIS } from "../../constants/cloudComputing";
+import { CIRCLE_CI_S3_CLOUDFRONT, KENESIS, DISTRIBUTED_PROCESSING } from "../../constants/cloudComputing";
 import { dropdownOptions } from "./options";
 
 class CloudComputing extends Component {
@@ -46,7 +47,8 @@ class CloudComputing extends Component {
     const Article =
       {
         [CIRCLE_CI_S3_CLOUDFRONT]: S3Pipeline,
-        [KENESIS]: Kinesis
+        [KENESIS]: Kinesis,
+        [DISTRIBUTED_PROCESSING]: DistributedProcessing
       }[article] || Overview;
 
     const ArticleWithSideBar = withScroller(Article);

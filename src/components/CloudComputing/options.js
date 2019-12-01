@@ -1,7 +1,8 @@
 import {
   CLOUD_COMPUTING_OVERVIEW,
   CIRCLE_CI_S3_CLOUDFRONT,
-  KENESIS
+  KENESIS,
+  DISTRIBUTED_PROCESSING
 } from "../../constants/cloudComputing";
 
 export const dropdownOptions = [
@@ -19,6 +20,11 @@ export const dropdownOptions = [
     key: KENESIS,
     value: KENESIS,
     text: "AWS Kenesis"
+  },
+  {
+    key: DISTRIBUTED_PROCESSING,
+    value: DISTRIBUTED_PROCESSING,
+    text: "Distributed Processing"
   },
   {
     key: "More Coming Soon",

@@ -33,13 +33,13 @@ class Article extends Component{
         />
     )
 
-    renderSource = ({ href, text = "GitHub" }) => (
+    renderSource = ({ href, text = "GitHub", prefix="Source code:" }) => (
         <Block margin={`${remCalc(20)} 0`} key={href}>
-            Source code: <Link target="_blank" rel="noopener noreferrer" href={href}>{text}</Link>
+            {prefix} <Link target="_blank" rel="noopener noreferrer" href={href}>{text}</Link>
         </Block>
     )
 
-    renderParagraph = ({ margin = `${remCalc(20)} 0`, text }) => <Block key={`paragraph-${text}`} margin={margin}>{text}</Block>
+    renderParagraph = ({ margin = `${remCalc(20)} 0`, text }) => <Block textAlign="left" key={`paragraph-${text}`} margin={margin}>{text}</Block>
     
     renderPublished = ({  margin = `${remCalc(20)} 0`, href=LINKEDIN, author = "Niall O' Connor", date }) => <Block margin={margin} key={`published-${author}`}>Published by <Link href={href} target="__blank" rel="noopener noreferrer">{author}</Link> on {date}.</Block>
     
